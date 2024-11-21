@@ -7,7 +7,6 @@ import ReadmoreBtn from "@/app/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
 
-// Fetch data from JSON file
 const getData = async () => {
     const res = await fetch("/data/sourceProject.json");
 
@@ -46,16 +45,21 @@ export default function Home() {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
-    // Get unique categories from the projects
+    const allowedCategories = ["All", "Video", "Photo"];
+    
+    // ดึงประเภทที่มีเฉพาะจาก projects
     const categories = ["All", ...new Set(projects.map((project) => project.type))];
 
-    // Filter projects based on selected category and ID range
+    const filteredCategories = categories.filter((category) =>
+        allowedCategories.includes(category)
+    );
+
     const filteredItems =
         activeCategory === "All"
-            ? projects.filter((project) => project.id >= 13 && project.id <= 22)
+            ? projects.filter((project) => project.id >= 34 && project.id <= 37)
             : projects
                 .filter((project) => project.type === activeCategory)
-                .filter((project) => project.id >= 13 && project.id <= 22);
+                .filter((project) => project.id >= 34 && project.id <= 37);
 
     return (
         <>
@@ -79,7 +83,7 @@ export default function Home() {
                 <div className="pb-8">
                     <h1 className="text-2xl font-bold mb-4">Filterable Items</h1>
                     <CategoryFilter
-                        categories={categories}
+                        categories={filteredCategories} 
                         activeCategory={activeCategory}
                         setActiveCategory={setActiveCategory}
                     />
@@ -92,12 +96,12 @@ export default function Home() {
                         <Link
                             key={project.id}
                             href={`/CardWorks/${project.id}`}
-                            data-aos="fade-up" // AOS animation
-                            data-aos-delay={index * 100} // Increment delay by 100ms for each card
+                            data-aos="fade-up" 
+                            data-aos-delay={index * 100} 
                         >
-                            <div className=""> {/* Add group class here */}
+                            <div> 
                                 <Image
-                                    src={project.banner}
+                                    src={project.cards}
                                     alt={project.title.title1}
                                     width={500}
                                     height={550}
@@ -110,7 +114,7 @@ export default function Home() {
             </div>
 
             <div className="w-11/12 mx-auto mt-12">
-                <h1 className="text-3xl text-white mb-4">Our Works</h1>
+                <h1 className="text-5xl text-white mb-4">Our Works</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {["Graphic Design", "Production", "Drawing"].map((work, index) => (
                         <div key={index} className="rounded-sm flex flex-col justify-center items-start pl-10 h-60 bg-[#222222]">
