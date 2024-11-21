@@ -1,27 +1,21 @@
 "use client";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
-import CategoryFilter from "@/app/components/Categories/page";
 import { useEffect, useState } from "react";
+import CategoryFilter from "@/app/components/Categories/page";
 import ReadmoreBtn from "@/app/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
 
 const getData = async () => {
     const res = await fetch("/data/sourceProject.json");
-
-    if (!res.ok) {
-        throw new Error("Failed to fetch data");
-    }
-
-    const data = await res.json();
-    return data;
+    if (!res.ok) throw new Error("Failed to fetch data");
+    return await res.json();
 };
 
 export default function Home() {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
     const [activeCategory, setActiveCategory] = useState("All");
     const [hoveredId, setHoveredId] = useState(null);
 
@@ -34,7 +28,6 @@ export default function Home() {
                 setProjects(data);
             } catch (error) {
                 console.error(error);
-                setError("Failed to load projects.");
             } finally {
                 setLoading(false);
             }
@@ -44,62 +37,41 @@ export default function Home() {
     }, []);
 
     if (loading) return <div>Loading...</div>;
-    if (error) return <div>{error}</div>;
 
-    const allowedCategories = ["All", "Photo", "Video"];
-    const allowedIds = [38, 39, 40, 41, 42, 43, 44, 45, 46, 47];
+    const categories = ["All", "Painting", "Drawing"];
     
-    const categories = ["All", ...new Set(projects.map((project) => project.type))];
-    const filteredCategories = categories.filter((category) =>
-        allowedCategories.includes(category)
-    );
-
-    const filteredItems =
-        activeCategory === "All"
-            ? projects.filter((project) => allowedIds.includes(project.id))
-            : projects
-                .filter((project) => project.type === activeCategory && allowedIds.includes(project.id));
-
-    const columns = 4; 
+    const filteredItems = activeCategory === "All"
+        ? projects.filter((project) => project.id >= 38 && project.id <= 47)
+        : projects
+            .filter((project) => project.type === activeCategory)
+            .filter((project) => project.id >= 38 && project.id <= 47);
 
     return (
         <>
             <div className="relative w-full h-screen">
-                <Image
-                    src="/bannerWeb.png"
-                    alt="Banner"
-                    fill
-                    objectFit="cover"
-                    className="absolute"
-                />
+                <Image src="/bannerWeb.png" alt="Banner" fill objectFit="cover" className="absolute" />
                 <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#040404] to-transparent" />
             </div>
 
             <div className="w-11/12 mx-auto pt-40">
-                <div className="w-10/12 mb-8">
-                    <p className="text-white text-3xl">
-                        At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and effective functionality.
-                    </p>
-                </div>
-                <div className="pb-8">
-                    <h1 className="text-2xl font-bold mb-4">Filterable Items</h1>
-                    <CategoryFilter
-                        categories={filteredCategories}
-                        activeCategory={activeCategory}
-                        setActiveCategory={setActiveCategory}
-                    />
-                </div>
+                <p className="text-white text-3xl mb-8">
+                    At MuchMedia, we deliver creative websites with user-friendly interfaces and functionality.
+                </p>
+                <CategoryFilter
+                    categories={categories}
+                    activeCategory={activeCategory}
+                    setActiveCategory={setActiveCategory}
+                />
             </div>
 
             <div className="w-11/12 mx-auto">
-                <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                     {filteredItems.map((project, index) => (
                         <Link
                             key={project.id}
                             href={`/CardWorks/${project.id}`}
                             data-aos="fade-up"
-                            data-aos-delay={(index % columns) * 100}
-                            data-aos-anchor-placement="top-bottom"
+                            data-aos-delay={index * 100}
                             onMouseEnter={() => setHoveredId(project.id)}
                             onMouseLeave={() => setHoveredId(null)}
                         >
@@ -110,7 +82,7 @@ export default function Home() {
                                     width={500}
                                     height={400}
                                     className={`w-full h-96 object-cover transition-all duration-300 ease-in-out 
-                                        ${hoveredId && hoveredId !== project.id ? 'blur-sm' : 'blur-none'}`}
+                                        ${hoveredId && hoveredId !== project.id ? 'blur-sm' : ''}`}
                                 />
                             </div>
                         </Link>
