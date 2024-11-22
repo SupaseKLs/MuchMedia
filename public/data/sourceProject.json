@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "cards": "/images/WebApp/Multicamp.png",
-    "banner": "/images/WebApp/Multicamp.png",
+    "cards": "/images/WebApp/images/Multicamp.png",
+    "banner": "/images/WebApp/images/Multicamp.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -19,8 +19,8 @@
   },
   {
     "id": 2,
-    "cards": "/images/WebApp/Aye.png",
-    "banner": "/images/WebApp/Aye.png",
+    "cards": "/images/WebApp/images/Aye.png",
+    "banner": "/images/WebApp/images/Aye.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -37,8 +37,8 @@
   },
   {
     "id": 3,
-    "cards": "/images/WebApp/Res.png",
-    "banner": "/images/WebApp/Res.png",
+    "cards": "/images/WebApp/images/Res.png",
+    "banner": "/images/WebApp/images/Res.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -55,8 +55,8 @@
   },
   {
     "id": 4,
-    "cards": "/images/WebApp/Syniving.png",
-    "banner": "/images/WebApp/Syniving.png",
+    "cards": "/images/WebApp/images/Synliving.png",
+    "banner": "/images/WebApp/images/Synliving.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -73,8 +73,8 @@
   },
   {
     "id": 5,
-    "cards": "/images/WebApp/ArmFlag.png",
-    "banner": "/images/WebApp/ArmFlag.png",
+    "cards": "/images/WebApp/images/ArmFlag.png",
+    "banner": "/images/WebApp/images/ArmFlag.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -91,8 +91,8 @@
   },
   {
     "id": 6,
-    "cards": "/images/WebApp/PayGuard.png",
-    "banner": "/images/WebApp/PayGuard.png",
+    "cards": "/images/WebApp/images/PayGuard.png",
+    "banner": "/images/WebApp/images/PayGuard.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -109,8 +109,8 @@
   },
   {
     "id": 7,
-    "cards": "/images/WebApp/Wise.png",
-    "banner": "/images/WebApp/Wise.png",
+    "cards": "/images/WebApp/images/Wise.png",
+    "banner": "/images/WebApp/images/Wise.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
