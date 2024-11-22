@@ -43,12 +43,12 @@ export default function Home() {
     if (loading) return <div>Loading...</div>;
 
     // Categories (Photo, Video, All)
-    const allowedCategories = ["All", "Photo", "Video"];
+    const allowedCategories = ["All", "Poster", "Logo"];
 
     // Filter projects based on selected category and ID range (34 to 37)
     const filteredItems =
         activeCategory === "All"
-            ? projects.filter((project) => project.id >= 8 && project.id <= 33)
+            ? projects.filter((project) => project.id >= 8 && project.id <= 32)
             : projects
                 .filter((project) => project.type === activeCategory)
                 .filter((project) => project.id >= 8 && project.id <= 33);
