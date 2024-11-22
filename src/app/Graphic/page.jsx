@@ -51,7 +51,7 @@ export default function Home() {
             ? projects.filter((project) => project.id >= 8 && project.id <= 32)
             : projects
                 .filter((project) => project.type === activeCategory)
-                .filter((project) => project.id >= 8 && project.id <= 33);
+                .filter((project) => project.id >= 8 && project.id <= 32);
 
     // Get unique categories from the projects
     const categories = ["All", ...new Set(projects.map((project) => project.type))];

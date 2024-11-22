@@ -66,7 +66,7 @@ const ProjectPage = ({ params }) => {
   if (loading) return <div>Loading...</div>;
   if (!project) return <div>Project not found</div>;
 
-  const isImageFallback = (id >= 8 && id <= 33) || (id >= 35 && id <= 47);
+  const isImageFallback = (id >= 8 && id <= 32) || (id >= 36 && id <= 47);
 
   return (
     <div>

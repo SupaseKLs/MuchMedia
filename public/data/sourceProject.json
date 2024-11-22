@@ -583,9 +583,9 @@
 
 
   {
-    "id": 34,
-    "cards": "/images/law.jpg",
-    "banner": "/images/Drawing/Bewzxd.png",
+    "id": 33,
+    "cards": "/images/Production/images/home.png",
+    "banner": "/images/Production/images/home.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -598,12 +598,30 @@
       "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
-    "video": "/images/Production/Spiderman.mp4"
+    "video": "/images/Production/video/Spiderman.mp4"
+  },
+  {
+    "id": 34,
+    "cards": "/images/Production/images/home.png",
+    "banner": "/images/Production/images/home.png",
+    "created": "Poorijak Russamee",
+    "price": "3500",
+    "developed": "1",
+    "type": "Video",
+    "header": {
+      "header1": "MuchMedia Poster",
+      "header2": "Solutions"
+    },
+    "title": {
+      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+   "video": "/images/Production/video/Pinball.mp4"
   },
   {
     "id": 35,
-    "cards": "/images/law.jpg",
-    "banner": "/images/Drawing/Bewzxd.png",
+    "cards": "/images/Production/images/home.png",
+    "banner": "/images/Production/images/home.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -616,28 +634,10 @@
       "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
       "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
-    "video": "/images/Production/Museum.mp4"
+    "video": "/images/Production/video/FNAF.mp4"
   },
   {
     "id": 36,
-    "cards": "/images/law.jpg",
-    "banner": "/images/Drawing/Bewzxd.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
-    "type": "Video",
-    "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
-    },
-    "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-    },
-    "video": "/images/Production/Bew.mp4"
-  },
-  {
-    "id": 37,
     "cards": "/images/Production/cmmn1.jpg",
     "banner": "/images/Production/cmmn2.jpg",
     "created": "Poorijak Russamee",

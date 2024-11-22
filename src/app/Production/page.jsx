@@ -56,10 +56,10 @@ export default function Home() {
 
     const filteredItems =
         activeCategory === "All"
-            ? projects.filter((project) => project.id >= 34 && project.id <= 37)
+            ? projects.filter((project) => project.id >= 33 && project.id <= 36)
             : projects
                 .filter((project) => project.type === activeCategory)
-                .filter((project) => project.id >= 34 && project.id <= 37);
+                .filter((project) => project.id >= 33 && project.id <= 36);
 
     return (
         <>
