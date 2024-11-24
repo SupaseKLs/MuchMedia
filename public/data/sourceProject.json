@@ -638,8 +638,8 @@
   },
   {
     "id": 36,
-    "cards": "/images/Production/cmmn1.jpg",
-    "banner": "/images/Production/cmmn2.jpg",
+    "cards": "/images/Production/images/bracelet1.jpg",
+    "banner": "/images/Production/images/bracelet1.jpg",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
@@ -658,7 +658,7 @@
 
 
   {
-    "id": 38,
+    "id": 37,
     "cards": "/images/Drawing/kapa.png",
     "banner": "/images/Drawing/kapa.png",
     "created": "Poorijak Russamee",
@@ -676,7 +676,7 @@
     "video": "#"
   },
   {
-    "id": 39,
+    "id": 38,
     "cards": "/images/Drawing/KQ.jpeg",
     "banner": "/images/Drawing/KQ.jpeg",
     "created": "Poorijak Russamee",
@@ -694,7 +694,7 @@
     "video": "#"
   },
   {
-    "id": 40,
+    "id": 39,
     "cards": "/images/Drawing/MissYou.jpeg",
     "banner": "/images/Drawing/MissYou.jpeg",
     "created": "Poorijak Russamee",
@@ -712,7 +712,7 @@
     "video": "#"
   },
   {
-    "id": 41,
+    "id": 40,
     "cards": "/images/Drawing/OmieBrown.png",
     "banner": "/images/Drawing/OmieBrown.png",
     "created": "Poorijak Russamee",
@@ -730,7 +730,7 @@
     "video": "#"
   },
   {
-    "id": 42,
+    "id": 41,
     "cards": "/images/Drawing/OmieGreen.JPG",
     "banner": "/images/Drawing/OmieGreen.JPG",
     "created": "Poorijak Russamee",
@@ -748,7 +748,7 @@
     "video": "#"
   },
   {
-    "id": 43,
+    "id": 42,
     "cards": "/images/Drawing/OmieRed.png",
     "banner": "/images/Drawing/OmieRed.png",
     "created": "Poorijak Russamee",
@@ -766,7 +766,7 @@
     "video": "#"
   },
   {
-    "id": 44,
+    "id": 43,
     "cards": "/images/Drawing/Turtle.jpeg",
     "banner": "/images/Drawing/Bewzxd.png",
     "created": "Poorijak Russamee",
@@ -784,13 +784,31 @@
     "video": "#"
   },
   {
-    "id": 45,
-    "cards": "/images/Drawing/Draw2.jpg",
-    "banner": "/images/Drawing/Draw2.jpg",
+    "id": 44,
+    "cards": "/images/Drawing/Draw2.png",
+    "banner": "/images/Drawing/Draw2.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
-    "type": "Painting",
+    "type": "Drawing",
+    "header": {
+      "header1": "MuchMedia Poster",
+      "header2": "Solutions"
+    },
+    "title": {
+      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "video": "#"
+  },
+  {
+    "id": 45,
+    "cards": "/images/Drawing/Draw3.png",
+    "banner": "/images/Drawing/Draw3.png",
+    "created": "Poorijak Russamee",
+    "price": "3500",
+    "developed": "1",
+    "type": "Drawing",
     "header": {
       "header1": "MuchMedia Poster",
       "header2": "Solutions"
@@ -803,12 +821,12 @@
   },
   {
     "id": 46,
-    "cards": "/images/Drawing/Draw3.png",
-    "banner": "/images/Drawing/Draw3.png",
+    "cards": "/images/Drawing/Draw4.jpg",
+    "banner": "/images/Drawing/Draw4.jpg",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",
-    "type": "Painting",
+    "type": "Drawing",
     "header": {
       "header1": "MuchMedia Poster",
       "header2": "Solutions"
@@ -821,8 +839,8 @@
   },
   {
     "id": 47,
-    "cards": "/images/Drawing/Draw4.png",
-    "banner": "/images/Drawing/Draw4.png",
+    "cards": "/images/Drawing/Bewzxd.png",
+    "banner": "/images/Drawing/Bewzxd.png",
     "created": "Poorijak Russamee",
     "price": "3500",
     "developed": "1",

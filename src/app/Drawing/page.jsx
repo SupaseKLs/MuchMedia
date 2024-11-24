@@ -41,10 +41,10 @@ export default function Home() {
     const categories = ["All", "Painting", "Drawing"];
     
     const filteredItems = activeCategory === "All"
-        ? projects.filter((project) => project.id >= 38 && project.id <= 47)
+        ? projects.filter((project) => project.id >= 37 && project.id <= 47)
         : projects
             .filter((project) => project.type === activeCategory)
-            .filter((project) => project.id >= 38 && project.id <= 47);
+            .filter((project) => project.id >= 37 && project.id <= 47);
 
     return (
         <>
@@ -53,7 +53,7 @@ export default function Home() {
                 <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#040404] to-transparent" />
             </div>
 
-            <div className="w-11/12 mx-auto pt-40">
+            <div className="w-11/12 mx-auto pt-40 pb-10">
                 <p className="text-white text-3xl mb-8">
                     At MuchMedia, we deliver creative websites with user-friendly interfaces and functionality.
                 </p>
