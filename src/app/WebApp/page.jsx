@@ -1,5 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import Cursor from "@/components/Cursor/cursor_core/page";
+import { AnimatePresence, motion } from "framer-motion";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from "next/image";
@@ -7,7 +9,6 @@ import Link from "next/link";
 import CategoryFilter from "@/components/Categories/page";
 import ReadmoreBtn from "@/components/readmoreBtn/page";
 
-// Fetch data from a JSON file
 const getData = async () => {
     const res = await fetch("/data/sourceProject.json");
     if (!res.ok) {
@@ -22,9 +23,10 @@ export default function Home() {
     const [error, setError] = useState(null);
     const [activeCategory, setActiveCategory] = useState("All");
     const [hoveredId, setHoveredId] = useState(null);
+   const [isHovering, setIsHovering] = useState(false);
 
+    const targetRef = useRef(null);
     useEffect(() => {
-        // Initialize AOS for animations
         AOS.init({ duration: 500, easing: 'ease-in-out', once: true });
 
         const fetchData = async () => {
@@ -45,16 +47,13 @@ export default function Home() {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
-    // Allowed categories for filtering
     const allowedCategories = ["All", "Front-End", "UX/UI"];
     
-    // Get unique categories from the projects data
     const categories = ["All", ...new Set(projects.map((project) => project.type))];
     const filteredCategories = categories.filter((category) =>
         allowedCategories.includes(category)
     );
 
-    // Apply the filtering logic based on `activeCategory` and `id` between 34 and 37
     const filteredItems =
         activeCategory === "All"
             ? projects.filter((project) => project.id >= 1 && project.id <= 7)
@@ -62,6 +61,14 @@ export default function Home() {
                 .filter((project) => project.type === activeCategory)
                 .filter((project) => project.id >= 1 && project.id <= 7);
 
+                const handlePositionChange = (x, y) => {
+                    if (targetRef.current) {
+                        const rect = targetRef.current.getBoundingClientRect();
+                        const isInside =
+                            x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+                        setIsHovering(isInside);
+                    }
+                };
     return (
         <>
             <div className="relative w-full h-screen">
@@ -92,8 +99,48 @@ export default function Home() {
             </div>
 
             <div className="w-11/12 mx-auto">
-                <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {filteredItems.map((project, index) => (
+            <div className="flex h-full w-full items-center justify-center">
+                    <Cursor
+                        attachToParent
+                        variants={{
+                            initial: { scale: 0.3, opacity: 0 },
+                            animate: { scale: 1, opacity: 1 },
+                            exit: { scale: 0.3, opacity: 0 },
+                        }}
+                        springConfig={{
+                            bounce: 0.001,
+                        }}
+                        transition={{
+                            ease: "easeInOut",
+                            duration: 0.15,
+                        }}
+                        onPositionChange={handlePositionChange}
+                    >
+                        <motion.div
+                            animate={{
+                                width: isHovering ? 80 : 16,
+                                height: isHovering ? 32 : 16,
+                            }}
+                            className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
+                        >
+                            <AnimatePresence>
+                                {isHovering && (
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0.6 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        exit={{ opacity: 0, scale: 0.6 }}
+                                        className="inline-flex w-full items-center justify-center"
+                                    >
+                                        <div className="inline-flex items-center text-sm text-white dark:text-black">
+                                            More +
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </motion.div>
+                    </Cursor>
+                <div ref={targetRef} className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {filteredItems.map((project, index) => (
                         <Link
                             key={project.id}
                             href={`/CardWorks/${project.id}`}
@@ -102,18 +149,19 @@ export default function Home() {
                             onMouseEnter={() => setHoveredId(project.id)}
                             onMouseLeave={() => setHoveredId(null)}
                         >
-                            <div className="w-full h-96 relative">
+                            <div className="group">
                                 <Image
                                     src={project.cards}
                                     alt={project.title.title1}
-                                    layout="fill"
-                                    objectFit="cover"
-                                    className={`rounded-sm w-full h-full transition-all duration-300 ease-in-out 
-                                        ${hoveredId && hoveredId !== project.id ? 'blur-sm' : 'blur-none'}`}
+                                    width={500}
+                                    height={400}
+                                    className={`w-full h-96 object-cover transition-all duration-300 ease-in-out 
+                                        ${hoveredId && hoveredId !== project.id ? 'blur-sm' : ''}`}
                                 />
                             </div>
                         </Link>
                     ))}
+                    </div>
                 </div>
             </div>
 

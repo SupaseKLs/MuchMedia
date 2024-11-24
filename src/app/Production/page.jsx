@@ -50,7 +50,7 @@ export default function Home() {
     if (error) return <div>{error}</div>;
 
     const allowedCategories = ["All", "Video", "Photo"];
-    
+
     const categories = ["All", ...new Set(projects.map((project) => project.type))];
 
     const filteredCategories = categories.filter((category) =>
@@ -64,14 +64,14 @@ export default function Home() {
                 .filter((project) => project.type === activeCategory)
                 .filter((project) => project.id >= 33 && project.id <= 36);
 
-                const handlePositionChange = (x, y) => {
-                    if (targetRef.current) {
-                        const rect = targetRef.current.getBoundingClientRect();
-                        const isInside =
-                            x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
-                        setIsHovering(isInside);
-                    }
-                };
+    const handlePositionChange = (x, y) => {
+        if (targetRef.current) {
+            const rect = targetRef.current.getBoundingClientRect();
+            const isInside =
+                x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+            setIsHovering(isInside);
+        }
+    };
 
     return (
         <>
@@ -95,7 +95,7 @@ export default function Home() {
                 <div className="pb-8">
                     <h1 className="text-2xl font-bold mb-4">Filterable Items</h1>
                     <CategoryFilter
-                        categories={filteredCategories} 
+                        categories={filteredCategories}
                         activeCategory={activeCategory}
                         setActiveCategory={setActiveCategory}
                     />
@@ -103,7 +103,7 @@ export default function Home() {
             </div>
 
             <div className="w-11/12 mx-auto">
-            <div className="flex h-full w-full items-center justify-center">
+                <div className="flex h-full w-full items-center justify-center">
                     <Cursor
                         attachToParent
                         variants={{
@@ -143,25 +143,25 @@ export default function Home() {
                             </AnimatePresence>
                         </motion.div>
                     </Cursor>
-                <div ref={targetRef} className="relative group grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                    {filteredItems.map((project, index) => (
-                        <Link
-                            key={project.id}
-                            href={`/CardWorks/${project.id}`}
-                            data-aos="fade-up" 
-                            data-aos-delay={index * 100} 
-                        >
-                            <div> 
-                                <Image
-                                    src={project.cards}
-                                    alt={project.title.title1}
-                                    width={500}
-                                    height={550}
-                                    className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:blur-sm hover:!blur-none" // Apply group-hover to the image
-                                />
-                            </div>
-                        </Link>
-                    ))}
+                    <div ref={targetRef} className="relative group grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                        {filteredItems.map((project, index) => (
+                            <Link
+                                key={project.id}
+                                href={`/CardWorks/${project.id}`}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                            >
+                                <div>
+                                    <Image
+                                        src={project.cards}
+                                        alt={project.title.title1}
+                                        width={500}
+                                        height={550}
+                                        className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:blur-sm hover:!blur-none" // Apply group-hover to the image
+                                    />
+                                </div>
+                            </Link>
+                        ))}
                     </div>
                 </div>
             </div>
