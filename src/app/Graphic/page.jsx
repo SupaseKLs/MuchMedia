@@ -1,13 +1,14 @@
 "use client";
+import { useEffect, useState, useRef } from "react";
 import 'aos/dist/aos.css';
+import Cursor from "@/components/Cursor/cursor_core/page";
+import { AnimatePresence, motion } from "framer-motion";
 import AOS from 'aos';
-import CategoryFilter from "@/app/components/Categories/page";
-import { useEffect, useState } from "react";
-import ReadmoreBtn from "@/app/components/readmoreBtn/page";
+import CategoryFilter from "@/components/Categories/page";
+import ReadmoreBtn from "@/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
 
-// Fetch the data from the sourceProject.json file
 const getData = async () => {
     const res = await fetch("/data/sourceProject.json");
     if (!res.ok) {
@@ -21,8 +22,9 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
     const [activeCategory, setActiveCategory] = useState("All");
     const [hoveredId, setHoveredId] = useState(null);
+    const [isHovering, setIsHovering] = useState(false);
 
-    // Fetch data on component mount
+    const targetRef = useRef(null);
     useEffect(() => {
         AOS.init({ duration: 500, easing: 'ease-in-out', once: true });
 
@@ -31,9 +33,9 @@ export default function Home() {
                 const data = await getData();
                 setProjects(data);
             } catch (error) {
-                console.error(error); // Logging error for debugging
+                console.error(error);
             } finally {
-                setLoading(false); // Stop loading when data is fetched
+                setLoading(false);
             }
         };
 
@@ -42,10 +44,8 @@ export default function Home() {
 
     if (loading) return <div>Loading...</div>;
 
-    // Categories (Photo, Video, All)
     const allowedCategories = ["All", "Poster", "Logo"];
 
-    // Filter projects based on selected category and ID range (34 to 37)
     const filteredItems =
         activeCategory === "All"
             ? projects.filter((project) => project.id >= 8 && project.id <= 32)
@@ -53,19 +53,22 @@ export default function Home() {
                 .filter((project) => project.type === activeCategory)
                 .filter((project) => project.id >= 8 && project.id <= 32);
 
-    // Get unique categories from the projects
     const categories = ["All", ...new Set(projects.map((project) => project.type))];
 
-    // Filter categories based on allowed categories
     const filteredCategories = categories.filter((category) =>
         allowedCategories.includes(category)
     );
 
-    const columns = 4; // Grid columns for displaying items
-
+const handlePositionChange = (x, y) => {
+    if (targetRef.current) {
+      const rect = targetRef.current.getBoundingClientRect();
+      const isInside =
+        x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+      setIsHovering(isInside);
+    }
+  };
     return (
         <>
-            {/* Banner Section */}
             <div className="relative w-full h-screen">
                 <Image
                     src="/bannerWeb.png"
@@ -77,7 +80,6 @@ export default function Home() {
                 <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#040404] to-transparent" />
             </div>
 
-            {/* Description Section */}
             <div className="w-11/12 mx-auto pt-40">
                 <div className="w-10/12 mb-8">
                     <p className="text-white text-3xl">
@@ -94,15 +96,55 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Projects Section */}
             <div className="w-11/12 mx-auto">
-                <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div className="flex h-full w-full items-center justify-center">
+            <Cursor
+              attachToParent
+              variants={{
+                initial: { scale: 0.3, opacity: 0 },
+                animate: { scale: 1, opacity: 1 },
+                exit: { scale: 0.3, opacity: 0 },
+              }}
+              springConfig={{
+                bounce: 0.001,
+              }}
+              transition={{
+                ease: "easeInOut",
+                duration: 0.15,
+              }}
+              onPositionChange={handlePositionChange}
+            >
+              <motion.div
+                animate={{
+                  width: isHovering ? 80 : 16,
+                  height: isHovering ? 32 : 16,
+                }}
+                className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
+              >
+                <AnimatePresence>
+                  {isHovering && (
+                    <motion.div
+                      initial={{ opacity: 0, scale: 0.6 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.6 }}
+                      className="inline-flex w-full items-center justify-center"
+                    >
+                      <div className="inline-flex items-center text-sm text-white dark:text-black">
+                        More +
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            </Cursor>
+                <div ref={targetRef} className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                 
                     {filteredItems.map((project, index) => (
                         <Link
                             key={project.id}
                             href={`/CardWorks/${project.id}`}
                             data-aos="fade-up"
-                            data-aos-delay={(index % columns) * 100}
+                            data-aos-delay={index * 100}
                             data-aos-anchor-placement="top-bottom"
                             onMouseEnter={() => setHoveredId(project.id)}
                             onMouseLeave={() => setHoveredId(null)}
@@ -122,7 +164,8 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* Our Works Section */}
+            </div>
+
             <div className="w-11/12 mx-auto mt-12">
                 <h1 className="text-5xl text-white mb-4">Our Works</h1>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

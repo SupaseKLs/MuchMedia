@@ -2,8 +2,8 @@
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect, useState } from "react";
-import CategoryFilter from "@/app/components/Categories/page";
-import ReadmoreBtn from "@/app/components/readmoreBtn/page";
+import CategoryFilter from "@/components/Categories/page";
+import ReadmoreBtn from "@/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
 

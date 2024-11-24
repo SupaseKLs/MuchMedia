@@ -4,8 +4,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from "next/image";
 import Link from "next/link";
-import CategoryFilter from "@/app/components/Categories/page";
-import ReadmoreBtn from "@/app/components/readmoreBtn/page";
+import CategoryFilter from "@/components/Categories/page";
+import ReadmoreBtn from "@/components/readmoreBtn/page";
 
 // Fetch data from a JSON file
 const getData = async () => {
