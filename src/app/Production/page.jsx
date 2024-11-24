@@ -2,7 +2,9 @@
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import CategoryFilter from "@/components/Categories/page";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import Cursor from "@/components/Cursor/cursor_core/page";
+import { AnimatePresence, motion } from "framer-motion";
 import ReadmoreBtn from "@/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,7 +25,9 @@ export default function Home() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [activeCategory, setActiveCategory] = useState("All");
+    const [isHovering, setIsHovering] = useState(false);
 
+    const targetRef = useRef(null);
     useEffect(() => {
         AOS.init({ duration: 500, easing: 'ease-in-out', once: true });
 
@@ -47,7 +51,6 @@ export default function Home() {
 
     const allowedCategories = ["All", "Video", "Photo"];
     
-    // ดึงประเภทที่มีเฉพาะจาก projects
     const categories = ["All", ...new Set(projects.map((project) => project.type))];
 
     const filteredCategories = categories.filter((category) =>
@@ -60,6 +63,15 @@ export default function Home() {
             : projects
                 .filter((project) => project.type === activeCategory)
                 .filter((project) => project.id >= 33 && project.id <= 36);
+
+                const handlePositionChange = (x, y) => {
+                    if (targetRef.current) {
+                        const rect = targetRef.current.getBoundingClientRect();
+                        const isInside =
+                            x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+                        setIsHovering(isInside);
+                    }
+                };
 
     return (
         <>
@@ -91,7 +103,47 @@ export default function Home() {
             </div>
 
             <div className="w-11/12 mx-auto">
-                <div className="relative group grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="flex h-full w-full items-center justify-center">
+                    <Cursor
+                        attachToParent
+                        variants={{
+                            initial: { scale: 0.3, opacity: 0 },
+                            animate: { scale: 1, opacity: 1 },
+                            exit: { scale: 0.3, opacity: 0 },
+                        }}
+                        springConfig={{
+                            bounce: 0.001,
+                        }}
+                        transition={{
+                            ease: "easeInOut",
+                            duration: 0.15,
+                        }}
+                        onPositionChange={handlePositionChange}
+                    >
+                        <motion.div
+                            animate={{
+                                width: isHovering ? 80 : 16,
+                                height: isHovering ? 32 : 16,
+                            }}
+                            className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
+                        >
+                            <AnimatePresence>
+                                {isHovering && (
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0.6 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        exit={{ opacity: 0, scale: 0.6 }}
+                                        className="inline-flex w-full items-center justify-center"
+                                    >
+                                        <div className="inline-flex items-center text-sm text-white dark:text-black">
+                                            More +
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </motion.div>
+                    </Cursor>
+                <div ref={targetRef} className="relative group grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
                     {filteredItems.map((project, index) => (
                         <Link
                             key={project.id}
@@ -110,6 +162,7 @@ export default function Home() {
                             </div>
                         </Link>
                     ))}
+                    </div>
                 </div>
             </div>
 

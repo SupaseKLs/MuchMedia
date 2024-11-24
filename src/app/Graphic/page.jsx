@@ -59,14 +59,14 @@ export default function Home() {
         allowedCategories.includes(category)
     );
 
-const handlePositionChange = (x, y) => {
-    if (targetRef.current) {
-      const rect = targetRef.current.getBoundingClientRect();
-      const isInside =
-        x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
-      setIsHovering(isInside);
-    }
-  };
+    const handlePositionChange = (x, y) => {
+        if (targetRef.current) {
+            const rect = targetRef.current.getBoundingClientRect();
+            const isInside =
+                x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+            setIsHovering(isInside);
+        }
+    };
     return (
         <>
             <div className="relative w-full h-screen">
@@ -97,72 +97,72 @@ const handlePositionChange = (x, y) => {
             </div>
 
             <div className="w-11/12 mx-auto">
-            <div className="flex h-full w-full items-center justify-center">
-            <Cursor
-              attachToParent
-              variants={{
-                initial: { scale: 0.3, opacity: 0 },
-                animate: { scale: 1, opacity: 1 },
-                exit: { scale: 0.3, opacity: 0 },
-              }}
-              springConfig={{
-                bounce: 0.001,
-              }}
-              transition={{
-                ease: "easeInOut",
-                duration: 0.15,
-              }}
-              onPositionChange={handlePositionChange}
-            >
-              <motion.div
-                animate={{
-                  width: isHovering ? 80 : 16,
-                  height: isHovering ? 32 : 16,
-                }}
-                className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
-              >
-                <AnimatePresence>
-                  {isHovering && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.6 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.6 }}
-                      className="inline-flex w-full items-center justify-center"
+                <div className="flex h-full w-full items-center justify-center">
+                    <Cursor
+                        attachToParent
+                        variants={{
+                            initial: { scale: 0.3, opacity: 0 },
+                            animate: { scale: 1, opacity: 1 },
+                            exit: { scale: 0.3, opacity: 0 },
+                        }}
+                        springConfig={{
+                            bounce: 0.001,
+                        }}
+                        transition={{
+                            ease: "easeInOut",
+                            duration: 0.15,
+                        }}
+                        onPositionChange={handlePositionChange}
                     >
-                      <div className="inline-flex items-center text-sm text-white dark:text-black">
-                        More +
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            </Cursor>
-                <div ref={targetRef} className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                 
-                    {filteredItems.map((project, index) => (
-                        <Link
-                            key={project.id}
-                            href={`/CardWorks/${project.id}`}
-                            data-aos="fade-up"
-                            data-aos-delay={index * 100}
-                            data-aos-anchor-placement="top-bottom"
-                            onMouseEnter={() => setHoveredId(project.id)}
-                            onMouseLeave={() => setHoveredId(null)}
+                        <motion.div
+                            animate={{
+                                width: isHovering ? 80 : 16,
+                                height: isHovering ? 32 : 16,
+                            }}
+                            className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
                         >
-                            <div className="group">
-                                <Image
-                                    src={project.cards}
-                                    alt={project.title.title1}
-                                    width={500}
-                                    height={400}
-                                    className={`w-full h-96 object-cover transition-all duration-300 ease-in-out 
+                            <AnimatePresence>
+                                {isHovering && (
+                                    <motion.div
+                                        initial={{ opacity: 0, scale: 0.6 }}
+                                        animate={{ opacity: 1, scale: 1 }}
+                                        exit={{ opacity: 0, scale: 0.6 }}
+                                        className="inline-flex w-full items-center justify-center"
+                                    >
+                                        <div className="inline-flex items-center text-sm text-white dark:text-black">
+                                            More +
+                                        </div>
+                                    </motion.div>
+                                )}
+                            </AnimatePresence>
+                        </motion.div>
+                    </Cursor>
+                    <div ref={targetRef} className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                        {filteredItems.map((project, index) => (
+                            <Link
+                                key={project.id}
+                                href={`/CardWorks/${project.id}`}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                                data-aos-anchor-placement="top-bottom"
+                                onMouseEnter={() => setHoveredId(project.id)}
+                                onMouseLeave={() => setHoveredId(null)}
+                            >
+                                <div className="group">
+                                    <Image
+                                        src={project.cards}
+                                        alt={project.title.title1}
+                                        width={500}
+                                        height={400}
+                                        className={`w-full h-96 object-cover transition-all duration-300 ease-in-out 
                                         ${hoveredId && hoveredId !== project.id ? 'blur-sm' : ''}`}
-                                />
-                            </div>
-                        </Link>
-                    ))}
+                                    />
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
-            </div>
 
             </div>
 
