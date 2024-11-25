@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "name" : "Supasek Laobutsa",
+        "role" : "Founder,Developer",
+        "img" : "/images/Teams/S.jpg",
+        "contact_facebook" : "https://www.facebook.com/supasek.laobutsa"
+        
+    },
+    {
+        "id" : 2,
+        "name" : "Napat Attayoko",
+        "role" : "Co-Founder,Developer", 
+        "img" : "/images/Teams/Nine.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 3,
+        "name" : "Ammarat Jamdee",
+        "role" : "Co-Founder,Graphic Design",
+        "img" : "/images/Teams/Omie.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 4,
+        "name" : "Pooriak Russamee",
+        "role" : "Developer",
+        "img" : "/images/Teams/Best.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 5,
+        "name" : "Panthong Kasujai",
+        "role" : "Developer", 
+        "img" : "/images/Teams/Fammozy.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 6,
+        "name" : "Tanathat Setteechaichana",
+        "role" : "Developer,Camera Man",
+        "img" : "/images/Teams/Pan.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 7,
+        "name" : "Korwit Koedrod",
+        "role" : "Camera Man",
+        "img" : "/images/Teams/Tun.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 8,
+        "name" : "Kawin Palasak",
+        "role" : "Graphic Design", 
+        "img" : "/images/Teams/Mond.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 9,
+        "name" : "Paramed Mayterangsiman",
+        "role" : "Graphic Design",
+        "img" : "/images/Teams/Bew.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 10,
+        "name" : "WiNam eiei",
+        "role" : "???",
+        "img" : "/images/Teams/Best.jpg",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    }
+    
+    ]
