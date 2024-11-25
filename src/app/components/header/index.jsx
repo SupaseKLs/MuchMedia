@@ -124,6 +124,7 @@ export default function Index() {
                                 <div className="lg:hidden mt-4">
                                     <button onClick={toggleMenu}>
                                         <Hamburger
+                                            id = 'hamburger'
                                             color="#ffff"
                                             className="mt-4 z-50"
                                             toggled={open}
