@@ -8,12 +8,12 @@
     "developed": "1",
     "type": "Front-End",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Website",
+      "header2": "Multicamp Website"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "Learn to create websites using HTML, CSS, and JavaScript, from the basics to making a real website! Explore how to design web pages that look great, are easy to use, and work on any device. Get tips to make your website unique and stand out 🚀 Join us and start building your very first website today!",
+      "title2": "Muticamp Workshop: Frontend Web Development Join us to learn frontend web development using HTML, CSS, and JavaScript. Discover how to design responsive websites that work seamlessly across all devices, along with UI/UX techniques to create user-friendly and visually appealing designs. You will learn how to build interactive web pages and customize websites to suit all users' needs."
     },
     "video": "/food.mp4"
   },
@@ -26,12 +26,12 @@
     "developed": "1",
     "type": "Front-End",
     "header": {
-      "header1": "MuchMedia POster",
-      "header2": "Solutions"
+      "header1": "Webfolio",
+      "header2": "Aye - Webfolio"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A webfolio for a UX/UI Designer is used to showcase design work that focuses on user experience (UX) and user interface (UI) design with high quality. It highlights the ability to create easy-to-use experiences that meet user needs. This webfolio helps viewers see problem-solving skills through practical design work, including the development and improvement of designs for apps or websites to ensure the best user experience.",
+      "title2": "The webfolio is created to demonstrate the designer’s skills and expertise in UX/UI design. It serves as a portfolio that can be shared with potential employers or clients to showcase previous work and design processes. By presenting well-organized and visually appealing projects, it helps build trust and credibility. It also serves as a personal space to reflect on growth as a designer and stay up-to-date with design trends. Ultimately, the webfolio helps in networking and finding new opportunities in the field."
     },
     "video": "#"
   },
@@ -44,12 +44,12 @@
     "developed": "1",
     "type": "Front-End",
     "header": {
-      "header1": "MuchMedia POster",
+      "header1": "Website",
       "header2": "Solutions"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A restaurant serving delicious crispy fried chicken and tasty hamburgers in a relaxed atmosphere, perfect for all ages and any occasion. Whether you're dining with family or friends, we offer a variety of menu options, including crispy fried chicken and hearty hamburgers, along with special sides and sauces. Come and enjoy every bite of our delicious meals.",
+      "title2": "Why choose this restaurant? Here, you can enjoy delicious crispy fried chicken and tasty hamburgers in a comfortable and friendly atmosphere. We use high-quality ingredients to make every bite fresh and tasty. With quick and friendly service, every visit is easy and memorable. Whether you're dining with family or friends, this is the place you won’t regret!"
     },
     "video": "#"
   },
@@ -62,12 +62,12 @@
     "developed": "1",
     "type": "UX/UI",
     "header": {
-      "header1": "MuchMedia POster",
-      "header2": "Solutions"
+      "header1": "Synliving",
+      "header2": "Synliving Website"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A furniture store where you can find high-quality and stylish items for every part of your home. From living room furniture to bedroom and kitchen pieces, we offer a wide range of products to suit all styles and needs. We also provide helpful advice on decorating to create a warm and comfortable atmosphere in your home.",
+      "title2": "We offer high-quality furniture that suits every style and budget, along with friendly service and expert advice on home decor. We pay attention to every detail to make sure your home is both beautiful and functional. With a wide range of modern and stylish products, we have everything you need to create the perfect home."
     },
     "video": "#"
   },
@@ -80,12 +80,12 @@
     "developed": "1",
     "type": "UX/UI",
     "header": {
-      "header1": "MuchMedia POster",
-      "header2": "Solutions"
+      "header1": "ArmFlag Application",
+      "header2": "Why choose ArmFlag?"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "ArmFlag is an app that helps you measure your blood pressure easily. It also helps you check for symptoms of office syndrome, which can happen from sitting for long hours at work. The app tracks your health and reminds you to stretch or move during the day to improve your well-being. It’s a simple way to stay on top of your health while working.",
+      "title2": "ArmFlag is an all-in-one health tracking app designed to monitor your blood pressure and identify signs of office syndrome. It provides an easy way to keep track of your health at any time and from anywhere. The app offers reminders for stretching or moving during the day, which helps reduce the risks of sitting for long periods. By combining medical data and behavioral insights, ArmFlag helps you maintain a healthy balance between work and self-care, ensuring a better and more active lifestyle."
     },
     "video": "#"
   },
@@ -98,12 +98,12 @@
     "developed": "1",
     "type": "UX/UI",
     "header": {
-      "header1": "MuchMedia POster",
-      "header2": "Solutions"
+      "header1": "PayGuard Application",
+      "header2": "Why choose PayGuard?"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "PayGuard is an app designed to protect users from fraud during money transfers. It provides security features that help prevent unauthorized transactions and safeguard your financial information. With real-time alerts and monitoring, PayGuard ensures that your money is transferred safely and securely, giving you peace of mind when making payments or sending money online.",
+      "title2": "You should choose PayGuard because we focus on keeping your online money transfers safe. Our app prevents fraud and unauthorized transactions with real-time monitoring and instant alerts. With PayGuard, you can make payments and transfer money with confidence, knowing your financial information is protected."
     },
     "video": "#"
   },
@@ -116,12 +116,12 @@
     "developed": "1",
     "type": "UX/UI",
     "header": {
-      "header1": "MuchMedia POster",
-      "header2": "Solutions"
+      "header1": "Wise+ Application",
+      "header2": "Why choose Wise+?"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "Wise+ is an app designed to empower seniors by helping them create their own community and engage in activities independently, without needing assistance from their children or family. It connects users with others who share similar interests, allowing them to stay active, social, and enjoy life to the fullest. With Wise+, seniors can explore new hobbies, make new friends, and participate in various activities on their own terms.",
+      "title2": "You should choose Wise+ because it helps seniors live a meaningful and fun life by allowing them to create their own community and do activities independently. Wise+ connects you with people who share similar interests, helping you stay active and social. It boosts your confidence and ensures you can enjoy everyday life without feeling alone."
     },
     "video": "#"
   },
@@ -138,12 +138,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Chamber in Valorant"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "Chamber is a Sentinel in Valorant who excels in precision and strategic positioning. His abilities include placing teleport anchors for quick movement, using a powerful pistol for accurate shots, and deploying traps to slow enemies. His ultimate, Tour De Force, equips him with a powerful sniper rifle that can eliminate enemies in one shot. Chamber is ideal for players who enjoy controlling space while delivering high damage with accuracy.",
+      "title2": "Here is a poster of Chamber from Valorant, using a yellow color scheme. It shows Chamber in an energetic pose, highlighting his sleek and modern look along with his unique weapons and abilities. The yellow background adds power and focus, making the poster stand out and reflect Chamber's precision and control in the game."
     },
     "video": "#"
   },
@@ -156,12 +156,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "ROG Tessen"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "The ROG Tessen is a premium mobile gaming controller designed for Android devices, offering a responsive and immersive gaming experience. With its foldable design, RGB lighting, and customizable rear paddles, it provides comfort and style for gamers. The controller is especially great for fast-paced FPS games, thanks to its tactile buttons and precision joysticks. While it’s portable, the angular grips may be uncomfortable during long gaming sessions. The Tessen is perfect for players who value performance and portability in mobile gaming.",
+      "title2": "The ROG Tessen poster features a sleek black-and-white design with the controller positioned at the center, symbolizing its power and precision. The minimalist color scheme highlights the controller’s high-tech aesthetics, making it the focal point of the design. With its clean lines and modern look, the poster emphasizes the ROG Tessen’s performance-oriented features, perfect for fast-paced mobile gaming. The striking contrast of black and white represents the balance between style and function, showcasing the controller as an essential tool for serious gamers."
     },
     "video": "#"
   },
@@ -174,12 +174,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Enco Air2"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "The OPPO Enco Air2 is a pair of true wireless earbuds designed for high-quality sound and comfort. They feature a 13.4mm composite titanized diaphragm driver for enhanced audio clarity, with dynamic bass and clear vocals, perfect for music lovers. The earbuds are lightweight, weighing only 3.5g per earbud, ensuring a snug and comfortable fit. With Bluetooth 5.2 technology, they offer low-latency audio, making them suitable for gaming. The Enco Air2 also boasts up to 24 hours of playback time with the charging case, making it an ideal choice for long listening sessions.",
+      "title2": "The blue and white design with the earbud at the center reflects a clean and modern aesthetic, emphasizing simplicity and elegance. The blue color represents technology, trust, and innovation, while the white background adds a minimalist touch, making the earbud the focal point. This color scheme appeals to consumers looking for a stylish yet functional product, highlighting the modern, user-friendly features of the OPPO Enco Air2 earbuds. The design creates a sophisticated yet approachable look, reinforcing the product's advanced technology and performance."
     },
     "video": "#"
   },
@@ -192,12 +192,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Thumbnail",
+      "header2": "FlyUp"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A montage is a video editing technique that combines short, often dramatic clips into a single sequence to convey a theme, story, or emotion quickly. In the context of gaming, a montage typically refers to a compilation of exciting, intense, or impressive moments from gameplay, such as skillful kills, clutch plays, or highlights. These clips are often set to music or accompanied by sound effects to enhance the emotional impact and engage viewers. Montages are popular on platforms like YouTube, especially for games like *Valorant*, where players create highlight reels showcasing their best performances.",
+      "title2": "Designing a montage clip cover for the game Valorant to be used as a clip cover on YouTube."
     },
     "video": "#"
   },
@@ -210,12 +210,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Thumbnail",
+      "header2": "How to choose time frames?"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A thumbnail is a small image that acts as a preview for a video or webpage, designed to attract viewers' attention. On YouTube, thumbnails often combine an engaging image, bold text, and sometimes graphics to summarize the content and make the video stand out. For example, in a video about choosing time frames for Forex trading, the thumbnail might show a chart or a trading screen, with striking text like How to Choose Time Frames? to immediately communicate the video’s topic. The aim is to make it visually appealing and clickable to increase views.",
+      "title2": "This title implies that the video will provide a tutorial or guide on how to select the right time frames for trading in the Forex market, which could be particularly useful for traders looking to refine their strategies or understand time frame selection for different trading styles (scalping, day trading, swing trading, etc.)."
     },
     "video": "#"
   },
@@ -246,12 +246,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "EVO Gojo"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "It is a poster design to sell Roblox products."
     },
     "video": "#"
   },
@@ -264,12 +264,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Thumbnail",
+      "header2": "GojoxMonarch"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A thumbnail is a small image that acts as a preview for a video or webpage, designed to attract viewers' attention. On YouTube, thumbnails often combine an engaging image, bold text, and sometimes graphics to summarize the content and make the video stand out. For example, in a video about choosing time frames for Forex trading, the thumbnail might show a chart or a trading screen, with striking text like How to Choose Time Frames? to immediately communicate the video’s topic. The aim is to make it visually appealing and clickable to increase views.",
+      "title2": "Gojo from the game Anime Vanguard. This character stands out with its mysterious purple tones and stunning light effects, perfectly conveying the immense power of the character. The 0.1% and the high demand from players for this character highlight its exclusivity. Phrases like Super Easy!! and Start with GOJO make it even more appealing, sparking interest and encouraging players to try the game."
     },
     "video": "#"
   },
@@ -282,12 +282,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "Igros"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "This poster design stands out with its use of contrasting colors, eye-catching typography, and concise text. It creates a visually appealing and attention-grabbing composition, effectively communicating information about the game and its pricing."
     },
     "video": "#"
   },
@@ -300,12 +300,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "Promotion Items"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "This poster design is simple yet highly eye-catching, featuring a striking contrast between red and black that makes the text and images stand out. Additionally, the use of varying font sizes and styles adds depth and visual interest to the design.The well-organized layout ensures that viewers can quickly grasp the information, whether it’s the pricing of items or service details. Overall, this design emphasizes clarity and straightforwardness, making it easier for customers to make informed decisions."
     },
     "video": "#"
   },
@@ -318,12 +318,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Thumbnail",
+      "header2": "Gojo VS Toji"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A thumbnail is a small image that acts as a preview for a video or webpage, designed to attract viewers' attention. On YouTube, thumbnails often combine an engaging image, bold text, and sometimes graphics to summarize the content and make the video stand out. For example, in a video about choosing time frames for Forex trading, the thumbnail might show a chart or a trading screen, with striking text like How to Choose Time Frames? to immediately communicate the video’s topic. The aim is to make it visually appealing and clickable to increase views.",
+      "title2": "This poster design is highly engaging and captivating. The striking contrast between the two characters highlights their differences and conflict, likely symbolizing a battle or rivalry. Additionally, the vibrant light effects enhance the excitement and visual appeal of the poster."
     },
     "video": "#"
   },
@@ -336,12 +336,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Infinix Note 12 Pro"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
+      "title2": "The design emphasizes simplicity yet elegance, with a purple background that makes the white text and phone image stand out clearly. The large, easy-to-read font ensures customers can quickly grasp key product details, such as the phone model, storage capacity, and price, which is highlighted in eye-catching yellow.The well-balanced layout creates a clean and visually pleasing look, while the placement of the Infinix logo at the top-right corner reinforces brand recognition. Overall, this design focuses on clarity and straightforwardness, enabling customers to understand the product information at a glance and make purchasing decisions with ease."
     },
     "video": "#"
   },
@@ -354,12 +354,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Infinix Note 12 Pro 5G"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
+      "title2": "The poster design is vibrant and visually appealing, featuring a bright yellow background that makes the white text and phone image stand out clearly. The typography includes a variety of sizes and styles, adding energy and preventing the design from feeling monotonous.Additionally, incorporating the logo of a popular game into the poster conveys that this phone model is well-suited for gaming. The large, prominently displayed price further grabs consumers' attention effectively. Overall, this design emphasizes fun and value, appealing to the target audience who enjoy gaming and are looking for an affordable smartphone."
     },
     "video": "#"
   },
@@ -372,12 +372,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Game Poster"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
+      "title2": "This image blends the beauty of nature with the eeriness of the mysterious in perfect harmony, evoking a sense of intrigue and curiosity. It compels viewers to explore the story and origins behind the image."
     },
     "video": "#"
   },
@@ -390,12 +390,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Best Pixel"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
+      "title2": "Pixel art that transforms real-life portraits into pixelated images is a fusion of classic digital art and modern photography. It involves converting high-resolution photographs into images composed of small dots arranged similarly to graphics in retro computer games. The result is a unique and nostalgic creation. This type of artwork often emphasizes capturing the original image's colors and lighting with precision, even while using pixelation as the creative medium."
     },
     "video": "#"
   },
@@ -408,12 +408,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Sukuna"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
+      "title2": "This image is a fusion of the beauty of Japanese art and the mystery of the character, creating a sense of intrigue and curiosity."
     },
     "video": "#"
   },
@@ -426,12 +426,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Fan Art",
+      "header2": "Gojo Fan Art"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "Fan art in English refers to artwork created by fans of a particular media (such as movies, TV shows, books, video games, or celebrities), based on characters, settings, or themes from that media. It is typically unofficial and made out of admiration or love for the original work.",
+      "title2": "This image is a blend of darkness and mystery, creating a sense of intrigue and curiosity."
     },
     "video": "#"
   },
@@ -444,12 +444,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "Promotion Rengoku"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "The design of this poster uses bright colors, clear typography, and an organized layout, making it visually appealing and attention-grabbing. It is well-suited for presenting product information."
     },
     "video": "#"
   },
@@ -462,12 +462,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "Risk per Trade and Fixed Lot Size"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "The design of this image is quite simple but effective in communicating the intended message. It uses a comparison between two key concepts: Risk per Trade and Fixed Lot Size, which are important ideas in trading."
     },
     "video": "#"
   },
@@ -480,12 +480,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "Risk Reward and Ratio"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "The design uses bold colors and a popular Jackie Chan meme to grab attention and make a complex concept like Risk-Reward Ratio more approachable. The large, contrasting text highlights key terms, while the meme adds humor, creating curiosity. This mix of clear, organized layout and playful elements makes the content engaging and less intimidating, especially for those new to Forex trading."
     },
     "video": "#"
   },
@@ -498,12 +498,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "Promotion Sukuna"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "This design uses vibrant colors, bold text, and dynamic visuals to grab attention, making it perfect for an advertisement. The large, eye-catching SUKUNA and 199 THB highlight the main offer, while the anime-inspired characters add a sense of excitement and appeal to fans of the series. The bright, energetic background enhances the overall sense of urgency and excitement, encouraging viewers to engage. The clear call-to-action at the bottom helps guide the user to take the next step, making the design both functional and visually appealing."
     },
     "video": "#"
   },
@@ -516,12 +516,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Thumbnail",
+      "header2": "Sukuna Youtube"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A thumbnail is a small image that acts as a preview for a video or webpage, designed to attract viewers' attention. On YouTube, thumbnails often combine an engaging image, bold text, and sometimes graphics to summarize the content and make the video stand out. For example, in a video about choosing time frames for Forex trading, the thumbnail might show a chart or a trading screen, with striking text like How to Choose Time Frames? to immediately communicate the video’s topic. The aim is to make it visually appealing and clickable to increase views.",
+      "title2": "The design รับทำ SUKUNA 199 THB is aimed at promoting a service related to the character Sukuna from a specific anime/manga. The price is set at 199 THB, and it specifies that users need a username and password to access the service. Additionally, it recommends using the Mumu Player for optimal experience. The design effectively targets anime fans by highlighting the character and creating a sense of urgency and appeal through bold, vibrant visuals."
     },
     "video": "#"
   },
@@ -534,12 +534,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Social Media Poster",
+      "header2": "Rich menu"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "There are several interesting elements in the design that indicate the intention to communicate with the target audience interested in investment, particularly in Copy Trading or following professional traders."
     },
     "video": "#"
   },
@@ -552,12 +552,12 @@
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Light and Drink"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
+      "title2": "Several elements are harmoniously combined, creating a diverse range of emotions for the viewers."
     },
     "video": "#"
   },
@@ -571,11 +571,11 @@
     "type": "Logo",
     "header": {
       "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header2": "SCREAM"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title2": "The SCREAM logo is an example of design that uses images and symbols to convey complex meanings, focusing on creating a strong impression and capturing the viewer's attention. This type of logo design can be applied to brands looking to create a strong and memorable image."
     },
     "video": "#"
   },

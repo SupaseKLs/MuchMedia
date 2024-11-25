@@ -149,7 +149,7 @@ export default function Home() {
                                 onMouseEnter={() => setHoveredId(project.id)}
                                 onMouseLeave={() => setHoveredId(null)}
                             >
-                                <div className="group">
+                                <div className="group" >
                                     <Image
                                         src={project.cards}
                                         alt={project.title.title1}

@@ -150,6 +150,7 @@ export default function Home() {
                             onMouseLeave={() => setHoveredId(null)}
                         >
                             <div className="group">
+                                
                                 <Image
                                     src={project.cards}
                                     alt={project.title.title1}

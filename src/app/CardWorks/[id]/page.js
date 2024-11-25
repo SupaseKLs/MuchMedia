@@ -102,6 +102,22 @@ const ProjectPage = ({ params }) => {
       </div>
 
       <div className="w-11/12 mx-auto">
+
+          <div className="md:flex-row md:flex justify-between">
+            <div className="py-3 md:pt-10">
+                <h1 className="text-white text-5xl">{project.created}</h1>
+                <p className="text-gray-600 text-md font-semibold pt-2">Developed by</p>
+            </div>
+            <div className="text-white py-3 md:pt-10">
+                <h1 className="text-5xl">{project.price} Bath</h1>
+                <h1 className="text-md font-semibold pt-2">Price</h1>
+            </div>
+            <div className="text-white py-3 md:pt-10">
+                <h1 className="text-5xl">{project.developed} Days</h1>
+                <h1 className="text-md font-semibold pt-2">Development</h1>
+            </div>
+          </div>
+
         <div className="w-9/12">
           <h1 className="font-bold text-7xl py-10 text-white">
             {project.header.header1}
@@ -134,7 +150,6 @@ const ProjectPage = ({ params }) => {
                 }}
                 className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
               >
-                {/* ref={targetRef} */}
                 <AnimatePresence>
                   {isHovering && (
                     <motion.div
@@ -162,6 +177,7 @@ const ProjectPage = ({ params }) => {
               </div>
             ) : (
               <div
+              ref={targetRef}
                 className="relative"
                 onMouseEnter={() => setShowControls(true)}
                 onMouseLeave={() => setShowControls(false)}

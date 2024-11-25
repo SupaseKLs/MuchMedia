@@ -151,7 +151,7 @@ export default function Home() {
                                 data-aos="fade-up"
                                 data-aos-delay={index * 100}
                             >
-                                <div>
+                                <div className='group' >
                                     <Image
                                         src={project.cards}
                                         alt={project.title.title1}
