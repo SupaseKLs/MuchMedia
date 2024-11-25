@@ -3,8 +3,8 @@
     "id": 1,
     "cards": "/images/WebApp/images/Multicamp.png",
     "banner": "/images/WebApp/images/Multicamp.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Supasek Laobutsa",
+    "price": "1200",
     "developed": "1",
     "type": "Front-End",
     "header": {
@@ -15,15 +15,15 @@
       "title1": "Learn to create websites using HTML, CSS, and JavaScript, from the basics to making a real website! Explore how to design web pages that look great, are easy to use, and work on any device. Get tips to make your website unique and stand out 🚀 Join us and start building your very first website today!",
       "title2": "Muticamp Workshop: Frontend Web Development Join us to learn frontend web development using HTML, CSS, and JavaScript. Discover how to design responsive websites that work seamlessly across all devices, along with UI/UX techniques to create user-friendly and visually appealing designs. You will learn how to build interactive web pages and customize websites to suit all users' needs."
     },
-    "video": "/food.mp4"
+    "video": "#"
   },
   {
     "id": 2,
     "cards": "/images/WebApp/images/Aye.png",
     "banner": "/images/WebApp/images/Aye.png",
-    "created": "Poorijak Russamee",
+    "created": "Supasek Laobutsa",
     "price": "3500",
-    "developed": "1",
+    "developed": "5",
     "type": "Front-End",
     "header": {
       "header1": "Webfolio",
@@ -39,9 +39,9 @@
     "id": 3,
     "cards": "/images/WebApp/images/Res.png",
     "banner": "/images/WebApp/images/Res.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Napat Attayoko",
+    "price": "1200",
+    "developed": "2",
     "type": "Front-End",
     "header": {
       "header1": "Website",
@@ -57,9 +57,9 @@
     "id": 4,
     "cards": "/images/WebApp/images/Synliving.png",
     "banner": "/images/WebApp/images/Synliving.png",
-    "created": "Poorijak Russamee",
+    "created": "Supasek Laobutsa",
     "price": "3500",
-    "developed": "1",
+    "developed": "3",
     "type": "UX/UI",
     "header": {
       "header1": "Synliving",
@@ -75,8 +75,8 @@
     "id": 5,
     "cards": "/images/WebApp/images/ArmFlag.png",
     "banner": "/images/WebApp/images/ArmFlag.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Supasek Laobutsa",
+    "price": "1200",
     "developed": "1",
     "type": "UX/UI",
     "header": {
@@ -93,8 +93,8 @@
     "id": 6,
     "cards": "/images/WebApp/images/PayGuard.png",
     "banner": "/images/WebApp/images/PayGuard.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Supasek Laobutsa / ",
+    "price": "1200",
     "developed": "1",
     "type": "UX/UI",
     "header": {
@@ -111,8 +111,8 @@
     "id": 7,
     "cards": "/images/WebApp/images/Wise.png",
     "banner": "/images/WebApp/images/Wise.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Supasek / Poorijak",
+    "price": "3400",
     "developed": "1",
     "type": "UX/UI",
     "header": {
@@ -133,9 +133,9 @@
     "id": 8,
     "cards": "/images/Graphic/images/Chamber.png",
     "banner": "/images/Graphic/images/Chamber.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Kawin Palasak",
+    "price": "500",
+    "developed": "2",
     "type": "Poster",
     "header": {
       "header1": "Poster",
@@ -152,7 +152,7 @@
     "cards": "/images/Graphic/images/Controller.jpg",
     "banner": "/images/Graphic/images/Controller.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "750",
     "developed": "1",
     "type": "Poster",
     "header": {
@@ -169,9 +169,9 @@
     "id": 10,
     "cards": "/images/Graphic/images/EncoAir2.jpg",
     "banner": "/images/Graphic/images/EncoAir2.jpg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Ammarat Jamdee",
+    "price": "800",
+    "developed": "2",
     "type": "Poster",
     "header": {
       "header1": "Poster",
@@ -187,10 +187,10 @@
     "id": 11,
     "cards": "/images/Graphic/images/FlyUp.png",
     "banner": "/images/Graphic/images/FlyUp.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Kawin Palasak",
+    "price": "750",
     "developed": "1",
-    "type": "Poster",
+    "type": "Thumbnail",
     "header": {
       "header1": "Thumbnail",
       "header2": "FlyUp"
@@ -205,10 +205,10 @@
     "id": 12,
     "cards": "/images/Graphic/images/Forex.png",
     "banner": "/images/Graphic/images/Forex.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Kawin Palasak",
+    "price": "850",
     "developed": "1",
-    "type": "Poster",
+    "type": "Thumbnail",
     "header": {
       "header1": "Thumbnail",
       "header2": "How to choose time frames?"
@@ -223,17 +223,17 @@
     "id": 13,
     "cards": "/images/Graphic/images/Freedom.png",
     "banner": "/images/Graphic/images/Freedom.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Ammarat Jamdee",
+    "price": "1500",
     "developed": "1",
     "type": "Poster",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Poster",
+      "header2": "Freedom"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
+      "title2": "The Freedom poster depicts the essence of liberation and self-expression, using bold imagery to symbolize breaking free from constraints. Vibrant colors and dynamic shapes convey a sense of movement and empowerment, while the central focus reflects the triumph of overcoming challenges. The poster inspires a sense of independence and the pursuit of personal freedom, inviting viewers to embrace their own journey toward liberation."
     },
     "video": "#"
   },
@@ -242,9 +242,9 @@
     "cards": "/images/Graphic/images/Gojo.jpg",
     "banner": "/images/Graphic/images/Gojo.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "850",
     "developed": "1",
-    "type": "Poster",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "EVO Gojo"
@@ -260,9 +260,9 @@
     "cards": "/images/Graphic/images/GojoxMonarch.jpg",
     "banner": "/images/Graphic/images/GojoxMonarch.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "550",
     "developed": "1",
-    "type": "Poster",
+    "type": "Thumbnail",
     "header": {
       "header1": "Thumbnail",
       "header2": "GojoxMonarch"
@@ -278,9 +278,9 @@
     "cards": "/images/Graphic/images/Igros.jpg",
     "banner": "/images/Graphic/images/Igros.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "650",
     "developed": "1",
-    "type": "Poster",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "Igros"
@@ -296,9 +296,9 @@
     "cards": "/images/Graphic/images/Items.jpg",
     "banner": "/images/Graphic/images/Items.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "650",
     "developed": "1",
-    "type": "Poster",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "Promotion Items"
@@ -314,9 +314,9 @@
     "cards": "/images/Graphic/images/Monarch.jpg",
     "banner": "/images/Graphic/images/Monarch.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "800",
     "developed": "1",
-    "type": "Poster",
+    "type": "Thumbnail",
     "header": {
       "header1": "Thumbnail",
       "header2": "Gojo VS Toji"
@@ -331,9 +331,9 @@
     "id": 19,
     "cards": "/images/Graphic/images/Note12.png",
     "banner": "/images/Graphic/images/Note12.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Kawin Palasak",
+    "price": "1200",
+    "developed": "2",
     "type": "Poster",
     "header": {
       "header1": "Poster",
@@ -349,9 +349,9 @@
     "id": 20,
     "cards": "/images/Graphic/images/Infinix.png",
     "banner": "/images/Graphic/images/Infinix.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Kawin Palasak",
+    "price": "1200",
+    "developed": "2",
     "type": "Poster",
     "header": {
       "header1": "Poster",
@@ -367,9 +367,9 @@
     "id": 21,
     "cards": "/images/Graphic/images/omie.jpg",
     "banner": "/images/Graphic/images/omie.jpg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Ammarat Jamdee",
+    "price": "800",
+    "developed": "3",
     "type": "Poster",
     "header": {
       "header1": "Poster",
@@ -386,8 +386,8 @@
     "cards": "/images/Graphic/images/Best.jpg",
     "banner": "/images/Graphic/images/Best.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "price": "500",
+    "developed": "3",
     "type": "Poster",
     "header": {
       "header1": "Poster",
@@ -403,12 +403,12 @@
     "id": 23,
     "cards": "/images/Graphic/images/Rov2.jpg",
     "banner": "/images/Graphic/images/Rov2.jpg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
-    "type": "Poster",
+    "created": "Ammarat Jamdee",
+    "price": "1200",
+    "developed": "2",
+    "type": "Fan Art",
     "header": {
-      "header1": "Poster",
+      "header1": "Fan Art",
       "header2": "Sukuna"
     },
     "title": {
@@ -422,9 +422,9 @@
     "cards": "/images/Graphic/images/Rov.jpg",
     "banner": "/images/Graphic/images/Rov.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
-    "type": "Poster",
+    "price": "1200",
+    "developed": "2",
+    "type": "Fan Art",
     "header": {
       "header1": "Fan Art",
       "header2": "Gojo Fan Art"
@@ -440,9 +440,9 @@
     "cards": "/images/Graphic/images/Rengoku.jpg",
     "banner": "/images/Graphic/images/Rengoku.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
-    "type": "Poster",
+    "price": "450",
+    "developed": "3",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "Promotion Rengoku"
@@ -458,9 +458,9 @@
     "cards": "/images/Graphic/images/RiskFixed.png",
     "banner": "/images/Graphic/images/RiskFixed.png",
     "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
-    "type": "Poster",
+    "price": "400",
+    "developed": "3",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "Risk per Trade and Fixed Lot Size"
@@ -476,9 +476,9 @@
     "cards": "/images/Graphic/images/RiskRatio.png",
     "banner": "/images/Graphic/images/RiskRatio.png",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "350",
     "developed": "1",
-    "type": "Poster",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "Risk Reward and Ratio"
@@ -494,9 +494,9 @@
     "cards": "/images/Graphic/images/Sukunaposter.png",
     "banner": "/images/Graphic/images/Sukunaposter.png",
     "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
-    "type": "Poster",
+    "price": "350",
+    "developed": "2",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "Promotion Sukuna"
@@ -512,9 +512,9 @@
     "cards": "/images/Graphic/images/Sukuna.png",
     "banner": "/images/Graphic/images/Sukuna.png",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "450",
     "developed": "1",
-    "type": "Poster",
+    "type": "Thumbnail",
     "header": {
       "header1": "Thumbnail",
       "header2": "Sukuna Youtube"
@@ -529,10 +529,10 @@
     "id": 30,
     "cards": "/images/Graphic/images/Trade.png",
     "banner": "/images/Graphic/images/Trade.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
-    "type": "Poster",
+    "created": "Kawin Palasak",
+    "price": "250",
+    "developed": "2",
+    "type": "Social Media",
     "header": {
       "header1": "Social Media Poster",
       "header2": "Rich menu"
@@ -548,7 +548,7 @@
     "cards": "/images/Graphic/images/Drink.jpg",
     "banner": "/images/Graphic/images/Drink.jpg",
     "created": "Poorijak Russamee",
-    "price": "3500",
+    "price": "450",
     "developed": "1",
     "type": "Poster",
     "header": {
@@ -565,16 +565,16 @@
     "id": 32,
     "cards": "/images/Graphic/images/Scream.jpg",
     "banner": "/images/Graphic/images/Scream.jpg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Ammarat Jamdee",
+    "price": "500",
+    "developed": "3",
     "type": "Logo",
     "header": {
-      "header1": "MuchMedia Poster",
+      "header1": "Logo",
       "header2": "SCREAM"
     },
     "title": {
-      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
+      "title1": "The word logo refers to a symbol or design that represents a company, brand, product, or service. It is often the most recognizable part of a brand's identity and serves as a visual shorthand for the company’s values, mission, or core message. Logos can be purely typographic (using the brand's name in a stylized font) or incorporate graphical elements that symbolize the brand.",
       "title2": "The SCREAM logo is an example of design that uses images and symbols to convey complex meanings, focusing on creating a strong impression and capturing the viewer's attention. This type of logo design can be applied to brands looking to create a strong and memorable image."
     },
     "video": "#"
@@ -586,17 +586,17 @@
     "id": 33,
     "cards": "/images/Production/images/home.png",
     "banner": "/images/Production/images/home.png",
-    "created": "Poorijak Russamee",
+    "created": "Our team",
     "price": "3500",
-    "developed": "1",
-    "type": "Video",
+    "developed": "5",
+    "type": "Motion",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Motion",
+      "header2": "Spiderman Motion"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "Motionin the context of design refers to movement or change that occurs within an image or graphic. It is used to create interest and engage the viewer's attention. Motion can involve changes in elements such as size, color, position, or shape, and it plays a key role in conveying emotions and feelings. For example, motion in digital design work, such as animation or video effects, brings life to the artwork and enhances the meaning of the presentation.",
+      "title2": "The work focuses on using color to create emotions and atmosphere through meaningful motion. Moving colors not only add dimension to the design but also reflect the power of transformation in graphic work. The motion enhances the feeling and experience, making the viewing experience more vibrant and engaging."
     },
     "video": "/images/Production/video/Spiderman.mp4"
   },
@@ -604,17 +604,17 @@
     "id": 34,
     "cards": "/images/Production/images/home.png",
     "banner": "/images/Production/images/home.png",
-    "created": "Poorijak Russamee",
+    "created": "Our team",
     "price": "3500",
-    "developed": "1",
-    "type": "Video",
+    "developed": "7",
+    "type": "Motion",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Motion",
+      "header2": "Pinball Motion"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "Motion in the context of design refers to movement or change that occurs within an image or graphic. It is used to create interest and engage the viewer's attention. Motion can involve changes in elements such as size, color, position, or shape, and it plays a key role in conveying emotions and feelings. For example, motion in digital design work, such as animation or video effects, brings life to the artwork and enhances the meaning of the presentation.",
+      "title2": "The work focuses on using color to create emotions and atmosphere through meaningful motion. Moving colors not only add dimension to the design but also reflect the power of transformation in graphic work. The motion enhances the feeling and experience, making the viewing experience more vibrant and engaging."
     },
    "video": "/images/Production/video/Pinball.mp4"
   },
@@ -622,35 +622,35 @@
     "id": 35,
     "cards": "/images/Production/images/home.png",
     "banner": "/images/Production/images/home.png",
-    "created": "Poorijak Russamee",
+    "created": "Our team",
     "price": "3500",
-    "developed": "1",
-    "type": "Video",
+    "developed": "7",
+    "type": "Motion",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Motion",
+      "header2": "FNAF"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "Motion in the context of design refers to movement or change that occurs within an image or graphic. It is used to create interest and engage the viewer's attention. Motion can involve changes in elements such as size, color, position, or shape, and it plays a key role in conveying emotions and feelings. For example, motion in digital design work, such as animation or video effects, brings life to the artwork and enhances the meaning of the presentation.",
+      "title2": "This work uses motion to enhance the mysterious and creepy atmosphere of the **Five Nights at Freddy's** (FNAF) game. The movement of characters and scenes is designed to increase tension and the sense of fear present throughout the game. The use of color and motion effects makes the audience feel the uncertainty and excitement that reflect the atmosphere of the FNAF world."
     },
     "video": "/images/Production/video/FNAF.mp4"
   },
   {
     "id": 36,
-    "cards": "/images/Production/images/bracelet1.jpg",
-    "banner": "/images/Production/images/bracelet1.jpg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "cards": "/images/Production/images/bracelet2.jpg",
+    "banner": "/images/Production/images/bracelet2.jpg",
+    "created": "Tanathat Setteechaichana",
+    "price": "1500",
     "developed": "1",
     "type": "Photo",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Bracelet",
+      "header2": ""
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "A photographer is someone who captures images with a camera to record events or subjects of interest, working in various fields such as weddings, news, advertising, and nature. Photographers need skills in using the camera, choosing good angles, and editing photos to achieve results that meet client needs or artistic presentation.",
+      "title2": ""
     },
     "video": "#"
   },
@@ -661,17 +661,17 @@
     "id": 37,
     "cards": "/images/Drawing/kapa.png",
     "banner": "/images/Drawing/kapa.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Ammarat Jamdee",
+    "price": "1200",
+    "developed": "2",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Sad Man"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Sad Man depicts the sorrow and loneliness of a man through dark tones and shading techniques that emphasize the depth of emotion. The image focuses on facial expressions and body language that reflect a sense of despair or inner pain. The colors used enhance the feeling of isolation and emptiness. This artwork conveys an internal struggle and the sense of loss."
     },
     "video": "#"
   },
@@ -679,17 +679,17 @@
     "id": 38,
     "cards": "/images/Drawing/KQ.jpeg",
     "banner": "/images/Drawing/KQ.jpeg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Ammarat Jamdee",
+    "price": "800",
     "developed": "1",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Killer Queen"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Killer Queen from the cartoon portrays a character with mystery and danger, featuring a striking design and colors that reflect a menacing presence. The image captures the character's powerful, cold demeanor, exuding confidence in their ability to dominate. The use of dark colors and sharp contrasts intensifies the tension and fear surrounding the character."
     },
     "video": "#"
   },
@@ -697,17 +697,17 @@
     "id": 39,
     "cards": "/images/Drawing/MissYou.jpeg",
     "banner": "/images/Drawing/MissYou.jpeg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Ammarat Jamdee",
+    "price": "800",
     "developed": "1",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "MissYou"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Miss You conveys feelings of longing and loneliness through soft colors and gentle shading. The image reflects emotions of waiting and hope that still reside in the heart, with a focus on tender eyes filled with affection and nostalgia. The choice of warm colors and the blending of light and shadow add depth and warmth to the emotion."
     },
     "video": "#"
   },
@@ -715,17 +715,17 @@
     "id": 40,
     "cards": "/images/Drawing/OmieBrown.png",
     "banner": "/images/Drawing/OmieBrown.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Ammarat Jamdee",
+    "price": "1200",
+    "developed": "2",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Her"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Her captures the beauty and tenderness of a woman through warm and delicate colors. The image focuses on her facial expressions and posture, reflecting confidence and inner calm. The choice of soft colors and smooth shading enhances the sense of natural beauty and flawless charm in the character."
     },
     "video": "#"
   },
@@ -733,17 +733,17 @@
     "id": 41,
     "cards": "/images/Drawing/OmieGreen.JPG",
     "banner": "/images/Drawing/OmieGreen.JPG",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Ammarat Jamdee",
+    "price": "1200",
+    "developed": "2",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Gon"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Gon from the cartoon captures the character's enthusiasm and innocence through bright, vibrant colors full of energy. The image emphasizes lively gestures and eyes filled with curiosity and determination. The use of green and yellow tones enhances the sense of vitality, reflecting a personality full of hope and dreams."
     },
     "video": "#"
   },
@@ -751,35 +751,35 @@
     "id": 42,
     "cards": "/images/Drawing/OmieRed.png",
     "banner": "/images/Drawing/OmieRed.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Ammarat Jamdee",
+    "price": "1200",
     "developed": "1",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Garou"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Garou from the cartoon reflects the darkness and determination in his fight through deep, intense colors. The image emphasizes powerful postures and eyes that convey anger and a strong commitment to his goals. The use of dark colors, such as black and red, enhances the feeling of intensity and challenge in the character's personality."
     },
     "video": "#"
   },
   {
     "id": 43,
     "cards": "/images/Drawing/Turtle.jpeg",
-    "banner": "/images/Drawing/Bewzxd.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "banner": "/images/Drawing/Turtle.jpeg",
+    "created": "Ammarat Jamdee",
+    "price": "1200",
     "developed": "1",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Muruem"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Murum from the cartoon reflects the character's complexity and mystery through deep, dimensional colors. The image showcases a posture filled with thought and a confrontation with the outside world. The blend of dark and light colors enhances the feeling of calmness and the hidden mystery within the character."
     },
     "video": "#"
   },
@@ -787,17 +787,17 @@
     "id": 44,
     "cards": "/images/Drawing/Draw2.png",
     "banner": "/images/Drawing/Draw2.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Ammarat Jamdee",
+    "price": "1200",
     "developed": "1",
     "type": "Drawing",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Handsome Man"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Handsome Man portrays the elegance and confidence of a young man through sharp lines and vivid colors. The image emphasizes a confident posture and eyes filled with cool composure and charm. The use of warm colors and detailed shading enhances the natural beauty and attractiveness of the character."
     },
     "video": "#"
   },
@@ -805,17 +805,17 @@
     "id": 45,
     "cards": "/images/Drawing/Draw3.png",
     "banner": "/images/Drawing/Draw3.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Ammarat Jamdee",
+    "price": "1500",
     "developed": "1",
     "type": "Drawing",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Spice Girl"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Spice Girl captures the fun and energy of a young woman with a bold and unique personality. The image highlights lively poses and a sense of self-confidence. The use of bright colors and playful patterns enhances the feeling of femininity, while also reflecting strength and individuality."
     },
     "video": "#"
   },
@@ -823,17 +823,17 @@
     "id": 46,
     "cards": "/images/Drawing/Draw4.jpg",
     "banner": "/images/Drawing/Draw4.jpg",
-    "created": "Poorijak Russamee",
-    "price": "3500",
+    "created": "Ammarat Jamdee",
+    "price": "1500",
     "developed": "1",
     "type": "Drawing",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "",
+      "header2": "Juepak"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "",
+      "title2": "The painting Juepak portrays the strength and mystery of the character through deep, intense colors. The image highlights a firm posture and eyes that convey determination and a challenge in facing obstacles. The use of dark colors and detailed shading adds a sense of confidence and complexity to the character."
     },
     "video": "#"
   },
@@ -841,17 +841,17 @@
     "id": 47,
     "cards": "/images/Drawing/Bewzxd.png",
     "banner": "/images/Drawing/Bewzxd.png",
-    "created": "Poorijak Russamee",
-    "price": "3500",
-    "developed": "1",
+    "created": "Ammarat Jamdee",
+    "price": "800",
+    "developed": "2",
     "type": "Painting",
     "header": {
-      "header1": "MuchMedia Poster",
-      "header2": "Solutions"
+      "header1": "Who is Bewzxd?",
+      "header2": "Bewzxd"
     },
     "title": {
-      "title1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      "title2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "title1": "The YouTube channel Bewzxd creates videos and streams focused on Roblox games, offering exciting and fun gameplay experiences. Viewers can enjoy exploring adventures and various activities within the game while following the channel for fresh and engaging content.",
+      "title2": "The fan art painting Bewzxd reflects the unique traits of the character through captivating use of color and shading techniques. The image showcases distinct poses and emotions that highlight the character's individuality. The choice of vibrant colors and the play of light add depth and intrigue to the artwork."
     },
     "video": "#"
   }

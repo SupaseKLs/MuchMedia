@@ -49,7 +49,7 @@ export default function Home() {
     if (loading) return <div>Loading...</div>;
     if (error) return <div>{error}</div>;
 
-    const allowedCategories = ["All", "Video", "Photo"];
+    const allowedCategories = ["All", "Motion", "Photo"];
 
     const categories = ["All", ...new Set(projects.map((project) => project.type))];
 

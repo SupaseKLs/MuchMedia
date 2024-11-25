@@ -44,7 +44,7 @@ export default function Home() {
 
     if (loading) return <div>Loading...</div>;
 
-    const allowedCategories = ["All", "Poster", "Logo"];
+    const allowedCategories = ["All", "Poster", "Logo", "Social Media", "Thumbnail", "Fan Art"];
 
     const filteredItems =
         activeCategory === "All"

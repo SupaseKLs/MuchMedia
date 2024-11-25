@@ -5,6 +5,7 @@ import Play from "@/app/assets/play.svg";
 import Pause from "@/app/assets/pause.svg";
 import Cursor from "@/components/Cursor/cursor_core/page";
 import { AnimatePresence, motion } from "framer-motion";
+import NumberTicker from '@/components/Counter/page'
 
 const getData = async () => {
   const res = await fetch("/data/sourceProject.json");
@@ -86,7 +87,7 @@ const ProjectPage = ({ params }) => {
   if (loading) return <div>Loading...</div>;
   if (!project) return <div>Project not found</div>;
 
-  const isImageFallback = (id >= 8 && id <= 32) || (id >= 37 && id <= 47);
+  const isImageFallback = (id >= 8 && id <= 32) || (id >= 36 && id <= 47);
 
   return (
     <div>
@@ -109,11 +110,11 @@ const ProjectPage = ({ params }) => {
                 <p className="text-gray-600 text-md font-semibold pt-2">Developed by</p>
             </div>
             <div className="text-white py-3 md:pt-10">
-                <h1 className="text-5xl">{project.price} Bath</h1>
+            <NumberTicker className="text-5xl" value={project.price} /><span className="text-5xl"> Bath</span>
                 <h1 className="text-md font-semibold pt-2">Price</h1>
             </div>
             <div className="text-white py-3 md:pt-10">
-                <h1 className="text-5xl">{project.developed} Days</h1>
+            <NumberTicker className="text-5xl" value={project.developed} /><span className="text-5xl"> Days</span>
                 <h1 className="text-md font-semibold pt-2">Development</h1>
             </div>
           </div>
@@ -169,7 +170,7 @@ const ProjectPage = ({ params }) => {
             {isImageFallback ? (
               <div ref={targetRef}>
                 <img
-                  className="w-11/12 mx-auto h-auto rounded-lg"
+                  className="w-11/12 mx-auto h-full rounded-lg"
                   src={project.banner}
                   alt={project.title.title1}
                   onClick={handleImageClick}
