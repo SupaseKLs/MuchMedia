@@ -9,6 +9,10 @@ import Slider from '../Components/SliderOne/page';
 import Slider2 from '../Components/SliderTwo/page2';
 // import Swiper from "../Components/Swiper/SwiperCom"
 
+// fam
+import FAQSection from '../Components/question/FAQSection';
+import ReviewsSection from '../Components/question/ReviewsSection';
+
 
 function HomePage() {
     return (
@@ -125,7 +129,7 @@ function HomePage() {
                             <Slider2 />
                         </div>
 
-                        <div className="w-full flex justify-between items-start text-white gap-10 py-10" style={{ backgroundColor: "#000", marginBottom: "60px" }}>
+                        <div className="w-full flex justify-between items-start text-white gap-10 py-10" style={{ backgroundColor: "#ffffff", marginBottom: "60px" }}>
                             <div className="w-1/3 pr-4">
                                 <p className=" text-2xl font-mid text-gray-300 mb-2">
                                     Develop Friendships
@@ -150,6 +154,55 @@ function HomePage() {
                 <div>
                     <Marquee />
                 </div>
+
+            </div>
+
+            {/* FOOTER  FAMMOZY */}
+            <div className="w-full flex flex-col justify-start items-center text-white py-10" style={{ backgroundColor: "#000", marginBottom: "30px" }}>
+
+                {/* Text Section */}
+                <div className="w-4/5 text-center mb-10">
+                    <p className="text-0xl font-semibold leading-loose text-justify">
+                        MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE QUALITY MEDIA AND BE A LEADER IN DELIVERING ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR SKILLED TEAM IS DEDICATED TO PROVIDING THE BEST SERVICES TO OUR CLIENTS.
+                    </p>
+                </div>
+
+                <div className="w-full flex justify-center items-center py-10" style={{ backgroundColor: "#000", marginBottom: "60px" }}>
+
+                    {/* Team Section */}
+                    <div className="relative w-1/2">
+                        {/* Individual Team Member Image */}
+                        <img src="https://www.i-pic.info/i/wNbs898653.jpg" alt="Team Member" className="rounded-md w-full" style={{
+                        }} />
+
+                        {/* Overlay Text and Button */}
+                        <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
+                            <h3 className="text-3xl font-bold mb-2">Our Team</h3>
+                            <a href="/assets/ourteam" className="mt-2 inline-block px-4 py-2 bg-white text-black rounded-md">
+                                Discover Team
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                <ReviewsSection />
+                </div>
+
+
+
+
+            </div>
+
+
+
+            {/* ส่วน FAQ */}
+            <div style={{
+                background: `radial-gradient(circle at bottom, rgba(196, 255, 255, 0.4), transparent),linear-gradient(to top, #ffffff, #ffffff)`,
+            }}
+            ><FAQSection />
+            </div>
+            <div>
 
             </div>
 
