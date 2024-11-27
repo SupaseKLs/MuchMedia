@@ -3,22 +3,40 @@ import Marquee from "../ui/marquee";
 
 const reviews = [
   {
-    img: "/team.png",
+    img: "/images/p1.jpg",
   },
   {
-    img: "/team.png",
+    img: "/images/p2.jpg",
   },
   {
-    img: "/team.png",
+    img: "/images/p3.jpg",
   },
   {
-    img: "/team.png",
+    img: "/images/p4.jpg",
   },
   {
-    img: "/team.png",
+    img: "/images/p5.jpg",
   },
   {
-    img: "/team.png",
+    img: "/images/p6.jpg",
+  },
+  {
+    img: "/images/p7.jpg",
+  },
+  {
+    img: "/images/p8.jpg",
+  },
+  {
+    img: "/images/p9.jpg",
+  },
+  {
+    img: "/images/p10.jpg",
+  },
+  {
+    img: "/images/p11.jpg",
+  },
+  {
+    img: "/images/p12.jpg",
   },
 ];
 

@@ -1,4 +1,5 @@
 import Marquee from '../Components/Marquee/page'
+import MarTeam from '../Components/MarTeam/page'
 
 import Image from "next/image";
 import Code from "../assets/img/code.jpg";
@@ -171,17 +172,7 @@ function HomePage() {
                 <div className="w-full flex justify-center items-center py-10">
 
                     {/* Team Section */}
-                    {/* <div className="relative w-1/2">
-                        <img src="https://www.i-pic.info/i/wNbs898653.jpg" alt="Team Member" className="rounded-md w-full" style={{
-                        }} />
-
-                        <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
-                            <h3 className="text-3xl font-bold mb-2">Our Team</h3>
-                            <a href="/assets/ourteam" className="mt-2 inline-block px-4 py-2 bg-white text-black rounded-md">
-                                Discover Team
-                            </a>
-                        </div>
-                    </div> */}
+                    <MarTeam />
                 </div>
 
                 <div>
