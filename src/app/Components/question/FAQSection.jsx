@@ -10,7 +10,8 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="font-sans text-gray-800 p-6 max-w-3xl mx-auto rounded-lg bg-transparent">
+    <div className='w-11/12 mx-auto'>
+      <div className="font-sans text-gray-800 p-6 mx-auto rounded-lg bg-transparent">
       <h1 className="text-xl font-bold text-left mb-5">FAQS</h1>
       <h1 className="text-3xl font-bold text-left mb-5">Frequently Asked Questions</h1>
       <div className="border-t border-gray-300">
@@ -44,6 +45,7 @@ const FAQSection = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

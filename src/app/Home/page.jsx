@@ -5,7 +5,7 @@ import Code from "../assets/img/code.jpg";
 import Graphic from "../assets/img/design.jpg";
 import Drawing from "../assets/img/drawing.jpg";
 import Production from "../assets/img/production.jpg";
-import Slider from '../Components/SliderOne/page';
+import WorkCards from '../Components/OurWorksCards/page';
 import Slider2 from '../Components/SliderTwo/page2';
 // import Swiper from "../Components/Swiper/SwiperCom"
 
@@ -81,28 +81,28 @@ function HomePage() {
                 {/* Plan */}
                 <div className="w-11/12 mx-auto">
                     <div className="text-white font-sans flex flex-col min-h-screen">
-                        <section className="flex  justify-between items-start gap-10 py-5 w-full">
-                            <div className="flex gap-20">
+                        <section className="flex flex-col md:flex-row justify-between items-start gap-10 py-5 w-full">
+                            <div className="flex  gap-20">
                                 <div className="text-center">
-                                    <h2 className="count font-semibold text-9xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
+                                    <h2 className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
                                         10
                                     </h2>
                                     <p className="text-white text-xl text-left">Years of<br /> Experience</p>
                                 </div>
                                 <div className="text-center">
-                                    <h2 className="count font-semibold text-9xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
+                                    <h2 className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
                                         10
                                     </h2>
                                     <p className="text-white text-xl text-left">Years of<br /> Experience</p>
                                 </div>
                                 <div className="text-center">
-                                    <h2 className="count font-semibold text-9xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="100">
+                                    <h2 className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="100">
                                         100+
                                     </h2>
                                     <p className="text-white text-xl text-left" >Completed<br /> Project</p>
                                 </div>
                             </div>
-                            <div className="w-6/12 font-semibold text-6xl text-left">
+                            <div className="w-10/12 md:w-6/12 font-semibold text-4xl text-left">
                                 <p>
                                     All aspects of the projects were fully developed by our team. Here are some of our recent favorites.
                                 </p>
@@ -111,39 +111,40 @@ function HomePage() {
 
                         <div className="flex flex-col justify-between py-10 ">
                             <div className="w-full">
-                                <h2 className="text-8xl font-bold pt-10 text-gray-300">
+                                <h2 className="text-7xl font-bold pt-10 text-gray-300">
                                     <span className="text-gray-500">OUR</span> <span className="text-white">PROJECTS</span>
                                 </h2>
-                                <p className="text-3xl text-white mt-2">Lorem ipsum odor amet, consectetuer adipiscing</p>
-                            </div>
-                            <Slider />
-                        </div>
-
-                        <div className="flex flex-col items-start justify-between py-10 gap-5 w-full">
-                            <div className="w-full text-left">
-                                <h2 className="text-8xl font-bold text-gray-300">
-                                    <span className="text-gray-500">OUR</span> <span className="text-white">WORKS</span>
-                                </h2>
-                                <p className="text-3xl text-white mt-2">Lorem ipsum odor amet, consectetuer adipiscing</p>
+                                <p className="text-2xl text-white mt-2">Lorem ipsum odor amet, consectetuer adipiscing</p>
                             </div>
                             <Slider2 />
                         </div>
 
-                        <div className="w-full flex justify-between items-start text-white gap-10 py-10" style={{ backgroundColor: "#ffffff", marginBottom: "60px" }}>
-                            <div className="w-1/3 pr-4">
-                                <p className=" text-2xl font-mid text-gray-300 mb-2">
+                        <div className="flex flex-col items-start justify-between py-10 gap-5 w-full">
+                            <div className="w-full text-left">
+                                <h2 className="text-7xl font-bold text-gray-300">
+                                    <span className="text-gray-500">OUR</span> <span className="text-white">WORKS</span>
+                                </h2>
+                                <p className="text-2xl text-white mt-2">Lorem ipsum odor amet, consectetuer adipiscing</p>
+                            </div>
+                            <WorkCards />
+
+                        </div>
+
+                        <div className="w-full flex-col md:flex-row flex justify-between text-white gap-10 py-10">
+                            <div className="w-2/3 pr-4">
+                                <p className="text-2xl font-mid text-gray-300 mb-2">
                                     Develop Friendships
                                 </p>
-                                <h1 className="text-4xl font-bold leading-snug mt-2">
+                                <h1 className="text-3xl md:text-4xl font-bold leading-snug mt-2">
                                     Creative activities to <br />
                                     strengthen friendships
                                 </h1>
                             </div>
-                            <div className="w-2/3">
+                            <div className="w-11/12 md:w-2/3">
                                 <p className="text-2xl font-semibold leading-loose gap-11">
-                                    Creative activities help strengthen friendships by <br />
-                                    creating opportunities to make friends, share <br />
-                                    experiences, and support each other and learn to <br />
+                                    Creative activities help strengthen friendships by
+                                    creating opportunities to make friends, share
+                                    experiences, and support each other and learn to 
                                     support each other, creating meaningful relationships.
                                 </p>
                             </div>
@@ -158,40 +159,34 @@ function HomePage() {
             </div>
 
             {/* FOOTER  FAMMOZY */}
-            <div className="w-full flex flex-col justify-start items-center text-white py-10" style={{ backgroundColor: "#000", marginBottom: "30px" }}>
+            <div className="w-full flex flex-col justify-start items-center text-white py-10">
 
                 {/* Text Section */}
-                <div className="w-4/5 text-center mb-10">
-                    <p className="text-0xl font-semibold leading-loose text-justify">
+                <div className="h-screen flex justify-center items-center w-4/5 text-center mb-10">
+                    <p className="text-4xl font-semibold leading-loose text-justify">
                         MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE QUALITY MEDIA AND BE A LEADER IN DELIVERING ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR SKILLED TEAM IS DEDICATED TO PROVIDING THE BEST SERVICES TO OUR CLIENTS.
                     </p>
                 </div>
 
-                <div className="w-full flex justify-center items-center py-10" style={{ backgroundColor: "#000", marginBottom: "60px" }}>
+                <div className="w-full flex justify-center items-center py-10">
 
                     {/* Team Section */}
-                    <div className="relative w-1/2">
-                        {/* Individual Team Member Image */}
+                    {/* <div className="relative w-1/2">
                         <img src="https://www.i-pic.info/i/wNbs898653.jpg" alt="Team Member" className="rounded-md w-full" style={{
                         }} />
 
-                        {/* Overlay Text and Button */}
                         <div className="absolute inset-0 flex flex-col justify-center items-center text-white">
                             <h3 className="text-3xl font-bold mb-2">Our Team</h3>
                             <a href="/assets/ourteam" className="mt-2 inline-block px-4 py-2 bg-white text-black rounded-md">
                                 Discover Team
                             </a>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
 
                 <div>
-                <ReviewsSection />
+                    <ReviewsSection />
                 </div>
-
-
-
-
             </div>
 
 

@@ -1,87 +1,64 @@
-"use client"; // บอกให้ Next.js รู้ว่านี่คือ Client Component
-import React, { useRef } from 'react';
-
-const ReviewsSection = () => {
-  const scrollContainer = useRef(null);
-
-  const handleDrag = (e) => {
-    e.preventDefault();
-    const container = scrollContainer.current;
-    container.scrollLeft -= e.movementX;
-  };
-
-  const enableDrag = () => {
-    document.addEventListener('mousemove', handleDrag);
-    document.addEventListener('mouseup', disableDrag);
-  };
-
-  const disableDrag = () => {
-    document.removeEventListener('mousemove', handleDrag);
-    document.removeEventListener('mouseup', disableDrag);
-  };
+export default function Reviews() {
+  const cardData = [
+    {
+      title: "Card 1",
+      description: "This is the description for Card 1.",
+      image: "https://i.pinimg.com/236x/49/f6/88/49f6885b30a435998eebdad5c13a0f48.jpg",
+      name: "Napat Attayoko",
+      position: "Director"
+    },
+    {
+      title: "Card 2",
+      description: "This is the description for Card 2.",
+      image: "https://i.pinimg.com/236x/49/f6/88/49f6885b30a435998eebdad5c13a0f48.jpg",
+      name: "Napat Attayoko",
+      position: "Director"
+    },
+    {
+      title: "Card 3",
+      description: "This is the description for Card 3.",
+      image: "https://i.pinimg.com/236x/49/f6/88/49f6885b30a435998eebdad5c13a0f48.jpg",
+      name: "Napat Attayoko",
+      position: "Director"
+    },
+  ];
 
   return (
-    <div className="w-4/5 mx-auto text-center my-6">
-      {/* Section Reviews */}
-      <section className="mb-12">
-        <h5 className="text-lg font-bold mb-2 text-left text-gray-600">Clients Reviews</h5>
-        <h2 className="text-4xl font-bold mb-6 text-left text-gray-900">What They Say</h2>
+     <>
+      <div className="pt-10 pb-20">
+        <p className="text-2xl font-bold">
+        clients reviews
+        </p>
+        <h1 className="text-7xl md:text-8xl font-bold">What they say</h1>
+      </div>
+    <div className="h-full flex items-center  justify-between">
+      <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {cardData.map((card, index) => (
+          <div
+            key={index}
+            className="bg-white mx-auto w-11/12 md:w-96 h-full py-10 shadow-md rounded overflow-hidden"
+          >
+            <div className="text-black w-11/12 mx-auto flex flex-col">
+              <div>
 
-        <div
-          ref={scrollContainer}
-          onMouseDown={enableDrag}
-          className="flex overflow-x-auto gap-6 scrollbar-hide cursor-grab"
-        >
-          {/* Review Cards */}
-          {[1, 2, 3, 4].map((item, index) => (
-            <div
-              key={index}
-              className="p-6 border border-gray-300 rounded-md shadow-md bg-white w-full sm:w-72 md:w-80 lg:w-96 xl:w-1/4 flex-shrink-0"
-            >
-              <div className="flex items-center mb-4">
-                <img
-                  src="https://via.placeholder.com/48"
-                  alt="Reviewer"
-                  className="rounded-full w-12 h-12 mr-4"
-                />
+              </div>
+              <div className="w-9/12 py-10">
+                <p>Lorem ipsum dolor sit amet consectetur. Fames lacus pulvinar venenatis lectus sem. Sagittis lectus quis feugiat ut est id magna quam.</p>
+              </div>
+              <div className="flex items-center">
                 <div>
-                  <h3 className="font-semibold text-gray-900">Reviewer Name {item}</h3>
-                  <p className="text-sm text-gray-500">Position {item}</p>
+                  <img className="w-12 h-12 rounded-full" src={card.image} alt="" />
+                </div>
+                <div className="ml-4">
+                  <h1>{card.name}</h1>
+                  <h1>{card.position}</h1>
                 </div>
               </div>
-
-              <p className="text-gray-700 mb-4">
-                This is an example review text. It can be customized for each reviewer.
-              </p>
-
-              {/* Star Ratings */}
-              <div className="flex items-center">
-                {[...Array(5)].map((_, i) => (
-                  <svg
-                    key={i}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                    strokeWidth={1.5}
-                    stroke="currentColor"
-                    className={`w-5 h-5 ${i < item ? 'text-yellow-500' : 'text-gray-300'}`}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.342 7.222h7.617c.969 0 1.371 1.24.588 1.81l-6.168 4.48 2.342 7.222c.3.921-.755 1.688-1.54 1.11l-6.168-4.48-6.168 4.48c-.785.578-1.84-.189-1.54-1.11l2.342-7.222-6.168-4.48c-.783-.57-.38-1.81.588-1.81h7.617l2.342-7.222z"
-                    />
-                  </svg>
-                ))}
-              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
+      </div>
 
-        
-      </section>
-    </div>
+    </div></>
   );
-};
-
-export default ReviewsSection;
+}

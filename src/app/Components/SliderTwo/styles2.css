@@ -1,45 +1,30 @@
 #app {
   height: 100%;
 }
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
 
 .swiper {
-  width: 956px;
+  width: 100%;
   height: 100%;
 }
-.swiper-pagination-bullet {
-  display: none;
-}
+
 .swiper-slide {
-  margin-left: 2px; 
-  height: 662px !important;   /* Center slide text vertically */
   text-align: center;
   font-size: 18px;
   background: #fff;
+margin-top: 20px;
+  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 400px;
 }
 
 .swiper-slide img {
   display: block;
-  width: 397px;
-  height: 662px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
-
-.swiper-slide {
-  width: 90%;
+.swiper-pagination-bullet {
+  display: none;
 }
