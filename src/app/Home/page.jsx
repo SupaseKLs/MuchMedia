@@ -19,8 +19,8 @@ function HomePage() {
     return (
         <>
             <div className="w-full z-10">
-                <div className="flex justify-center absolute bottom-10 z-20 w-full">
-                    <h1 className="text-6xl md:text-[120px] xl:text-[200px]  text-white ">MUCHMEDIA</h1>
+                <div className="flex justify-center absolute bottom-20 md:bottom-8 z-20 w-full">
+                    <h1 className="text-7xl md:text-8xl lg:text-9xl text-white">MUCHMEDIA</h1>
                 </div>
                 <video
                     autoPlay
@@ -28,9 +28,9 @@ function HomePage() {
                     loop
                     className="w-full h-screen object-cover"
                 >
-                    <source src="/header.mp4" type="video/mp4" />
+                    <source src="/video/bgvideo.mp4" type="video/mp4" />
                 </video>
-
+                <div className="absolute bottom-0 w-full h-96 bg-gradient-to-t from-[#040404] to-transparent" />
                 {/* ข้อความด้านบนวิดีโอ */}
                 <div className="h-screen flex items-center">
                     <div className="w-11/12 mx-auto">
