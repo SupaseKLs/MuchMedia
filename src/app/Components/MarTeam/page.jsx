@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import Marquee from "../ui/marquee";
+import Marquee from "../ui/marqueeTeam";
 
 const reviews = [
   {
@@ -31,17 +31,21 @@ const reviews = [
   },
 ];
 
-const firstRow = reviews.slice(0, reviews.length / 2);
-
 const ReviewCard = ({ img }) => {
   return (
     <figure
       className={cn(
-        "relative w-[300px] h-full cursor-pointer overflow-hidden"
+        "relative w-[300px] h-full overflow-hidden"
       )}
     >
       <div className="flex flex-row items-center">
-        <img className="rounded-sm w-full h-full" width="32" height="32" alt="" src={img} />
+        <img
+          className="rounded-sm w-full h-full"
+          width="32"
+          height="32"
+          alt=""
+          src={img}
+        />
       </div>
     </figure>
   );
@@ -50,20 +54,23 @@ const ReviewCard = ({ img }) => {
 const MarqueeDemo = () => {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
-        <div className="absolute flex flex-col items-center top-0 z-10 pt-44">
-            <h1 className="text-6xl font-bold">Our Team</h1>
-            <div>
-            <button className="mt-6 py-2 px-8 text-2xl bg-gray-900 rounded-full text-white">Discover Team</button>
-
-            </div>
+      {/* Header Section */}
+      <div className="absolute flex flex-col items-center top-0 z-10 pt-44">
+        <h1 className="text-6xl font-bold">Our Team</h1>
+        <div>
+          <button className="mt-6 py-2 px-8 text-2xl bg-gray-900 rounded-full text-white">
+            Discover Team
+          </button>
         </div>
+      </div>
+      {/* Marquee Section */}
       <Marquee>
-        {firstRow.map((review) => (
-          <ReviewCard key={review.username} {...review} />
+        {reviews.map((review) => (
+          <ReviewCard key={review.img} {...review} />
         ))}
       </Marquee>
     </div>
   );
 };
 
-export default MarqueeDemo; // ใช้ export default ที่นี่
+export default MarqueeDemo;
