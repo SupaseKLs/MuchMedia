@@ -4,11 +4,13 @@
    overflow: hidden;
 
    .wrapper{
+        height: auto;
         display: flex;
         gap: 50px;
         margin-bottom: 80px;
         padding-left: 5rem;
         margin-top: 5rem;
+        position: relative;
 
     }
 
@@ -49,4 +51,19 @@
         }
     }
 
+}
+
+@media only screen and (min-width: 2560px) {
+    .nav {
+        .wrapper {
+            padding-bottom: 2rem;
+            .container {
+                a {                   
+                    span {
+                        font-size: 7rem;
+                    }
+                }
+            }
+        }
+    }
 }
