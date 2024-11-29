@@ -8,9 +8,7 @@ import Drawing from "../assets/img/drawing.jpg";
 import Production from "../assets/img/production.jpg";
 import WorkCards from '../Components/OurWorksCards/page';
 import Slider2 from '../Components/SliderTwo/page2';
-// import Swiper from "../Components/Swiper/SwiperCom"
 
-// fam
 import FAQSection from '../Components/question/FAQSection';
 import ReviewsSection from '../Components/question/ReviewsSection';
 
@@ -34,8 +32,8 @@ function HomePage() {
                 {/* ข้อความด้านบนวิดีโอ */}
                 <div className="h-screen flex items-center">
                     <div className="w-11/12 mx-auto">
-                        <div className="max-w-[1200px]">
-                            <p className="text-4xl md:text-5xl xl:text-6xl">
+                        <div className="w-11/12 md:w-8/12">
+                            <p className="text-white text-4xl md:text-5xl xl:text-4xl">
                                 MUCHMEDIA LEVERAGES MULTIMEDIA
                                 TO BUILD A BETTER WORLD, CREATING
                                 NEW OPPORTUNITIES FOR THE NEXT
@@ -46,9 +44,9 @@ function HomePage() {
                 </div>
 
                 <div className="w-11/12 py-20 mx-auto">
-                    <h1 className="text-5xl md:text-7xl xl:text-9xl text-gray-600">OUR <span className="text-white">SERVICE</span></h1>
-                    <ul className="text-1xl md:text-3xl xl:text-5xl pt-7 list-disc pb-20">
-                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi ex<br />
+                    <h1 className="text-6xl md:text-5xl xl:text-7xl font-bold text-gray-600">OUR <span className="text-white">SERVICE</span></h1>
+                    <ul className="text-xl md:text-3xl xl:text-5xl pt-7 list-disc pb-20">
+                        <li className='w-9/12 text-white text-md md:text-xl xl:text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi ex
                             esse veniam tempore nostrum voluptas perferendis nam sit eaque.</li>
                     </ul>
 
@@ -131,7 +129,7 @@ function HomePage() {
 
                         </div>
 
-                        <div className="w-full flex-col md:flex-row flex justify-between text-white gap-10 py-10">
+                        <div className="w-full flex justify-between text-white gap-10 py-10">
                             <div className="w-2/3 pr-4">
                                 <p className="text-2xl font-mid text-gray-300 mb-2">
                                     Develop Friendships
@@ -142,7 +140,7 @@ function HomePage() {
                                 </h1>
                             </div>
                             <div className="w-11/12 md:w-2/3">
-                                <p className="text-2xl font-semibold leading-loose gap-11">
+                                <p className="text-sm md:text-2xl font-semibold leading-loose gap-11">
                                     Creative activities help strengthen friendships by
                                     creating opportunities to make friends, share
                                     experiences, and support each other and learn to 
