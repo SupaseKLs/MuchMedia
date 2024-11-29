@@ -41,7 +41,7 @@ export default function Index() {
         <div className={styles.container}>
           <Body links={links} selectedLink={selectedLink} setSelectedLink={setSelectedLink}/>
         </div>
-        <Image src={links[selectedLink.index].src} className='absolute'  isActive={selectedLink.isActive}/>
+        <Image src={links[selectedLink.index].src} className='Images' width={200} height={200}  isActive={selectedLink.isActive}/>
       </div>
     </motion.div>
     </div>

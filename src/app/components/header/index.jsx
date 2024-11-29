@@ -141,7 +141,7 @@ export default function Index() {
                                             initial="initial"
                                             whileHover="hovered"
                                             key={i}
-                                            className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Gotham overflow-hidden ">
+                                            className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter overflow-hidden ">
 
                                             <motion.div
                                             className='text-text_color'
@@ -168,7 +168,7 @@ export default function Index() {
                                         </motion.li>
 
                                     ))}
-                                    <li className="md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Gotham">
+                                    <li className="md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter">
                                         <motion.p
                                             onMouseOver={() => setIsActive(!isActive)}
                                             className={styles.el}
@@ -181,7 +181,7 @@ export default function Index() {
                                             initial="initial"
                                             whileHover="hovered"
                                             key={Menu}
-                                            className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold overflow-hidden font-Gotham "
+                                            className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold overflow-hidden font-Inter "
                                         >
                                             {/* <div>
                                                 <a href="">{Menu.split("").map((l, i) => (
