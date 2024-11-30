@@ -1,5 +1,7 @@
 import { cn } from "@/lib/utils";
 import Marquee from "../ui/marqueeTeam";
+import Share from '@/app/assets/svg/blank.svg'
+import Image from "next/image";
 
 const reviews = [
   {
@@ -35,7 +37,7 @@ const ReviewCard = ({ img }) => {
   return (
     <figure
       className={cn(
-        "relative w-[300px] h-full overflow-hidden"
+        "relative w-[500px] h-full overflow-hidden"
       )}
     >
       <div className="flex flex-row items-center">
@@ -55,12 +57,19 @@ const MarqueeDemo = () => {
   return (
     <div className="relative flex w-full flex-col items-center justify-center overflow-hidden rounded-lg md:shadow-xl">
       {/* Header Section */}
-      <div className="absolute flex flex-col items-center top-0 z-10 pt-44">
-        <h1 className="text-6xl font-bold">Our Team</h1>
+      <div className="absolute flex flex-col items-center top-0 z-10 pt-72">
         <div>
-          <button className="mt-6 py-2 px-8 text-2xl bg-gray-900 rounded-full text-white">
-            Discover Team
-          </button>
+          <h1 className="text-8xl font-bold">Our Team</h1>
+
+        </div>
+        <div>
+        <a className="mt-6 flex items-center px-8 py-4 text-2xl bg-[#2B2B2B] rounded-full text-white">
+              Discover Team <span><Image className="ml-4" src={Share} width={20} height={20} /></span>
+            </a>
+          <div>
+
+
+          </div>
         </div>
       </div>
       {/* Marquee Section */}
