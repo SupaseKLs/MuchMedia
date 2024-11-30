@@ -8,9 +8,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
+        background: "#1B1B1D",
         foreground: "var(--foreground)",
+        text_color: '#a0a0a0',
       },
+    },
+    fontFamily: {
+      'Inter' : ["Inter", 'san-serif'],
+      'Poppins' : ["Poppins", 'san-serif'],
+      'sans': ['ui-sans-serif', 'system-ui', ],
+      'serif': ['ui-serif', 'Georgia', ],
+      'mono': ['ui-monospace', 'SFMono-Regular', ],
+      
+    },
+    keyframes : {
+      'open-menu' : {
+        '0%' : { transform: 'scaleY(0)'},
+        '100%' : { transform: 'scaleY(1)'},
+      },
+    },
+    animation: {
+      'open-menu': 'open-menu 0.4s ease-in-out forwards',
     },
   },
   plugins: [],
