@@ -25,8 +25,14 @@ export default function Home() {
     const [isHovering, setIsHovering] = useState(false);
 
     const targetRef = useRef(null);
+
     useEffect(() => {
-        AOS.init({ duration: 500, easing: 'ease-in-out', once: true });
+        AOS.init({
+            duration: 300, 
+            easing: 'ease-out',
+            once: true, 
+            offset: 100, 
+        });
 
         const fetchData = async () => {
             try {
@@ -36,6 +42,7 @@ export default function Home() {
                 console.error(error);
             } finally {
                 setLoading(false);
+                AOS.refresh(); // Refresh AOS after data load
             }
         };
 
@@ -67,6 +74,7 @@ export default function Home() {
             setIsHovering(isInside);
         }
     };
+
     return (
         <>
             <div className="relative w-full h-screen">
@@ -137,25 +145,25 @@ export default function Home() {
                             </AnimatePresence>
                         </motion.div>
                     </Cursor>
-                    <div ref={targetRef} className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
+                    <div ref={targetRef} className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {filteredItems.map((project, index) => (
                             <Link
                                 key={project.id}
                                 href={`/CardWorks/${project.id}`}
-                                data-aos="fade-up"
-                                data-aos-delay={index * 100}
+                                data-aos="fade-up" 
+                                data-aos-delay={index * 50} 
                                 data-aos-anchor-placement="top-bottom"
                                 onMouseEnter={() => setHoveredId(project.id)}
                                 onMouseLeave={() => setHoveredId(null)}
                             >
-                                <div className="group" >
+                                <div className="group">
                                     <Image
                                         src={project.cards}
                                         alt={project.title.title1}
                                         width={500}
                                         height={400}
-                                        className={`w-full h-96 object-cover transition-all duration-300 ease-in-out 
+                                        className={`w-full h-[600px] object-cover transition-all duration-300 ease-in-out 
                                         ${hoveredId && hoveredId !== project.id ? 'blur-sm' : ''}`}
                                     />
                                 </div>
@@ -163,7 +171,6 @@ export default function Home() {
                         ))}
                     </div>
                 </div>
-
             </div>
 
             <div className="w-11/12 mx-auto mt-12">
