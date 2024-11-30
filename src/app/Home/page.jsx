@@ -28,10 +28,10 @@ function HomePage() {
                     <source src="/video/bgvideo.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute bottom-0 w-full h-96 bg-gradient-to-t from-[#040404] to-transparent" />
-                <div className="h-screen flex items-center">
+                <div className="h-screen w-full flex items-center">
                     <div className="w-11/12 mx-auto">
-                        <div className="w-[420px] md:w-[1400px]">
-                            <p className="text-white text-4xl md:text-5xl leading-[4rem] xl:leading-[6rem] xl:text-6xl">
+                        <div className="w-[370px] md:w-[1400px]">
+                            <p className="text-white text-2xl px-2 md:text-5xl leading-[4rem] xl:leading-[6rem] xl:text-6xl">
                                 MUCHMEDIA LEVERAGES MULTIMEDIA
                                 TO BUILD A BETTER WORLD, CREATING
                                 NEW OPPORTUNITIES FOR THE NEXT
@@ -81,7 +81,7 @@ function HomePage() {
                 <div className="w-11/12 mx-auto">
                     <div className="text-white font-sans flex flex-col min-h-screen">
                         <section className="flex flex-col md:flex-row justify-between items-start gap-10 py-5 w-full">
-                            <div className="flex gap-8 md:gap-20">
+                            <div className="flex gap-8 px-2 md:gap-20">
                                 <div className="text-center">
                                     <h2 className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
                                         10
@@ -161,8 +161,8 @@ function HomePage() {
             <div className="w-full flex flex-col justify-start items-center text-white py-10">
 
                 {/* Text Section */}
-                <div className="py-20 flex justify-center items-center">
-                    <p className="text-2xl md:text-5xl font-semibold px-2 w-[420px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
+                <div className="py-20 w-full flex justify-center items-center">
+                    <p className="text-2xl md:text-5xl font-semibold px-2 w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
                         MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE QUALITY MEDIA AND BE A LEADER IN DELIVERING ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR SKILLED TEAM IS DEDICATED TO PROVIDING THE BEST SERVICES TO OUR CLIENTS.
                     </p>
                 </div>
