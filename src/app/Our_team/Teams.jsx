@@ -5,7 +5,7 @@ import { delay, motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Navbar from '../components/header/index'
-import Footer from '@/app/components/footer/Footer1'
+import Footer from '@/app/components/footer/Footer2'
 
 const Teams = () => {
     const [teams, setTeams] = useState([]);

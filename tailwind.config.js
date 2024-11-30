@@ -19,8 +19,6 @@ module.exports = {
       'sans': ['ui-sans-serif', 'system-ui', ],
       'serif': ['ui-serif', 'Georgia', ],
       'mono': ['ui-monospace', 'SFMono-Regular', ],
-      'Gotham' : ['Gotham' , 'san-serif'],
-      'neue': ['"Neue Montreal"', 'sans-serif'],
       
     },
     keyframes : {
