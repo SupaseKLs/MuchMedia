@@ -11,7 +11,7 @@ import FAQSection from '../Components/question/FAQSection';
 import ReviewsSection from '../Components/question/ReviewsSection';
 import Slider2 from '../Components/SliderTwo/page2';
 
-
+// Ready
 function HomePage() {
     return (
         <>
