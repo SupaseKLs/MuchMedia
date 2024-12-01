@@ -9,25 +9,29 @@ export default function Footer() {
 
   return (
     <div
-      className='relative h-[450px] bg-background'
+      className='relative h-[700px] lg:h-[450px] bg-background'
       style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
     >
-      <div className='fixed bottom-14 h-[450px] w-full '>
-        <div className="relative bg-primary-color h-[450px]">
+      <div className='fixed bottom-14 h-[700px] lg:h-[450px] w-full '>
+        <div className="relative bg-primary-color h-[700px] lg:h-[450px]">
           <div className="">
             <div className="absolute bottom-0 sm:p-10 sm:top-16 top-24  w-full">
               <div className='flex flex-col  md:flex-row  lg:justify-between md:items-center  '>
 
                 {/* start logo */}
                 <div className="logo ml-0 lg:ml-36 w-full text-white">
-                  <div className="Logo-img  flex flex-col items-start">
-                    <div className="flex flex-col items-center">
-                      <img src='/images/logo.svg' width={250} height={250} className='max-w-[150px]' alt="" />
-                      <span className='hidden text-center mt-3 text-2xl lg:block'>MuchMedia</span>
+                  <div className="Logo-img flex flex-col items-start">
+                    <div className="flex flex-col justify-center w-full items-center md:items-start pl-0 md:pl-20">
+                      <div>
+                        <img src='/images/logo.svg' width={250} height={250} className='max-w-[150px]' alt="" />
+                      </div>
+                      <div>
+                        <h1 className='hidden text-center mt-3 text-2xl lg:block'>MuchMedia</h1>
+                      </div>
                     </div>
                   </div>
 
-                  <p className='text-5xl md:text-5xl lg:text-6xl font-semibold my-8 whitespace-nowrap font-Gotham'>Get in touch</p>
+                  <p className='text-5xl md:text-5xl lg:text-6xl font-semibold my-8 whitespace-nowrap font-Gotham pl-20 md:pl-0'>Get in touch</p>
 
 
                   <div className="contact flex ">

@@ -112,7 +112,7 @@ export default function Index() {
                                         height="80"
                                         className="cursor-pointer py-2"
                                     />
-                                    <a href="Home"></a>
+                                    <a href="/"></a>
                                 </div>
 
                                 {/* Hamburger Menu */}
@@ -146,7 +146,7 @@ export default function Index() {
                                                     transition: { duration: .2, ease: 'easeInOut' }
                                                 }}
                                             >
-                                                <a href="Home">{items}</a>
+                                                <a href="/">{items}</a>
                                             </motion.div>
                                             <motion.div
                                                 className='absolute inset-0 hover:text-text_color md:px-3 lg:px-6'
@@ -156,7 +156,7 @@ export default function Index() {
                                                     transition: { duration: .2, ease: 'easeInOut' }
                                                 }}
                                             >
-                                                <a href="Home">{items}</a>
+                                                <a href="/">{items}</a>
                                             </motion.div>
 
 
@@ -185,7 +185,7 @@ export default function Index() {
                                                     hovered: { y: "-100%" }
                                                 }}
                                             >
-                                                <a href="">{Menu}</a>
+                                                <a href="/Our_team">{Menu}</a>
                                             </motion.div>
                                             <motion.div
                                                 className='absolute inset-0 md:px-3 lg:px-6 text-white'
@@ -234,6 +234,7 @@ export default function Index() {
                                                         <div className="flex items-center">
                                                             <div>
                                                                 <motion.a
+                                                                className='text-white'
                                                                     whileHover={{ color: '#767676' }}
                                                                     href="#">Work</motion.a>
                                                             </div>
@@ -263,7 +264,7 @@ export default function Index() {
                                                                     // animate={{ opacity: 1, height: 'auto' }}
                                                                     exit={{ opacity: 0, height: 0 }} // เพิ่ม exit เพื่อสไลด์กลับ
                                                                     transition={{ ease: 'easeInOut', duration: 0.2 }}
-                                                                    className={`font-Poppins ${isDropDown ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                                                                    className={`font-Poppins ${isDropDown ? 'text-white max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                                                                 >
                                                                     <motion.li
                                                                         variants={items}
