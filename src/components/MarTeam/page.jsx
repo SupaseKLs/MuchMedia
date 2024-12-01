@@ -2,6 +2,9 @@ import { cn } from "@/lib/utils";
 import Marquee from "../ui/marqueeTeam";
 import Share from '@/app/assets/svg/blank.svg'
 import Image from "next/image";
+import { motion } from "framer-motion";
+import FramerMagnetic from '@/components/FramerMagnetic/page';
+
 
 const reviews = [
   {
@@ -63,9 +66,12 @@ const MarqueeDemo = () => {
 
         </div>
         <div>
+        <FramerMagnetic>
         <a href="../Our_team" className="mt-6 flex items-center px-8 py-4 text-2xl bg-[#2B2B2B] rounded-full text-white">
               Discover Team <span><Image className="ml-4" src={Share} width={20} height={20} /></span>
             </a>
+        </FramerMagnetic>
+        
           <div>
 
 

@@ -9,22 +9,22 @@ import Image from './Image';
 const links = [
   {
     title: "Website",
-    href: "/Home",
+    href: "/WebApp",
     src: "laptop.png"
   },
   {
     title: "Graphic",
-    href: "/shop",
+    href: "/Graphic",
     src: "Product.png"
   },
   {
     title: "Production",
-    href: "/about",
+    href: "/Production",
     src: "home.png"
   },
   {
     title: "Drawing",
-    href: "/lookbook",
+    href: "/Drawing",
     src: "lookbook.png"
   },
   

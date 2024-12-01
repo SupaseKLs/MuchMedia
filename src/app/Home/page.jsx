@@ -15,6 +15,9 @@ import MaskText from '@/components/text-wrapper/page';
 
 // Ready
 function HomePage() {
+  const HeaderPhrases = [
+    "MUCHMEDIA",
+  ];
   const customPhrases = [
     "MUCHMEDIA LEVERAGES MULTIMEDIA",
     "TO BUILD A BETTER WORLD, CREATING",
@@ -43,7 +46,7 @@ function HomePage() {
     <>
       <div className="w-full z-10">
         <div className="flex justify-center absolute bottom-20 md:bottom-4 lg:bottom-8 z-20 w-full">
-          <h1 className="text-6xl md:text-9xl lg:text-[200px] text-white">MUCHMEDIA</h1>
+          <div className="text-6xl md:text-9xl lg:text-[200px] text-white"><MaskText phrases={HeaderPhrases} /></div>
         </div>
         <video
           autoPlay
