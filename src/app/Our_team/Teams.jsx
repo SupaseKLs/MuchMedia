@@ -1,11 +1,8 @@
 'use client'
-
 import React, { useState, useEffect } from 'react';
-import { delay, motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Navbar from '../components/header/index'
-import Footer from '@/app/components/footer/Footer2'
+
 
 const Teams = () => {
     const [teams, setTeams] = useState([]);
@@ -31,11 +28,10 @@ const Teams = () => {
     return (
         <>
             <div className=''>
-                <Navbar />
 
                 <div className="w-11/12 mx-auto">
                     <div className=" mt-40 bg-red-00">
-                        <div className="header w-11/12 mx-auto">
+                        <div className="header w-11/12 mx-auto text-white">
                             <h1 className="text-7xl font-Inter font-bold">Team</h1>
                             <p className="text-2xl leading-snug my-10 font-Inter">
                                 Much Media has a team consisting of website developers, video editors, graphic designers, and illustrators who work together to create engaging content and media. The team focuses on developing user-friendly websites, producing high-quality videos, designing beautiful graphics, and creating unique illustrations, all of which effectively enhance the brand's image and communication.
@@ -52,7 +48,6 @@ const Teams = () => {
                                 className="pb-14 relative"
                                 data-aos="fade-up"
                                 data-aos-delay={(index * 100)}
-                            // Children
                             >
                                 <div className="relative group aspect-[2/3] w-full max-w-[1366px] overflow-hidden rounded-sm">
                                     <img
@@ -61,7 +56,7 @@ const Teams = () => {
                                         className="absolute rounded-md scale-[160%] inset-0 w-full h-full object-contain transition-opacity duration-500 "
                                     />
                                 </div>
-                                <h2 className="mt-4 font-Inter text-xl font-bold">{team.name}</h2>
+                                <h2 className="mt-4 font-Inter text-xl text-white font-bold">{team.name}</h2>
                                 <p className="mt-2 font-Inter text-xl font-medium text-[#999999]">{team.role}</p>
                                 <a
                                     href={team.contact_facebook}
@@ -75,7 +70,6 @@ const Teams = () => {
                         ))}
                     </div>
                 </div>
-                    <Footer />
 
             </div>
 

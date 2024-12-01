@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Image from "next/image";
 import Link from "next/link";
@@ -18,7 +19,7 @@ export default function Footer() {
               <div className='flex flex-col  md:flex-row  lg:justify-between md:items-center  '>
 
                 {/* start logo */}
-                <div className="logo ml-0 lg:ml-36 w-full">
+                <div className="logo ml-0 lg:ml-36 w-full text-white">
                   <div className="Logo-img  flex flex-col items-start">
                     <div className="flex flex-col items-center">
                       <img src='/images/logo.svg' width={250} height={250} className='max-w-[150px]' alt="" />
@@ -29,7 +30,7 @@ export default function Footer() {
                   <p className='text-5xl md:text-5xl lg:text-6xl font-semibold my-8 whitespace-nowrap font-Gotham'>Get in touch</p>
 
 
-                  <div className="contact flex">
+                  <div className="contact flex ">
                     <div className="email flex items-center md:items-start  w-full flex-col">
                       <div className="">
                         <div className="flex">
@@ -53,7 +54,7 @@ export default function Footer() {
 
                 {/* end logo */}
 
-                <div className="content flex md:justify-end justify-center w-full md:mt-0 mt-10">
+                <div className="content flex md:justify-end justify-center w-full md:mt-0 mt-10 text-white">
                   <div className='flex flex-col  gap-2 pr-20'>
                     <h3 className='mb-2  font-Poppins text-2xl uppercase font-medium text-[#ffffff80]'>Pages</h3>
 

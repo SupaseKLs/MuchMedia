@@ -6,18 +6,11 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-<<<<<<< HEAD
-    keyframes: {
-      fadeIn: {
-        '0%': { opacity: '0' },
-        '100%': { opacity: '1' },
-=======
     extend: {
       colors: {
         background: "#1B1B1D",
         foreground: "var(--foreground)",
-        text_color: '#a0a0a0',
->>>>>>> 06f1533463c125a488ad24c5dcd0930b3243167f
+        text_color: '#f0f0f0',
       },
       scaleUp: {
         '0%': { transform: 'scale(0.8)', opacity: '0' },

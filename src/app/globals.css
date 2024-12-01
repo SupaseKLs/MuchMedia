@@ -6,8 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-=======
 @font-face {
   font-family: Gotham;
   font-weight: normal;
@@ -22,19 +20,6 @@
 }
 
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
->>>>>>> 06f1533463c125a488ad24c5dcd0930b3243167f
 body {
   background: #070707;
 }

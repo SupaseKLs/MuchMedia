@@ -156,7 +156,7 @@ export default function Home() {
                                     alt={project.title.title1}
                                     width={500}
                                     height={400}
-                                    className={`w-full h-96 object-cover transition-all duration-300 ease-in-out 
+                                    className={`w-full h-[600px] object-cover transition-all duration-300 ease-in-out 
                                         ${hoveredId && hoveredId !== project.id ? 'blur-sm' : ''}`}
                                 />
                             </div>

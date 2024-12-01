@@ -157,7 +157,7 @@ export default function Home() {
                                         alt={project.title.title1}
                                         width={500}
                                         height={550}
-                                        className="w-full h-full object-cover transition-all duration-300 ease-in-out group-hover:blur-sm hover:!blur-none" // Apply group-hover to the image
+                                        className="w-full h-[600px] object-cover transition-all duration-300 ease-in-out group-hover:blur-sm hover:!blur-none" // Apply group-hover to the image
                                     />
                                 </div>
                             </Link>

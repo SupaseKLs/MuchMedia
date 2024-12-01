@@ -119,7 +119,7 @@ export default function Index() {
                                 <div className="lg:hidden mt-4">
                                     <button onClick={toggleMenu}>
                                         <Hamburger
-                                            id = 'hamburger'
+                                            id='hamburger'
                                             color="#ffff"
                                             className="mt-4 z-50"
                                             toggled={open}
@@ -139,26 +139,26 @@ export default function Index() {
                                             className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter overflow-hidden ">
 
                                             <motion.div
-                                            className='text-text_color'
+                                                className='text-text_color'
                                                 variants={{
                                                     initial: { y: 0 },
                                                     hovered: { y: "-100%" },
-                                                    transition : { duration : .2,ease: 'easeInOut'}
+                                                    transition: { duration: .2, ease: 'easeInOut' }
                                                 }}
                                             >
                                                 <a href="Home">{items}</a>
                                             </motion.div>
                                             <motion.div
-                                                className='absolute inset-0  md:px-3 lg:px-6'
+                                                className='absolute inset-0 hover:text-text_color md:px-3 lg:px-6'
                                                 variants={{
                                                     initial: { y: "100%" },
-                                                    hovered: { y : 0 },
-                                                    transition : { duration : .2, ease: 'easeInOut'}
+                                                    hovered: { y: 0 },
+                                                    transition: { duration: .2, ease: 'easeInOut' }
                                                 }}
                                             >
                                                 <a href="Home">{items}</a>
                                             </motion.div>
-                                           
+
 
                                         </motion.li>
 
@@ -166,8 +166,8 @@ export default function Index() {
                                     <li className="md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter">
                                         <motion.p
                                             onMouseOver={() => setIsActive(!isActive)}
-                                            className={styles.el}
-                                        >
+                                            className={`${styles.el} text-text_color `}>
+
                                             Work
                                         </motion.p>
                                     </li>
@@ -179,20 +179,20 @@ export default function Index() {
                                             className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold overflow-hidden font-Inter "
                                         >
                                             <motion.div
-                                            className='text-text_color'
-                                            variants = {{
-                                                initial : {y : 0},
-                                                hovered : {y : "-100%" }
-                                            }}
+                                                className='text-text_color'
+                                                variants={{
+                                                    initial: { y: 0 },
+                                                    hovered: { y: "-100%" }
+                                                }}
                                             >
                                                 <a href="">{Menu}</a>
                                             </motion.div>
                                             <motion.div
-                                            className='absolute inset-0 md:px-3 lg:px-6 text-white'
-                                            variants = {{
-                                                initial : {y : "100%"},
-                                                hovered : {y : 0 , }
-                                            }}
+                                                className='absolute inset-0 md:px-3 lg:px-6 text-white'
+                                                variants={{
+                                                    initial: { y: "100%" },
+                                                    hovered: { y: 0, }
+                                                }}
                                             >
                                                 <a href="">{Menu}</a>
                                             </motion.div>
