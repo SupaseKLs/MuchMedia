@@ -1,10 +1,10 @@
 import Image from "next/image";
-import Teams from './Our_team/Teams'
+import HomePage from '../app/Home/page'
 
 export default function Home() {
   return (
     <>
-    <Teams/>
+    <HomePage/>
     </>
   );
 }
