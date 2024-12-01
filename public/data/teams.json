@@ -1,0 +1,74 @@
+[
+    {
+        "id" : 1,
+        "name" : "Supasek Laobutsa",
+        "role" : "CEO,Developer",
+        "img" : "/images/Teams/S.avif",
+        "contact_facebook" : "https://www.facebook.com/supasek.laobutsa"
+        
+    },
+    {
+        "id" : 2,
+        "name" : "Napat Attayoko",
+        "role" : "Founder,Developer", 
+        "img" : "/images/Teams/Nine.avif",
+        "contact_facebook" : "https://www.facebook.com/napat.attayoko"
+    },
+    {
+        "id" : 3,
+        "name" : "Ammarat Jamdee",
+        "role" : "Co-Founder,Graphic Design",
+        "img" : "/images/Teams/Omie.avif",
+        "contact_facebook" : "https://www.facebook.com/ome.ammarach"
+    },
+    {
+        "id" : 4,
+        "name" : "Pooriak Russamee",
+        "role" : "Co-Founder,Developer",
+        "img" : "/images/Teams/Best.avif",
+        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+    },
+    {
+        "id" : 5,
+        "name" : "Panthong Kasujai",
+        "role" : "Developer", 
+        "img" : "/images/Teams/Fammozy.avif",
+        "contact_facebook" : "https://www.facebook.com/FAMMOZYX2"
+    },
+    {
+        "id" : 6,
+        "name" : "Tanathat Setteechaichana",
+        "role" : "Developer,Camera Man",
+        "img" : "/images/Teams/Pan.avif",
+        "contact_facebook" : "https://www.facebook.com/Plannerkk"
+    },
+    {
+        "id" : 7,
+        "name" : "Korawit Koedrod",
+        "role" : "Camera Man",
+        "img" : "/images/Teams/Tun.avif",
+        "contact_facebook" : "https://www.facebook.com/korawit.koedrod"
+    },
+    {
+        "id" : 8,
+        "name" : "Kawin Palasak",
+        "role" : "Graphic Design", 
+        "img" : "/images/Teams/Mond.avif",
+        "contact_facebook" : "https://www.facebook.com/monz.blackshark"
+    },
+    {
+        "id" : 9,
+        "name" : "Paramed Mayterangsiman",
+        "role" : "Graphic Design",
+        "img" : "/images/Teams/Bew.avif",
+        "contact_facebook" : "https://www.facebook.com/ParamedWwzZ"
+    },
+    {
+        "id" : 10,
+        "name" : "Witchayan Phokaew",
+        "role" : "UX/UI Designer",
+        "img" : "/images/Teams/Oak.jpg",
+        "contact_facebook" : "https://www.facebook.com/wwitttc"
+    }
+    
+    ]

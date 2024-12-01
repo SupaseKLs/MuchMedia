@@ -1,0 +1,16 @@
+/* page.module.css */
+.body {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  
+  .lineMask {
+    overflow: hidden;
+  }
+  
+  .lineMask p {
+    margin: 0;
+    white-space: nowrap;
+  }
+  
