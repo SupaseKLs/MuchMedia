@@ -47,7 +47,7 @@ function HomePage() {
     <>
       <div className="w-full z-10">
         <div className="flex justify-center absolute bottom-20 md:bottom-4 lg:bottom-8 z-20 w-full">
-          <div className="text-6xl md:text-9xl lg:text-[200px] text-white"><MaskText phrases={HeaderPhrases} /></div>
+          <div className="text-6xl md:text-9xl font-Inter lg:text-[200px] text-white"><MaskText phrases={HeaderPhrases} /></div>
         </div>
         <video
           autoPlay
@@ -61,7 +61,7 @@ function HomePage() {
         <div className="h-screen w-full flex items-center">
           <div className="w-11/12 mx-auto">
             <div className="w-[370px] md:w-[1400px]">
-              <div className="text-white text-2xl px-2 md:text-5xl leading-[4rem] xl:leading-[6rem] xl:text-6xl">
+              <div className="text-white text-2xl px-2 md:text-5xl leading-[4rem] font-semibold xl:leading-[6rem] xl:text-6xl">
               <MaskText phrases={customPhrases} />
                 
                 
