@@ -6,8 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
-=======
 @font-face {
   font-family: Gotham;
   font-weight: normal;
@@ -34,8 +32,8 @@
   }
 }
 
->>>>>>> 06f1533463c125a488ad24c5dcd0930b3243167f
 body {
-  background: #070707;
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
 }
-
