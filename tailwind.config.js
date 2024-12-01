@@ -7,38 +7,65 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "#1B1B1D",
-        foreground: "var(--foreground)",
-        text_color: '#f0f0f0',
-      },
-      scaleUp: {
-        '0%': { transform: 'scale(0.8)', opacity: '0' },
-        '100%': { transform: 'scale(1)', opacity: '1' },
-      },
-    },
-    animation: {
-      fadeIn: 'fadeIn 0.3s ease-in-out',
-      scaleUp: 'scaleUp 0.3s ease-in-out',
-    },
-    fontFamily: {
-      'Inter' : ["Inter", 'san-serif'],
-      'Poppins' : ["Poppins", 'san-serif'],
-      'sans': ['ui-sans-serif', 'system-ui', ],
-      'serif': ['ui-serif', 'Georgia', ],
-      'mono': ['ui-monospace', 'SFMono-Regular', ],
-      
-    },
-    keyframes : {
-      'open-menu' : {
-        '0%' : { transform: 'scaleY(0)'},
-        '100%' : { transform: 'scaleY(1)'},
-      },
-    },
-    animation: {
-      'open-menu': 'open-menu 0.4s ease-in-out forwards',
-    },
+  	extend: {
+  		colors: {
+  			background: '#1B1B1D',
+  			foreground: 'var(--foreground)',
+  			text_color: '#f0f0f0'
+  		},
+  		scaleUp: {
+  			'0%': {
+  				transform: 'scale(0.8)',
+  				opacity: '0'
+  			},
+  			'100%': {
+  				transform: 'scale(1)',
+  				opacity: '1'
+  			}
+  		},
+  		keyframes: {
+  			marquee: {
+  				from: {
+  					transform: 'translateX(0)'
+  				},
+  				to: {
+  					transform: 'translateX(calc(-100% - var(--gap)))'
+  				}
+  			},
+  			'marquee-vertical': {
+  				from: {
+  					transform: 'translateY(0)'
+  				},
+  				to: {
+  					transform: 'translateY(calc(-100% - var(--gap)))'
+  				}
+  			}
+  		},
+  		animation: {
+  			marquee: 'marquee var(--duration) infinite linear',
+  			'marquee-vertical': 'marquee-vertical var(--duration) linear infinite'
+  		}
+  	},
+  	animation: {
+  		'open-menu': 'open-menu 0.4s ease-in-out forwards'
+  	},
+  	fontFamily: {
+  		Inter: ["Inter", 'san-serif'],
+  		Poppins: ["Poppins", 'san-serif'],
+  		sans: ['ui-sans-serif', 'system-ui', ],
+  		serif: ['ui-serif', 'Georgia', ],
+  		mono: ['ui-monospace', 'SFMono-Regular', ]
+  	},
+  	keyframes: {
+  		'open-menu': {
+  			'0%': {
+  				transform: 'scaleY(0)'
+  			},
+  			'100%': {
+  				transform: 'scaleY(1)'
+  			}
+  		}
+  	}
   },
   plugins: [require("tailwindcss-animate")],
 };
