@@ -6,7 +6,7 @@ import { Slant as Hamburger } from 'hamburger-react';
 import Image from 'next/image';
 import Logo from '@/app/asset/img/logo.svg';
 import Nav from './nav';
-
+import Link from 'next/link';
 
 
 export default function Index() {
@@ -111,7 +111,7 @@ export default function Index() {
                             <div className="flex justify-between items-center font-semibold">
                                 {/* Logo */}
                                 <div className="img">
-                                <a href="/">
+                                <Link href="/">
                                     <Image
                                         src={Logo}
                                         alt="logo"
@@ -119,7 +119,7 @@ export default function Index() {
                                         height="80"
                                         className="cursor-pointer py-2"
                                     />
-                                    </a>
+                                    </Link>
                                 </div>
 
                                 {/* Hamburger Menu */}
@@ -153,7 +153,7 @@ export default function Index() {
                                                     transition: { duration: .2, ease: 'easeInOut' }
                                                 }}
                                             >
-                                                <a href="/">{items}</a>
+                                                <Link href="/">{items}</Link>
                                             </motion.div>
                                             <motion.div
                                                 className='absolute inset-0 hover:text-text_color md:px-3 lg:px-6'
@@ -163,7 +163,7 @@ export default function Index() {
                                                     transition: { duration: .2, ease: 'easeInOut' }
                                                 }}
                                             >
-                                                <a href="/">{items}</a>
+                                                <Link href="/">{items}</Link>
                                             </motion.div>
                                         </motion.li>
 
@@ -188,7 +188,7 @@ export default function Index() {
                                                 hovered: { y: "-100%" }
                                             }}
                                         >
-                                            <a href="/We">Our teams</a>
+                                            <Link href="/We">Our teams</Link>
                                         </motion.div>
                                         <motion.div
                                             className='absolute inset-0 md:px-3 lg:px-6 text-white'
@@ -197,7 +197,7 @@ export default function Index() {
                                                 hovered: { y: 0, }
                                             }}
                                         >
-                                            <a href="/We">Our teams</a>
+                                            <Link href="/We">Our teams</Link>
                                         </motion.div>
                                     </motion.li>
 
@@ -246,7 +246,7 @@ export default function Index() {
                                                     whileHover={{ color: '#767676' }}
                                                     className={`px-6 py-3 cursor-pointer text-5xl ${isDropDown ? 'text-[#767676]' : 'text-white'}`}>
 
-                                                    <a href="Home">Home</a>
+                                                    <Link href="Home">Home</Link>
 
                                                 </motion.li>
 
