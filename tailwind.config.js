@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
+    darkMode: ["class"],
+    content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -39,5 +40,5 @@ module.exports = {
       'open-menu': 'open-menu 0.4s ease-in-out forwards',
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
