@@ -1,11 +1,12 @@
+import Image from 'next/image';
+import drawing from '../assets/svg/drawing.svg';
+import graphicdesign from '../assets/svg/graphicdesign.svg';
+import motion from '../assets/svg/motion.svg';
+import photography from '../assets/svg/photography.svg';
+import titleuxui from '../assets/svg/titleuxui.svg';
+import web from '../assets/svg/web.svg';
 import Marquee from '../Components/Marquee/page';
 import MarTeam from '../Components/MarTeam/page';
-
-import Image from "next/image";
-import Code from "../assets/img/code.jpg";
-import Graphic from "../assets/img/design.jpg";
-import Drawing from "../assets/img/drawing.jpg";
-import Production from "../assets/img/production.jpg";
 import WorkCards from '../Components/OurWorksCards/page';
 import FAQSection from '../Components/question/FAQSection';
 import ReviewsSection from '../Components/question/ReviewsSection';
@@ -41,7 +42,7 @@ function HomePage() {
 
                     </div>
                 </div>
-                {/* test */}
+
                 <div className="w-11/12 py-20 mx-auto">
                     <h1 className="text-5xl lg:text-7xl font-bold text-gray-600">OUR <span className="text-white">SERVICE</span></h1>
                     <ul className="text-xl md:text-3xl xl:text-5xl pt-7 list-disc pb-20">
@@ -50,31 +51,113 @@ function HomePage() {
                         </p>
                     </ul>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-6">
-                        <div className="relative col-span-1 sm:col-span-1 lg:col-span-7 row-span-1">
-                            <Image src={Drawing} width="761" height="500" alt="Drawing" className="h-[500px] w-full rounded-xl object-cover" />
-                            <h1 className="absolute top-1 left-4 text-6xl lg:text-8xl font-bold">Drawing</h1>
-                            <h1 className="absolute bottom-2 right-6 px-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">เริ่มต้น 999.-</h1>
-                        </div>
 
-                        <div className="relative col-span-1 sm:col-span-1 lg:col-span-5 row-span-1">
-                            <Image src={Graphic} width="761" height="500" alt="Graphic" className="h-[500px] w-full rounded-xl object-cover" />
-                            <h1 className="absolute top-2 left-4 text-3xl lg:text-6xl font-bold">Graphic design</h1>
-                            <h1 className="absolute bottom-2 right-2 px-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">เริ่มต้น 999.-</h1>
-                        </div>
+<div className="h-full flex justify-center items-center">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 w-full rounded-xl p-4">
+    {/* UX/UI */}
+    <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+      <Image
+        src={titleuxui}
+        alt="UX/UI Icon"
+        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+      />
+      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+        UX/UI Design
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-black">
+        User experience is the key to successful digital platforms. Our UX/UI design services
+        prioritize usability and aesthetics to craft interfaces that are both intuitive and
+        visually appealing, ensuring your audience stays engaged.
+      </p>
+    </div>
 
-                        <div className="relative col-span-1 sm:col-span-1 lg:col-span-5 row-span-1">
-                            <Image src={Production} width="761" height="500" alt="Production" className="h-[500px] w-full rounded-xl object-cover" />
-                            <h1 className="absolute top-1 left-4 text-3xl lg:text-6xl font-bold">Production</h1>
-                            <h1 className="absolute bottom-2 right-2 px-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">เริ่มต้น 999.-</h1>
-                        </div>
+    {/* Graphic Design */}
+    <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+      <Image
+        src={graphicdesign}
+        alt="Graphic Design Icon"
+        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+      />
+      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+        Graphic Design
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-black">
+        Visual communication is at the heart of what we do. Our graphic design services bring
+        your ideas to life with innovative designs that inspire, engage, and connect with your
+        audience, leaving a lasting impression.
+      </p>
+    </div>
 
-                        <div className="relative col-span-1 sm:col-span-1 lg:col-span-7 row-span-1">
-                            <Image src={Code} width="761" height="500" alt="Code" className="h-[500px] w-full rounded-xl object-cover" />
-                            <h1 className="absolute top-2 left-4 text-6xl lg:text-8xl font-bold">Website</h1>
-                            <h1 className="absolute bottom-2 right-2 px-4 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">เริ่มต้น 999.-</h1>
-                        </div>
-                    </div>
+    {/* Web & App Development */}
+    <div className="bg-white text-white py-6 px-4 sm:px-6 xl:px-9 rounded-xl">
+      <Image
+        src={web}
+        alt="Web & App Development Icon"
+        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+      />
+      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+        Web & App Development
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-black">
+        In today’s digital age, your online presence matters more than ever. We create modern,
+        responsive websites and intuitive apps that combine functionality with stunning aesthetics,
+        ensuring an exceptional user experience.
+      </p>
+    </div>
+
+    {/* Photography */}
+    <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+      <Image
+        src={photography}
+        alt="Photography Icon"
+        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+      />
+      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+        Photography
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-black">
+        Whether it’s capturing the essence of a brand, showcasing products, or preserving precious
+        moments, our photography services are designed to tell stories through stunning visuals.
+      </p>
+    </div>
+
+    {/* Drawing */}
+    <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+      <Image
+        src={drawing}
+        alt="Drawing Icon"
+        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+      />
+      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+        Drawing
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-black">
+        From traditional sketches to digital illustrations, our drawing services focus on creativity
+        and detail. We create unique visuals that enhance your brand, tell compelling stories, or
+        simply add an artistic touch to your projects.
+      </p>
+    </div>
+
+    {/* Motion Graphic */}
+    <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-500 w-500">
+      <Image
+        src={motion}
+        alt="Motion Graphic Icon"
+        className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+      />
+      <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+        Motion Graphic
+      </h2>
+      <p className="text-sm sm:text-base lg:text-lg text-black">
+        Transform ideas into dynamic visuals with our motion services. Whether it’s animated
+        videos, motion graphics, or cinematic storytelling, we breathe life into concepts,
+        ensuring every frame captures attention and delivers your message effectively.
+      </p>
+    </div>
+  </div>
+</div>
+
+
                 </div>
 
                 {/* Plan */}
