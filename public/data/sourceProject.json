@@ -69,7 +69,7 @@
       "title1": "A furniture store where you can find high-quality and stylish items for every part of your home. From living room furniture to bedroom and kitchen pieces, we offer a wide range of products to suit all styles and needs. We also provide helpful advice on decorating to create a warm and comfortable atmosphere in your home.",
       "title2": "We offer high-quality furniture that suits every style and budget, along with friendly service and expert advice on home decor. We pay attention to every detail to make sure your home is both beautiful and functional. With a wide range of modern and stylish products, we have everything you need to create the perfect home."
     },
-    "video": "#"
+    "video": "/video/Synliving.mp4"
   },
   {
     "id": 5,
@@ -93,7 +93,7 @@
     "id": 6,
     "cards": "/images/WebApp/images/PayGuard.png",
     "banner": "/images/WebApp/images/PayGuard.png",
-    "created": "Supasek Laobutsa / ",
+    "created": "Supasek Laobutsa",
     "price": "1200",
     "developed": "1",
     "type": "UX/UI",
@@ -105,7 +105,7 @@
       "title1": "PayGuard is an app designed to protect users from fraud during money transfers. It provides security features that help prevent unauthorized transactions and safeguard your financial information. With real-time alerts and monitoring, PayGuard ensures that your money is transferred safely and securely, giving you peace of mind when making payments or sending money online.",
       "title2": "You should choose PayGuard because we focus on keeping your online money transfers safe. Our app prevents fraud and unauthorized transactions with real-time monitoring and instant alerts. With PayGuard, you can make payments and transfer money with confidence, knowing your financial information is protected."
     },
-    "video": "#"
+    "video": "/video/Payguard.mp4"
   },
   {
     "id": 7,

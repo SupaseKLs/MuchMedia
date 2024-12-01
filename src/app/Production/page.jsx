@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import ReadmoreBtn from "@/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
+import MaskText from '@/components/text-wrapper/page';
 
 const getData = async () => {
     const res = await fetch("/data/sourceProject.json");
@@ -26,7 +27,11 @@ export default function Home() {
     const [error, setError] = useState(null);
     const [activeCategory, setActiveCategory] = useState("All");
     const [isHovering, setIsHovering] = useState(false);
-
+    const ContentTeam = [
+        "Much Media has a team consisting of website developers, video editors, graphic designers, and illustrators who work together to create engaging",
+        "content and media. The team focuses on developing user-friendly websites, producing high-quality videos, designing beautiful graphics, and",
+        "creating unique illustrations, all of which effectively enhance the brand's image and communication.",
+      ];
     const targetRef = useRef(null);
     useEffect(() => {
         AOS.init({ duration: 500, easing: 'ease-in-out', once: true });
@@ -88,9 +93,9 @@ export default function Home() {
 
             <div className="w-11/12 mx-auto pt-40">
                 <div className="w-10/12 mb-8">
-                    <p className="text-white text-3xl">
-                        At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and effective functionality.
-                    </p>
+                    <div className="text-white text-3xl">
+                    <MaskText phrases={ContentTeam} />
+                    </div>
                 </div>
                 <div className="pb-8">
                     <h1 className="text-2xl font-bold mb-4">Filterable Items</h1>

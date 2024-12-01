@@ -8,7 +8,7 @@ import CategoryFilter from "@/components/Categories/page";
 import ReadmoreBtn from "@/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
-
+import MaskText from '@/components/text-wrapper/page';
 const getData = async () => {
     const res = await fetch("/data/sourceProject.json");
     if (!res.ok) throw new Error("Failed to fetch data");
@@ -21,7 +21,11 @@ export default function Home() {
     const [activeCategory, setActiveCategory] = useState("All");
     const [hoveredId, setHoveredId] = useState(null);
     const [isHovering, setIsHovering] = useState(false);
-
+    const ContentPhrases = [
+        "At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team",
+        "collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and",
+        "effective functionality.",
+      ];
     const targetRef = useRef(null);
 
     useEffect(() => {
@@ -68,9 +72,9 @@ export default function Home() {
 
             <div className="w-11/12 mx-auto pt-40 pb-10">
                 <div className="w-10/12 mb-8">
-                    <p className="text-white text-3xl mb-8">
-                        At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and effective functionality.
-                    </p>
+                    <div className="text-white text-3xl mb-8">
+                    <MaskText phrases={ContentPhrases} />
+                    </div>
                 </div>
                 <CategoryFilter
                     categories={categories}

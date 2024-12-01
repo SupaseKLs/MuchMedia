@@ -88,9 +88,9 @@ export default function Home() {
 
             <div className="w-11/12 mx-auto pt-40">
                 <div className="w-11/12 mb-8">
-                    <h1 className='text-white text-2xl lg:text-4xl'>
+                    <div className='text-white text-2xl lg:text-4xl'>
                     <MaskText phrases={ContentTeam} />
-                    </h1>
+                    </div>
                 </div>
 
                 <div className="pb-8">
