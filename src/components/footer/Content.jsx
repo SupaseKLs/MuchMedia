@@ -27,6 +27,20 @@ const Section2 = () => {
 }
 
 const Nav = () => {
+    const links1 = [
+        { text: 'Home', href: '/' },
+        { text: 'Graphic', href: '/Graphic' },
+        { text: 'Production', href: '/Production' },
+        { text: 'Website', href: '/WebApp' },
+        { text: 'Drawing', href: '/Drawing' },
+        { text: 'Our Team', href: '/We' },
+        { text: 'Contact', href: '/Contact' },
+    ];
+    const links2 = [
+        { text: 'LinkedIn', href: '/' },
+        { text: 'Facebook', href: '/' },
+        { text: 'Instragram', href: '/' },
+    ];
     return (
         <div className='flex flex-col  md:flex-row  lg:justify-between md:items-center pt-10 '>
 
@@ -70,27 +84,32 @@ const Nav = () => {
                 <div className='flex flex-col  gap-2 pr-20'>
                     <h3 className='mb-2  font-Poppins text-2xl uppercase font-medium text-[#ffffff80]'>Pages</h3>
 
-                    {["Home", "Work", "Project", "Our Team", "Review", "FAQs"].map((page) => (
+                    <div className="flex flex-col gap-2">
+                    {links1.map((link) => (
                         <a
-                            key={page}
-                            className="relative text-xl after:absolute after:bottom-0 after:left-0 after:h-[3px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-white hover:after:origin-bottom-left hover:after:scale-x-100 font-Poppins"
-                            href="">
-                            {page}
+                            key={link.text}
+                            href={link.href}
+                            className="text-xl text-blue-500 hover:underline"
+                        >
+                            {link.text}
                         </a>
                     ))}
-
+                </div>
                 </div>
 
                 <div className='flex flex-col gap-2 lg:pr-20'>
                     <h3 className='mb-2  font-Poppins text-2xl uppercase font-medium text-[#ffffff80]'>Contact</h3>
-                    {['LinkedIN', 'Facebook', 'Instagram', 'line'].map((Contact) => (
+                    <div className="flex flex-col gap-2">
+                    {links2.map((link) => (
                         <a
-                            key={Contact}
-                            className="relative text-xl after:absolute after:bottom-0 after:left-0 after:h-[3px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-white hover:after:origin-bottom-left hover:after:scale-x-100 font-Poppins"
-                            href="">
-                            {Contact}
+                            key={link.text}
+                            href={link.href}
+                            className="text-xl text-blue-500 hover:underline"
+                        >
+                            {link.text}
                         </a>
                     ))}
+                </div>
 
                 </div>
 

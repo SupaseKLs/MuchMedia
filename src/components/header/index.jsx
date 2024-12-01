@@ -68,6 +68,12 @@ export default function Index() {
     };
 
 
+    const Page1 = [
+        { text: 'Our Team', href: '/We' },
+        { text: 'Contact', href: '/Contact' },
+    ];
+
+
 
 
     // Toggle Menu for mobile
@@ -105,6 +111,7 @@ export default function Index() {
                             <div className="flex justify-between items-center font-semibold">
                                 {/* Logo */}
                                 <div className="img">
+                                <a href="/">
                                     <Image
                                         src={Logo}
                                         alt="logo"
@@ -112,7 +119,7 @@ export default function Index() {
                                         height="80"
                                         className="cursor-pointer py-2"
                                     />
-                                    <a href="/"></a>
+                                    </a>
                                 </div>
 
                                 {/* Hamburger Menu */}
@@ -158,8 +165,6 @@ export default function Index() {
                                             >
                                                 <a href="/">{items}</a>
                                             </motion.div>
-
-
                                         </motion.li>
 
                                     ))}
@@ -171,33 +176,55 @@ export default function Index() {
                                             Work
                                         </motion.p>
                                     </li>
-                                    {['Our team', 'Review', 'FAQs', 'Contact'].map((Menu) => (
-                                        <motion.li
-                                            initial="initial"
-                                            whileHover="hovered"
-                                            key={Menu}
-                                            className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold overflow-hidden font-Inter "
+                                    <motion.li
+                                        initial="initial"
+                                        whileHover="hovered"
+                                        className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold overflow-hidden font-Inter "
+                                    >
+                                        <motion.div
+                                            className='text-text_color'
+                                            variants={{
+                                                initial: { y: 0 },
+                                                hovered: { y: "-100%" }
+                                            }}
                                         >
-                                            <motion.div
-                                                className='text-text_color'
-                                                variants={{
-                                                    initial: { y: 0 },
-                                                    hovered: { y: "-100%" }
-                                                }}
-                                            >
-                                                <a href="/Our_team">{Menu}</a>
-                                            </motion.div>
-                                            <motion.div
-                                                className='absolute inset-0 md:px-3 lg:px-6 text-white'
-                                                variants={{
-                                                    initial: { y: "100%" },
-                                                    hovered: { y: 0, }
-                                                }}
-                                            >
-                                                <a href="">{Menu}</a>
-                                            </motion.div>
-                                        </motion.li>
-                                    ))}
+                                            <a href="/We">Our teams</a>
+                                        </motion.div>
+                                        <motion.div
+                                            className='absolute inset-0 md:px-3 lg:px-6 text-white'
+                                            variants={{
+                                                initial: { y: "100%" },
+                                                hovered: { y: 0, }
+                                            }}
+                                        >
+                                            <a href="/We">Our teams</a>
+                                        </motion.div>
+                                    </motion.li>
+
+                                    <motion.li
+                                        initial="initial"
+                                        whileHover="hovered"
+                                        className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold overflow-hidden font-Inter "
+                                    >
+                                        <motion.div
+                                            className='text-text_color'
+                                            variants={{
+                                                initial: { y: 0 },
+                                                hovered: { y: "-100%" }
+                                            }}
+                                        >
+                                            <a href="/Contact">Contact</a>
+                                        </motion.div>
+                                        <motion.div
+                                            className='absolute inset-0 md:px-3 lg:px-6 text-white'
+                                            variants={{
+                                                initial: { y: "100%" },
+                                                hovered: { y: 0, }
+                                            }}
+                                        >
+                                            <a href="/Contact">Contact</a>
+                                        </motion.div>
+                                    </motion.li>
                                 </ul>
 
                                 {/* Mobile Menu */}
@@ -234,7 +261,7 @@ export default function Index() {
                                                         <div className="flex items-center">
                                                             <div>
                                                                 <motion.a
-                                                                className='text-white'
+                                                                    className='text-white'
                                                                     whileHover={{ color: '#767676' }}
                                                                     href="#">Work</motion.a>
                                                             </div>
@@ -276,7 +303,7 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href=""
+                                                                            href="/We"
                                                                         >
                                                                             WEBSITE
                                                                         </motion.a>
@@ -291,7 +318,7 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href=""
+                                                                            href="/"
                                                                         >
                                                                             GRAPHIC
                                                                         </motion.a>
@@ -306,7 +333,7 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href=""
+                                                                            href="/"
                                                                         >
                                                                             PRODUCTION
                                                                         </motion.a>
@@ -317,42 +344,40 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href=""
+                                                                            href="/"
                                                                         >
                                                                             DRAWING
                                                                         </motion.a>
                                                                     </motion.li>
+
+
                                                                 </motion.ul>
                                                             )}
                                                         </AnimatePresence>
                                                     </motion.div>
-
                                                 </li>
 
-                                                {/* End Marge nav */}
-                                                {['Our Team', 'Review', 'FAQs', 'Contact'].map((Drop) => (
+
+                                                {Page1.map((page) => (
                                                     <motion.li
-                                                        key={Drop}
-                                                        initial={{ opacity: 0 }}
-                                                        animate={{ opacity: 1 }}
-                                                        exit={{ opacity: 0 }}
-                                                        transition={{ ease: "easeInOut", delay: .2 }}
-                                                        className={`px-6 py-3 cursor-pointer text-5xl ${isDropDown ? 'text-[#767676]' : 'text-white'}`}>
-
-                                                        <motion.a href="Contact"
-                                                            whileHover={{ color: '#767676' }}
-                                                        >{Drop}</motion.a>
-
-                                                    </motion.li>
-                                                ))}
-
-                                                <motion.li
+                                                    key={page.text}
                                                     initial={{ opacity: 0 }}
                                                     animate={{ opacity: 1 }}
                                                     exit={{ opacity: 0 }}
-                                                    transition={{ ease: 'easeInOut', delay: .2 }}
-                                                    className="px-6 py-3 cursor-pointer">
+                                                    transition={{ ease: "easeInOut", delay: .2 }}
+                                                    className={`px-6 py-3 cursor-pointer text-5xl ${isDropDown ? 'text-[#767676]' : 'text-white'}`}>
+                                                    <motion.a href={page.href}
+                                                        whileHover={{ color: '#767676' }}
+                                                    >{page.text}</motion.a>
                                                 </motion.li>
+                                                ))}
+
+
+
+
+
+
+
                                             </ul>
                                         </motion.div>
                                     ) : null}
@@ -360,8 +385,8 @@ export default function Index() {
                             </div>
                         </div>
                     </div>
-                </motion.div>
-            </div>
+                </motion.div >
+            </div >
         </>
     );
 }

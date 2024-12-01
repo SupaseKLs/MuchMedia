@@ -6,7 +6,20 @@ import { useEffect } from "react";
 import Content from './Content'
 
 export default function Footer() {
-
+  const links1 = [
+    { text: 'Home', href: '/' },
+    { text: 'Graphic', href: '/Graphic' },
+    { text: 'Production', href: '/Production' },
+    { text: 'Website', href: '/WebApp' },
+    { text: 'Drawing', href: '/Drawing' },
+    { text: 'Our Team', href: '/We' },
+    { text: 'Contact', href: '/Contact' },
+  ];
+  const links2 = [
+    { text: 'LinkedIn', href: 'https://www.linkedin.com/feed/' },
+    { text: 'Facebook', href: 'https://www.facebook.com/supasek.laobutsa' },
+    { text: 'Instragram', href: 'https://www.instagram.com/sucsek.studio/' },
+  ];
   return (
     <div
       className='relative h-[700px] lg:h-[450px] bg-background'
@@ -61,28 +74,36 @@ export default function Footer() {
                 <div className="content flex md:justify-end justify-center w-full md:mt-0 mt-10 text-white">
                   <div className='flex flex-col  gap-2 pr-20'>
                     <h3 className='mb-2  font-Poppins text-2xl uppercase font-medium text-[#ffffff80]'>Pages</h3>
+                    <div className='flex flex-col'>
+                      {links1.map((link) => (
+                        <a
+                          key={link.text}
+                          href={link.href}
+                          className="relative text-2xl after:absolute after:bottom-0 after:left-0 after:h-[3px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  
+      after:bg-white after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 font-Poppins"
+                        >
+                          {link.text}
+                        </a>
+                      ))}
+                    </div>
 
-                    {["Home", "Work", "Project", "Our Team", "Review", "FAQs"].map((page) => (
-                      <a
-                        key={page}
-                        className="relative text-xl after:absolute after:bottom-0 after:left-0 after:h-[3px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-white hover:after:origin-bottom-left hover:after:scale-x-100 font-Poppins"
-                        href="">
-                        {page}
-                      </a>
-                    ))}
 
                   </div>
 
                   <div className='flex flex-col gap-2 lg:pr-20'>
                     <h3 className='mb-2  font-Poppins text-2xl uppercase font-medium text-[#ffffff80]'>Contact</h3>
-                    {['LinkedIN', 'Facebook', 'Instagram', 'line'].map((Contact) => (
-                      <a
-                        key={Contact}
-                        className="relative text-xl after:absolute after:bottom-0 after:left-0 after:h-[3px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] dark:after:bg-white hover:after:origin-bottom-left hover:after:scale-x-100 font-Poppins"
-                        href="">
-                        {Contact}
-                      </a>
-                    ))}
+                    <div className='flex flex-col'>
+                      {links2.map((link) => (
+                        <a
+                          key={link.text}
+                          href={link.href}
+                          className="relative text-2xl after:absolute after:bottom-0 after:left-0 after:h-[3px] pb-1 after:w-full after:origin-bottom-right after:scale-x-0  
+      after:bg-white after:transition-transform after:duration-300 after:ease-[cubic-bezier(0.65_0.05_0.36_1)] hover:after:origin-bottom-left hover:after:scale-x-100 font-Poppins"
+                        >
+                          {link.text}
+                        </a>
+                      ))}
+                    </div>
 
                   </div>
 

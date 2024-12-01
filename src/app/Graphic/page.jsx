@@ -8,7 +8,7 @@ import CategoryFilter from "@/components/Categories/page";
 import ReadmoreBtn from "@/components/readmoreBtn/page";
 import Image from "next/image";
 import Link from "next/link";
-
+import MaskText from '@/components/text-wrapper/page';
 const getData = async () => {
     const res = await fetch("/data/sourceProject.json");
     if (!res.ok) {
@@ -25,13 +25,17 @@ export default function Home() {
     const [isHovering, setIsHovering] = useState(false);
 
     const targetRef = useRef(null);
-
+    const ContentPhrases = [
+        "At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team",
+        "collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and",
+        "effective functionality.",
+      ];
     useEffect(() => {
         AOS.init({
-            duration: 300, 
+            duration: 300,
             easing: 'ease-out',
-            once: true, 
-            offset: 100, 
+            once: true,
+            offset: 100,
         });
 
         const fetchData = async () => {
@@ -90,9 +94,9 @@ export default function Home() {
 
             <div className="w-11/12 mx-auto pt-40">
                 <div className="w-10/12 mb-8">
-                    <p className="text-white text-3xl">
-                        At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and effective functionality.
-                    </p>
+                    <div className="text-white text-3xl">
+                    <MaskText phrases={ContentPhrases} />
+                    </div>
                 </div>
                 <div className="pb-8">
                     <h1 className="text-2xl font-bold mb-4">Filterable Items</h1>
@@ -151,8 +155,8 @@ export default function Home() {
                             <Link
                                 key={project.id}
                                 href={`/CardWorks/${project.id}`}
-                                data-aos="fade-up" 
-                                data-aos-delay={index * 50} 
+                                data-aos="fade-up"
+                                data-aos-delay={index * 50}
                                 data-aos-anchor-placement="top-bottom"
                                 onMouseEnter={() => setHoveredId(project.id)}
                                 onMouseLeave={() => setHoveredId(null)}
@@ -173,17 +177,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="w-11/12 mx-auto mt-12">
-                <h1 className="text-5xl text-white mb-4">Our Works</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {["Graphic Design", "Production", "Drawing"].map((work, index) => (
-                        <div key={index} className="rounded-sm flex flex-col justify-center items-start pl-10 h-60 bg-[#222222]">
-                            <h1 className="text-3xl text-white pb-2">{work}</h1>
-                            <ReadmoreBtn />
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <ReadmoreBtn />
+
         </>
     );
 }

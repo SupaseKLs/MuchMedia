@@ -10,22 +10,22 @@ const links = [
   {
     title: "Website",
     href: "/WebApp",
-    src: "laptop.png"
+    src: "Coding.png"
   },
   {
     title: "Graphic",
     href: "/Graphic",
-    src: "Product.png"
+    src: "Graphicdesign.png"
   },
   {
     title: "Production",
     href: "/Production",
-    src: "home.png"
+    src: "Camera.png"
   },
   {
     title: "Drawing",
     href: "/Drawing",
-    src: "lookbook.png"
+    src: "Drawing.png"
   },
   
 ]

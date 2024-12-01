@@ -67,7 +67,7 @@ const MarqueeDemo = () => {
         </div>
         <div>
         <FramerMagnetic>
-        <a href="/Our_team" className="mt-6 flex items-center px-8 py-4 text-2xl bg-[#2B2B2B] rounded-full text-white">
+        <a href="/We" className="mt-6 flex items-center px-8 py-4 text-2xl bg-[#2B2B2B] rounded-full text-white">
               Discover Team <span><Image className="ml-4" src={Share} width={20} height={20} /></span>
             </a>
         </FramerMagnetic>

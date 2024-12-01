@@ -57,7 +57,7 @@ module.exports = {
 		  },
 		},
 		animation: {
-			
+			spinslow: 'spin 10s linear infinite',
 		  scaleUp: "scaleUp 0.4s ease-in-out forwards",
 		  marquee: "marquee var(--duration) infinite linear",
 		  "marquee-vertical": "marquee-vertical var(--duration) infinite linear",

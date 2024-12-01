@@ -44,21 +44,21 @@ export default function Home() {
     if (loading) return <div>Loading...</div>;
 
     const categories = ["All", "Painting", "Drawing"];
-    
+
     const filteredItems = activeCategory === "All"
         ? projects.filter((project) => project.id >= 37 && project.id <= 47)
         : projects
             .filter((project) => project.type === activeCategory)
             .filter((project) => project.id >= 37 && project.id <= 47);
 
-            const handlePositionChange = (x, y) => {
-                if (targetRef.current) {
-                    const rect = targetRef.current.getBoundingClientRect();
-                    const isInside =
-                        x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
-                    setIsHovering(isInside);
-                }
-            };
+    const handlePositionChange = (x, y) => {
+        if (targetRef.current) {
+            const rect = targetRef.current.getBoundingClientRect();
+            const isInside =
+                x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
+            setIsHovering(isInside);
+        }
+    };
     return (
         <>
             <div className="relative w-full h-screen">
@@ -67,9 +67,11 @@ export default function Home() {
             </div>
 
             <div className="w-11/12 mx-auto pt-40 pb-10">
-                <p className="text-white text-3xl mb-8">
-                    At MuchMedia, we deliver creative websites with user-friendly interfaces and functionality.
-                </p>
+                <div className="w-10/12 mb-8">
+                    <p className="text-white text-3xl mb-8">
+                        At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and effective functionality.
+                    </p>
+                </div>
                 <CategoryFilter
                     categories={categories}
                     activeCategory={activeCategory}
@@ -78,7 +80,7 @@ export default function Home() {
             </div>
 
             <div className="w-11/12 mx-auto">
-            <div className="flex h-full w-full items-center justify-center">
+                <div className="flex h-full w-full items-center justify-center">
                     <Cursor
                         attachToParent
                         variants={{
@@ -119,42 +121,31 @@ export default function Home() {
                         </motion.div>
                     </Cursor>
                     <div ref={targetRef} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                    {filteredItems.map((project, index) => (
-                        <Link
-                            key={project.id}
-                            href={`/CardWorks/${project.id}`}
-                            data-aos="fade-up"
-                            data-aos-delay={index * 100}
-                            onMouseEnter={() => setHoveredId(project.id)}
-                            onMouseLeave={() => setHoveredId(null)}
-                        >
-                            <div className="group">
-                                <Image
-                                    src={project.cards}
-                                    alt={project.title.title1}
-                                    width={500}
-                                    height={400}
-                                    className={`w-full h-[600px] object-cover transition-all duration-300 ease-in-out 
+                        {filteredItems.map((project, index) => (
+                            <Link
+                                key={project.id}
+                                href={`/CardWorks/${project.id}`}
+                                data-aos="fade-up"
+                                data-aos-delay={index * 100}
+                                onMouseEnter={() => setHoveredId(project.id)}
+                                onMouseLeave={() => setHoveredId(null)}
+                            >
+                                <div className="group">
+                                    <Image
+                                        src={project.cards}
+                                        alt={project.title.title1}
+                                        width={500}
+                                        height={400}
+                                        className={`w-full h-[600px] object-cover transition-all duration-300 ease-in-out 
                                         ${hoveredId && hoveredId !== project.id ? 'blur-sm' : ''}`}
-                                />
-                            </div>
-                        </Link>
-                    ))}
-                     </div>
+                                    />
+                                </div>
+                            </Link>
+                        ))}
+                    </div>
                 </div>
             </div>
-
-            <div className="w-11/12 mx-auto mt-12">
-                <h1 className="text-5xl text-white mb-4">Our Works</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {["Graphic Design", "Production", "Drawing"].map((work, index) => (
-                        <div key={index} className="rounded-sm flex flex-col justify-center items-start pl-10 h-60 bg-[#222222]">
-                            <h1 className="text-3xl text-white pb-2">{work}</h1>
-                            <ReadmoreBtn />
-                        </div>
-                    ))}
-                </div>
-            </div>
+            <ReadmoreBtn />
         </>
     );
 }
