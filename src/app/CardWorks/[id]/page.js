@@ -1,6 +1,5 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
-import Image from "next/image";
 import Play from "@/app/assets/play.svg";
 import Pause from "@/app/assets/pause.svg";
 import Cursor from "@/components/Cursor/cursor_core/page";
@@ -198,7 +197,7 @@ const ProjectPage = ({ params }) => {
                       className="bg-white opacity-70 p-10 rounded-full"
                       onClick={togglePlayPause}
                     >
-                      <Image
+                      <img
                         className="w-12"
                         src={isPlaying ? Pause : Play}
                         alt={isPlaying ? "Pause" : "Play"}
