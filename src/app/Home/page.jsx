@@ -1,5 +1,5 @@
-import Marquee from '../Components/Marquee/page'
-import MarTeam from '../Components/MarTeam/page'
+import Marquee from '../Components/Marquee/page';
+import MarTeam from '../Components/MarTeam/page';
 
 import Image from "next/image";
 import Code from "../assets/img/code.jpg";
@@ -7,9 +7,9 @@ import Graphic from "../assets/img/design.jpg";
 import Drawing from "../assets/img/drawing.jpg";
 import Production from "../assets/img/production.jpg";
 import WorkCards from '../Components/OurWorksCards/page';
-import Slider2 from '../Components/SliderTwo/page2';
 import FAQSection from '../Components/question/FAQSection';
 import ReviewsSection from '../Components/question/ReviewsSection';
+import Slider2 from '../Components/SliderTwo/page2';
 
 
 function HomePage() {
@@ -41,7 +41,7 @@ function HomePage() {
 
                     </div>
                 </div>
-
+                {/* test */}
                 <div className="w-11/12 py-20 mx-auto">
                     <h1 className="text-5xl lg:text-7xl font-bold text-gray-600">OUR <span className="text-white">SERVICE</span></h1>
                     <ul className="text-xl md:text-3xl xl:text-5xl pt-7 list-disc pb-20">
