@@ -584,8 +584,8 @@
 
   {
     "id": 33,
-    "cards": "/images/Production/images/home.png",
-    "banner": "/images/Production/images/home.png",
+    "cards": "/images/Production/images/intro.jpg",
+    "banner": "/images/Production/images/intro.jpg",
     "created": "Our team",
     "price": "3500",
     "developed": "5",
@@ -602,8 +602,8 @@
   },
   {
     "id": 34,
-    "cards": "/images/Production/images/home.png",
-    "banner": "/images/Production/images/home.png",
+    "cards": "/images/Production/images/final-borad.jpg",
+    "banner": "/images/Production/images/final-borad.jpg",
     "created": "Our team",
     "price": "3500",
     "developed": "7",
@@ -620,8 +620,8 @@
   },
   {
     "id": 35,
-    "cards": "/images/Production/images/home.png",
-    "banner": "/images/Production/images/home.png",
+    "cards": "/images/Production/images/maxresdefault.webp",
+    "banner": "/images/Production/images/maxresdefault.webp",
     "created": "Our team",
     "price": "3500",
     "developed": "7",

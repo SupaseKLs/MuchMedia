@@ -62,43 +62,148 @@ function HomePage() {
           <div className="w-11/12 mx-auto">
             <div className="w-[370px] md:w-[1400px]">
               <div className="text-white text-2xl px-2 md:text-5xl leading-[4rem] font-semibold xl:leading-[6rem] xl:text-6xl">
-              <MaskText phrases={customPhrases} />
-                
-                
+                <MaskText phrases={customPhrases} />
               </div>
             </div>
-
           </div>
         </div>
-        
+        <div className="w-11/12 py-20 mx-auto">
+          <h1 className="text-5xl lg:text-7xl font-bold text-gray-600">OUR <span className="text-white">SERVICE</span></h1>
+          <ul className="text-xl md:text-3xl xl:text-5xl pt-7 list-disc pb-20">
+            <p className='w-full text-white text-2xl md:text-xl xl:text-2xl'>
+              • We deliver comprehensive solutions designed to drive your business forward
+            </p>
+          </ul>
+          <div className="h-full flex justify-center items-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 w-full rounded-xl p-4">
+              {/* UX/UI */}
+              <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+                <Image
+                  src={titleuxui}
+                  alt="UX/UI Icon"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                />
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+                  UX/UI Design
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg text-black">
+                  User experience is the key to successful digital platforms. Our UX/UI design services
+                  prioritize usability and aesthetics to craft interfaces that are both intuitive and
+                  visually appealing, ensuring your audience stays engaged.
+                </p>
+              </div>
+
+              {/* Graphic Design */}
+              <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+                <Image
+                  src={graphicdesign}
+                  alt="Graphic Design Icon"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                />
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+                  Graphic Design
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg text-black">
+                  Visual communication is at the heart of what we do. Our graphic design services bring
+                  your ideas to life with innovative designs that inspire, engage, and connect with your
+                  audience, leaving a lasting impression.
+                </p>
+              </div>
+
+              {/* Web & App Development */}
+              <div className="bg-white text-white py-6 px-4 sm:px-6 xl:px-9 rounded-xl">
+                <Image
+                  src={web}
+                  alt="Web & App Development Icon"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                />
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+                  Web & App Development
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg text-black">
+                  In today’s digital age, your online presence matters more than ever. We create modern,
+                  responsive websites and intuitive apps that combine functionality with stunning aesthetics,
+                  ensuring an exceptional user experience.
+                </p>
+              </div>
+
+              {/* Photography */}
+              <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+                <Image
+                  src={photography}
+                  alt="Photography Icon"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                />
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+                  Photography
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg text-black">
+                  Whether it’s capturing the essence of a brand, showcasing products, or preserving precious
+                  moments, our photography services are designed to tell stories through stunning visuals.
+                </p>
+              </div>
+
+              {/* Drawing */}
+              <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-auto">
+                <Image
+                  src={drawing}
+                  alt="Drawing Icon"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                />
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+                  Drawing
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg text-black">
+                  From traditional sketches to digital illustrations, our drawing services focus on creativity
+                  and detail. We create unique visuals that enhance your brand, tell compelling stories, or
+                  simply add an artistic touch to your projects.
+                </p>
+              </div>
+
+              {/* Motion Graphic */}
+              <div className="bg-white text-white py-6 px-4 sm:px-6 rounded-xl h-500 w-500">
+                <Image
+                  src={motion}
+                  alt="Motion Graphic Icon"
+                  className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20"
+                />
+                <h2 className="text-lg sm:text-xl lg:text-2xl font-bold py-4 text-black">
+                  Motion Graphic
+                </h2>
+                <p className="text-sm sm:text-base lg:text-lg text-black">
+                  Transform ideas into dynamic visuals with our motion services. Whether it’s animated
+                  videos, motion graphics, or cinematic storytelling, we breathe life into concepts,
+                  ensuring every frame captures attention and delivers your message effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
 
         {/* Plan */}
         <div className="w-11/12 mx-auto">
           <div className="text-white font-sans flex flex-col min-h-screen">
             <section className="flex flex-col md:flex-row justify-between items-start gap-10 py-5 w-full">
               <div className="flex gap-8 px-2 md:gap-20">
+
                 <div className="text-center">
                   <div className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
-                  <NumberTicker className="font-Poppins text-7xl text-purple-700" value="10" />
+                    <NumberTicker className="font-Poppins text-9xl text-purple-700" value="2" />
                   </div>
                   <p className="text-white text-xl text-left">Years of<br /> Experience</p>
                 </div>
                 <div className="text-center">
-                  <div className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
-                  <NumberTicker className="font-Poppins text-7xl text-purple-700" value="10" />
-                  </div>
-                  <p className="text-white text-xl text-left">Years of<br /> Experience</p>
-                </div>
-                <div className="text-center">
-                  <div className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="100">
-                  <NumberTicker className="font-Poppins text-7xl text-purple-700" value="100" /><span>+</span>
+                  <div className="count font-semibold text-9xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="100">
+                    <NumberTicker className="font-Poppins text-9xl text-purple-700" value="47" /><span>+</span>
                   </div>
                   <p className="text-white text-xl text-left" >Completed<br /> Project</p>
                 </div>
               </div>
               <div className="w-full md:w-5/12 font-semibold text-4xl text-left">
                 <div>
-                <MaskText phrases={ProPhrases} />
+                  <MaskText phrases={ProPhrases} />
                 </div>
               </div>
             </section>
@@ -136,8 +241,7 @@ function HomePage() {
               </div>
               <div className="w-full md:w-[600px]">
                 <div className="text-xl md:text-2xl font-semibold leading-loose gap-11">
-                  
-                <MaskText phrases={CreativePhrases} />
+                  <MaskText phrases={CreativePhrases} />
                 </div>
               </div>
             </div>
@@ -156,12 +260,11 @@ function HomePage() {
         {/* Text Section */}
         <div className="py-20 w-full flex justify-center items-center">
           <div className="text-2xl md:text-5xl font-semibold px-2 w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
-          <MaskText phrases={MuchPhrases} />
+            <MaskText phrases={MuchPhrases} />
           </div>
         </div>
 
         <div className="w-full flex justify-center items-center py-10">
-
           {/* Team Section */}
           <MarTeam />
         </div>

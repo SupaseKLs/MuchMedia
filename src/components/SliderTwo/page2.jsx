@@ -76,7 +76,7 @@ export default function App() {
                 >
                   <div className="inline-flex items-center font-bold text-sm text-white dark:text-black">
                     Drag
-                    <Image className="pl-2" src={Drag}></Image>
+                    <Image className="pl-2" src={Drag} alt="Drag"></Image>
                   </div>
                 </motion.div>
               )}
