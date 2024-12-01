@@ -45,7 +45,7 @@ const ReviewCard = ({ img }) => {
           className="rounded-sm w-full h-full"
           width="32"
           height="32"
-          alt=""
+          alt="img"
           src={img}
         />
       </div>
@@ -63,7 +63,7 @@ const MarqueeDemo = () => {
 
         </div>
         <div>
-        <a className="mt-6 flex items-center px-8 py-4 text-2xl bg-[#2B2B2B] rounded-full text-white">
+        <a href="../Our_team" className="mt-6 flex items-center px-8 py-4 text-2xl bg-[#2B2B2B] rounded-full text-white">
               Discover Team <span><Image className="ml-4" src={Share} width={20} height={20} /></span>
             </a>
           <div>

@@ -5,15 +5,40 @@ import motion from '../assets/svg/motion.svg';
 import photography from '../assets/svg/photography.svg';
 import titleuxui from '../assets/svg/titleuxui.svg';
 import web from '../assets/svg/web.svg';
-import Marquee from '../Components/Marquee/page';
-import MarTeam from '../Components/MarTeam/page';
-import WorkCards from '../Components/OurWorksCards/page';
-import FAQSection from '../Components/question/FAQSection';
-import ReviewsSection from '../Components/question/ReviewsSection';
-import Slider2 from '../Components/SliderTwo/page2';
+import Marquee from '../../components/Marquee/page';
+import MarTeam from '../../components/MarTeam/page';
+import WorkCards from '../../components/OurWorksCards/page';
+import FAQSection from '../../components/question/FAQSection';
+import ReviewsSection from '../../components/question/ReviewsSection';
+import Slider2 from '../../components/SliderTwo/page2';
+import MaskText from '@/components/text-wrapper/page';
 
 // Ready
 function HomePage() {
+  const customPhrases = [
+    "MUCHMEDIA LEVERAGES MULTIMEDIA",
+    "TO BUILD A BETTER WORLD, CREATING",
+    "NEW OPPORTUNITIES FOR THE NEXT",
+    "GENERATION TO SHAPE THE FUTURE"
+  ];
+  const ProPhrases = [
+    "All aspects of the projects were",
+    "fully developed by our team. Here",
+    "are some of our recent favorites.",
+  ];
+  const CreativePhrases = [
+    "Creative activities help strengthen friendships by",
+    "creating opportunities to make friends, share",
+    "experiences, and support each other and learn to",
+    "support each other, creating meaningful relationships.",
+  ];
+  const MuchPhrases = [
+    "MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE",
+    "QUALITY MEDIA AND BE A LEADER IN DELIVERING",
+    "ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR",
+    "SKILLED TEAM IS DEDICATED TO PROVIDING THE BEST",
+    "SERVICES TO OUR CLIENTS.",
+  ];
   return (
     <>
       <div className="w-full z-10">
@@ -32,12 +57,11 @@ function HomePage() {
         <div className="h-screen w-full flex items-center">
           <div className="w-11/12 mx-auto">
             <div className="w-[370px] md:w-[1400px]">
-              <p className="text-white text-2xl px-2 md:text-5xl leading-[4rem] xl:leading-[6rem] xl:text-6xl">
-                MUCHMEDIA LEVERAGES MULTIMEDIA
-                TO BUILD A BETTER WORLD, CREATING
-                NEW OPPORTUNITIES FOR THE NEXT
-                GENERATION TO SHAPE THE FUTURE
-              </p>
+              <div className="text-white text-2xl px-2 md:text-5xl leading-[4rem] xl:leading-[6rem] xl:text-6xl">
+              <MaskText phrases={customPhrases} />
+                
+                
+              </div>
             </div>
 
           </div>
@@ -184,10 +208,10 @@ function HomePage() {
                   <p className="text-white text-xl text-left" >Completed<br /> Project</p>
                 </div>
               </div>
-              <div className="w-full md:w-4/12 font-semibold text-4xl text-left">
-                <p>
-                  All aspects of the projects were fully developed by our team. Here are some of our recent favorites.
-                </p>
+              <div className="w-full md:w-5/12 font-semibold text-4xl text-left">
+                <div>
+                <MaskText phrases={ProPhrases} />
+                </div>
               </div>
             </section>
 
@@ -223,12 +247,10 @@ function HomePage() {
                 </h1>
               </div>
               <div className="w-full md:w-[600px]">
-                <p className="text-xl md:text-2xl font-semibold leading-loose gap-11">
-                  Creative activities help strengthen friendships by
-                  creating opportunities to make friends, share
-                  experiences, and support each other and learn to
-                  support each other, creating meaningful relationships.
-                </p>
+                <div className="text-xl md:text-2xl font-semibold leading-loose gap-11">
+                  
+                <MaskText phrases={CreativePhrases} />
+                </div>
               </div>
             </div>
 
@@ -245,9 +267,9 @@ function HomePage() {
 
         {/* Text Section */}
         <div className="py-20 w-full flex justify-center items-center">
-          <p className="text-2xl md:text-5xl font-semibold px-2 w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
-            MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE QUALITY MEDIA AND BE A LEADER IN DELIVERING ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR SKILLED TEAM IS DEDICATED TO PROVIDING THE BEST SERVICES TO OUR CLIENTS.
-          </p>
+          <div className="text-2xl md:text-5xl font-semibold px-2 w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
+          <MaskText phrases={MuchPhrases} />
+          </div>
         </div>
 
         <div className="w-full flex justify-center items-center py-10">

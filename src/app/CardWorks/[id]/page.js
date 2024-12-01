@@ -110,11 +110,11 @@ const ProjectPage = ({ params }) => {
                 <p className="text-gray-600 text-md font-semibold pt-2">Developed by</p>
             </div>
             <div className="text-white py-3 md:pt-10">
-            <NumberTicker className="text-5xl" value={project.price} /><span className="text-5xl"> Bath</span>
+            <NumberTicker className="text-5xl text-white" value={project.price} /><span className="text-5xl"> Bath</span>
                 <h1 className="text-md font-semibold pt-2">Price</h1>
             </div>
             <div className="text-white py-3 md:pt-10">
-            <NumberTicker className="text-5xl" value={project.developed} /><span className="text-5xl"> Days</span>
+            <NumberTicker className="text-5xl text-white" value={project.developed} /><span className="text-5xl"> Days</span>
                 <h1 className="text-md font-semibold pt-2">Development</h1>
             </div>
           </div>
