@@ -138,36 +138,32 @@ export default function Index() {
 
                                 {/* Desktop Menu */}
                                 <ul className="hidden lg:flex">
-                                    {['Home'].map((items, i) => (
-                                        <motion.li
-                                            initial="initial"
-                                            whileHover="hovered"
-                                            key={i}
-                                            className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter overflow-hidden ">
+                                <motion.li
+                                        initial="initial"
+                                        whileHover="hovered"
+                                        className="relative md:px-3 lg:px-6 cursor-pointer text-lg font-semibold overflow-hidden font-Inter "
+                                    >
+                                        <motion.div
+                                            className='text-text_color'
+                                            variants={{
+                                                initial: { y: 0 },
+                                                hovered: { y: "-100%" }
+                                            }}
+                                        >
+                                            <Link href="/">Home</Link>
+                                        </motion.div>
+                                        <motion.div
+                                            className='absolute inset-0 md:px-3 lg:px-6 text-white'
+                                            variants={{
+                                                initial: { y: "100%" },
+                                                hovered: { y: 0, }
+                                            }}
+                                        >
+                                            <Link href="/">Home</Link>
+                                        </motion.div>
+                                    </motion.li>
 
-                                            <motion.div
-                                                className='text-text_color'
-                                                variants={{
-                                                    initial: { y: 0 },
-                                                    hovered: { y: "-100%" },
-                                                    transition: { duration: .2, ease: 'easeInOut' }
-                                                }}
-                                            >
-                                                <Link href="/">{items}</Link>
-                                            </motion.div>
-                                            <motion.div
-                                                className='absolute inset-0 hover:text-text_color md:px-3 lg:px-6'
-                                                variants={{
-                                                    initial: { y: "100%" },
-                                                    hovered: { y: 0 },
-                                                    transition: { duration: .2, ease: 'easeInOut' }
-                                                }}
-                                            >
-                                                <Link href="/">{items}</Link>
-                                            </motion.div>
-                                        </motion.li>
-
-                                    ))}
+                                   
                                     <li className="md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter">
                                         <div className='flex items-center'>
                                             <motion.p

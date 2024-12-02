@@ -301,7 +301,8 @@ function HomePage() {
       <div style={{
         background: `radial-gradient(circle at bottom, rgba(196, 255, 255, 0.4), transparent),linear-gradient(to top, #ffffff, #ffffff)`,
       }}
-      ><FAQSection />
+      >
+        <FAQSection />
       </div>
       <div>
 
