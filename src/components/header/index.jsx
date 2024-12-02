@@ -111,14 +111,14 @@ export default function Index() {
                             <div className="flex justify-between items-center font-semibold">
                                 {/* Logo */}
                                 <div className="img">
-                                <Link href="/">
-                                    <Image
-                                        src={Logo}
-                                        alt="logo"
-                                        width="80"
-                                        height="80"
-                                        className="cursor-pointer py-2"
-                                    />
+                                    <Link href="/">
+                                        <Image
+                                            src={Logo}
+                                            alt="logo"
+                                            width="80"
+                                            height="80"
+                                            className="cursor-pointer py-2"
+                                        />
                                     </Link>
                                 </div>
 
@@ -169,12 +169,24 @@ export default function Index() {
 
                                     ))}
                                     <li className="md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter">
-                                        <motion.p
-                                            onClick={() => setIsActive(!isActive)}
-                                            className={`${styles.el} text-text_color `}>
+                                        <div className='flex items-center'>
+                                            <motion.p
+                                                onClick={() => setIsActive(!isActive)}
+                                                className={`${styles.el} text-text_color `}>
 
-                                            Work
-                                        </motion.p>
+                                                Work
+                                            </motion.p>
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="25"
+                                                height="25"
+                                                viewBox="0 0 24 24"
+                                                fill="#ffff"
+                                                className={`ml-2 dropdown-arr transition-transform duration-300 ${isActive ? 'rotate-180' : ''}`}
+                                            >
+                                                <path d="M16.293 9.293L12 13.586 7.707 9.293 6.293 10.707 12 16.414 17.707 10.707z"></path>
+                                            </svg>
+                                        </div>
                                     </li>
                                     <motion.li
                                         initial="initial"
@@ -237,7 +249,7 @@ export default function Index() {
                                             transition={{ ease: [0.76, 0, 0.24, 1], delay: 0.1, duration: 0.5 }}
                                             className="absolute top-0 left-0 -z-40 bg-background h-full w-full box-border"
                                         >
-                                            <ul className="flex flex-col w-full pt-32 font-neue  transition-transform duration-300 lg:hidden">
+                                            <ul className="flex flex-col w-full pt-32 font-neue transition-transform duration-300 lg:hidden">
                                                 <motion.li
                                                     initial={{ opacity: 0 }}
                                                     animate={{ opacity: 1 }}
@@ -258,7 +270,7 @@ export default function Index() {
                                                         transition={{ ease: 'easeInOut', delay: .2 }}
 
                                                         className={`nav-link flex flex-col  transition-transform duration-300 '}`} onClick={toggleDrop}>
-                                                        <div className="flex items-center">
+                                                        <div className="flex">
                                                             <div>
                                                                 <motion.a
                                                                     className='text-white'
@@ -360,16 +372,16 @@ export default function Index() {
 
                                                 {Page1.map((page) => (
                                                     <motion.li
-                                                    key={page.text}
-                                                    initial={{ opacity: 0 }}
-                                                    animate={{ opacity: 1 }}
-                                                    exit={{ opacity: 0 }}
-                                                    transition={{ ease: "easeInOut", delay: .2 }}
-                                                    className={`px-6 py-3 cursor-pointer text-5xl font-Poppins font-semibold  ${isDropDown ? 'text-[#767676]' : 'text-white'}`}>
-                                                    <motion.a href={page.href}
-                                                        whileHover={{ color: '#767676' }}
-                                                    >{page.text}</motion.a>
-                                                </motion.li>
+                                                        key={page.text}
+                                                        initial={{ opacity: 0 }}
+                                                        animate={{ opacity: 1 }}
+                                                        exit={{ opacity: 0 }}
+                                                        transition={{ ease: "easeInOut", delay: .2 }}
+                                                        className={`px-6 py-3 cursor-pointer text-5xl font-Poppins font-semibold  ${isDropDown ? 'text-[#767676]' : 'text-white'}`}>
+                                                        <motion.a href={page.href}
+                                                            whileHover={{ color: '#767676' }}
+                                                        >{page.text}</motion.a>
+                                                    </motion.li>
                                                 ))}
 
 
