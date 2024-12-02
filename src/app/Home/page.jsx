@@ -49,7 +49,7 @@ function HomePage() {
           autoPlay
           muted
           loop
-          className="w-full h-screen object-cover"
+          className="relative w-full h-screen object-cover"
         >
           <source src="/video/bgvideo.mp4" type="video/mp4" />
         </video>
@@ -209,7 +209,7 @@ function HomePage() {
                 <div className='hidden md:block font-semibold text-4xl text-left'>
                   <MaskText phrases={ProPhrases} />
                 </div>
-                <p className='block md:hidden'>
+                <p className='block md:hidden font-semibold text-4xl text-left'>
                 All aspects of the projects were
     fully developed by our team. Here
     are some of our recent favorites.
@@ -275,7 +275,7 @@ function HomePage() {
             <MaskText phrases={MuchPhrases} />
           </div>
           <div className='block md:hidden'>
-            <p className="text-xl md:text-5xl font-semibold px-2 w-[350px] md:w-[1300px] leading-[1.5rem] xl:leading-[5rem]">
+            <p className="text-xl md:text-5xl font-semibold px-2 w-[350px] md:w-[1300px] leading-[2.5rem] xl:leading-[5rem]">
               MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE
               QUALITY MEDIA AND BE A LEADER IN DELIVERING
               ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR

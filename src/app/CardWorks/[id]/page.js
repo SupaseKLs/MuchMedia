@@ -4,7 +4,8 @@ import Play from "@/app/assets/play.svg";
 import Pause from "@/app/assets/pause.svg";
 import Cursor from "@/components/Cursor/cursor_core/page";
 import { AnimatePresence, motion } from "framer-motion";
-import NumberTicker from '@/components/Counter/page'
+import NumberTicker from "@/components/Counter/page";
+import Image from "next/image";
 
 const getData = async () => {
   const res = await fetch("/data/sourceProject.json");
@@ -19,9 +20,7 @@ const ProjectPage = ({ params }) => {
   const [loading, setLoading] = useState(true);
   const [id, setId] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showControls, setShowControls] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isHovering, setIsHovering] = useState(false);
 
   const videoRef = useRef(null);
   const targetRef = useRef(null);
@@ -43,7 +42,7 @@ const ProjectPage = ({ params }) => {
           const project = data.find((item) => item.id === parseInt(id));
           setProject(project);
         } catch (error) {
-          console.error("Error fetching product:", error);
+          console.error("Error fetching project:", error);
           setProject(null);
         } finally {
           setLoading(false);
@@ -56,32 +55,16 @@ const ProjectPage = ({ params }) => {
 
   const togglePlayPause = () => {
     if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
-      } else {
-        videoRef.current.play();
-        videoRef.current.muted = false;
-      }
+      const video = videoRef.current;
+      const isPlaying = !video.paused;
+      isPlaying ? video.pause() : video.play();
+      video.muted = !isPlaying;
       setIsPlaying(!isPlaying);
     }
   };
 
-  const handleImageClick = () => {
-    setIsModalOpen(true);
-  };
-
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
-
-  const handlePositionChange = (x, y) => {
-    if (targetRef.current) {
-      const rect = targetRef.current.getBoundingClientRect();
-      const isInside =
-        x >= rect.left && x <= rect.right && y >= rect.top && y <= rect.bottom;
-      setIsHovering(isInside);
-    }
-  };
+  const handleImageClick = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   if (loading) return <div>Loading...</div>;
   if (!project) return <div>Project not found</div>;
@@ -102,21 +85,27 @@ const ProjectPage = ({ params }) => {
       </div>
 
       <div className="w-11/12 mx-auto">
-
-          <div className="md:flex-row md:flex justify-between">
-            <div className="py-3 md:pt-10">
-                <h1 className="text-white text-5xl">{project.created}</h1>
-                <p className="text-gray-600 text-md font-semibold pt-2">Developed by</p>
-            </div>
-            <div className="text-white py-3 md:pt-10">
-            <NumberTicker className="text-5xl text-white" value={project.price} /><span className="text-5xl"> Bath</span>
-                <h1 className="text-md font-semibold pt-2">Price</h1>
-            </div>
-            <div className="text-white py-3 md:pt-10">
-            <NumberTicker className="text-5xl text-white" value={project.developed} /><span className="text-5xl"> Days</span>
-                <h1 className="text-md font-semibold pt-2">Development</h1>
-            </div>
+        <div className="md:flex-row md:flex justify-between">
+          <div className="py-3 md:pt-10">
+            <h1 className="text-white text-5xl">{project.created}</h1>
+            <p className="text-gray-600 text-lg font-bold pt-2">
+              Developed by
+            </p>
           </div>
+          <div className="text-white py-3 md:pt-10">
+            <NumberTicker className="text-5xl text-white" value={project.price} />
+            <span className="text-5xl"> Bath</span>
+            <h1 className="text-lg font-bold pt-2">Price</h1>
+          </div>
+          <div className="text-white py-3 md:pt-10">
+            <NumberTicker
+              className="text-5xl text-white"
+              value={project.developed}
+            />
+            <span className="text-5xl"> Days</span>
+            <h1 className="text-lg font-bold pt-2">Development</h1>
+          </div>
+        </div>
 
         <div className="w-full lg:w-9/12">
           <h1 className="font-bold text-6xl py-10 text-white">
@@ -127,48 +116,9 @@ const ProjectPage = ({ params }) => {
 
         <div>
           <div className="flex h-full w-full items-center justify-center">
-            <Cursor
-              attachToParent
-              variants={{
-                initial: { scale: 0.3, opacity: 0 },
-                animate: { scale: 1, opacity: 1 },
-                exit: { scale: 0.3, opacity: 0 },
-              }}
-              springConfig={{
-                bounce: 0.001,
-              }}
-              transition={{
-                ease: "easeInOut",
-                duration: 0.15,
-              }}
-              onPositionChange={handlePositionChange}
-            >
-              <motion.div
-                animate={{
-                  width: isHovering ? 80 : 16,
-                  height: isHovering ? 32 : 16,
-                }}
-                className="flex items-center justify-center rounded-[24px] bg-gray-500/40 backdrop-blur-md dark:bg-gray-300/40"
-              >
-                <AnimatePresence>
-                  {isHovering && (
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.6 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0, scale: 0.6 }}
-                      className="inline-flex w-full items-center justify-center"
-                    >
-                      <div className="inline-flex items-center text-sm text-white dark:text-black">
-                        More +
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </motion.div>
-            </Cursor>
             {isImageFallback ? (
               <div ref={targetRef}>
-                <img
+                <Image
                   className="w-11/12 mx-auto h-full rounded-lg"
                   src={project.banner}
                   alt={project.title.title1}
@@ -177,10 +127,12 @@ const ProjectPage = ({ params }) => {
               </div>
             ) : (
               <div
-              ref={targetRef}
+                ref={targetRef}
                 className="relative"
-                onMouseEnter={() => setShowControls(true)}
-                onMouseLeave={() => setShowControls(false)}
+                onClick={() => {
+                  videoRef.current?.play();
+                  setIsPlaying(true);
+                }}
               >
                 <video
                   ref={videoRef}
@@ -188,23 +140,23 @@ const ProjectPage = ({ params }) => {
                   loop
                   muted
                   autoPlay
+                  playsinline
+                  loading="lazy"
                 >
                   <source src={project.video} type="video/mp4" />
                 </video>
-                {showControls && (
-                  <div className="absolute flex justify-center items-center h-full w-full top-0">
-                    <button
-                      className="bg-white opacity-70 p-10 rounded-full"
-                      onClick={togglePlayPause}
-                    >
-                      <img
-                        className="w-12"
-                        src={isPlaying ? Pause : Play}
-                        alt={isPlaying ? "Pause" : "Play"}
-                      />
-                    </button>
-                  </div>
-                )}
+                <div className="absolute flex justify-center items-center h-full w-full top-0">
+                  <button
+                    className="bg-white opacity-30 p-5 lg:p-20 rounded-full"
+                    onClick={togglePlayPause}
+                  >
+                    <Image
+                      className="w-6 lg:w-12"
+                      src={isPlaying ? Pause : Play}
+                      alt={isPlaying ? "Pause" : "Play"}
+                    />
+                  </button>
+                </div>
               </div>
             )}
           </div>
@@ -221,7 +173,7 @@ const ProjectPage = ({ params }) => {
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center z-50 animate-fadeIn">
           <div className="relative animate-scaleUp">
-            <img
+            <Image
               src={project.banner}
               alt={project.title.title1}
               className="max-w-full max-h-screen rounded-lg"
