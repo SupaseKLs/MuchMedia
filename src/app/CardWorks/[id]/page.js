@@ -92,7 +92,7 @@ const ProjectPage = ({ params }) => {
     <div>
       <div className="relative">
         <div
-          className="w-full h-screen bg-center bg-fixed"
+          className="w-full h-96 lg:h-screen bg-center bg-fixed"
           style={{
             backgroundImage: `url(${project.banner})`,
             backgroundSize: "cover",
@@ -118,8 +118,8 @@ const ProjectPage = ({ params }) => {
             </div>
           </div>
 
-        <div className="w-9/12">
-          <h1 className="font-bold text-7xl py-10 text-white">
+        <div className="w-full lg:w-9/12">
+          <h1 className="font-bold text-6xl py-10 text-white">
             {project.header.header1}
           </h1>
           <p className="pb-10 text-xl text-white">{project.title.title1}</p>
@@ -209,8 +209,8 @@ const ProjectPage = ({ params }) => {
             )}
           </div>
 
-          <div className="w-9/12">
-            <h1 className="pt-10 font-bold text-7xl text-white">
+          <div className="w-full lg:w-9/12">
+            <h1 className="pt-10 font-bold text-6xl text-white">
               {project.header.header2}
             </h1>
             <p className="py-10 text-xl text-white">{project.title.title2}</p>

@@ -43,8 +43,8 @@ export default function CardGrid() {
             <Image
               src={card.imageUrl}
               alt={card.title}
-              width={199}
-              height={199}
+              width={250}
+              height={250}
               priority
               className="h-[600px] w-full object-cover transition-transform duration-500 transform hover:scale-110"
             />

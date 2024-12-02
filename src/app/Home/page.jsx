@@ -275,7 +275,7 @@ function HomePage() {
             <MaskText phrases={MuchPhrases} />
           </div>
           <div className='block md:hidden'>
-            <p className="text-sm md:text-5xl font-semibold px-2 w-[350px] md:w-[1300px] leading-[1.5rem] xl:leading-[5rem]">
+            <p className="text-xl md:text-5xl font-semibold px-2 w-[350px] md:w-[1300px] leading-[1.5rem] xl:leading-[5rem]">
               MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE
               QUALITY MEDIA AND BE A LEADER IN DELIVERING
               ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR
