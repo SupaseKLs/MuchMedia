@@ -43,7 +43,7 @@ export default function Teams() {
                             <p className="block md:hidden text-2xl leading-snug my-10 font-Inter">
                             Much Media has a team consisting of website developers, video editors, graphic designers, and illustrators who work together to create engaging
         content and media. The team focuses on developing user-friendly websites, producing high-quality videos, designing beautiful graphics, and
-        creating unique illustrations, all of which effectively enhance the brand's image and communication.
+        creating unique illustrations, all of which effectively enhance the brands image and communication.
                             </p>
                         </div>
                     </div>
