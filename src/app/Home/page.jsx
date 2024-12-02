@@ -55,7 +55,6 @@ function HomePage() {
         >
           <source src="/video/bgvideo.mp4" type="video/mp4" />
         </video>
-        <div className="absolute bottom-0 w-full h-96 bg-gradient-to-t from-[#040404] to-transparent" />
         <div className="h-96 md:h-screen w-full flex items-center">
           <div className="w-11/12 mx-auto">
             <div className="w-[370px] md:w-9/12 lg:w-10/12">

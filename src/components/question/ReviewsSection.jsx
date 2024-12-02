@@ -27,7 +27,7 @@ export default function Reviews() {
       title: "Card 4",
       description: "The quality of the work speaks volumes about the team’s dedication. Everything feels polished and impressive!",
       image: "https://i.pinimg.com/736x/bc/8e/31/bc8e31140a5c1e1fd4ef51ea61e91386.jpg",
-      name: "Kritsada ๋Jaknara",
+      name: "Kritsada Jaknara",
       position: "Art Director"
     },
   ];
@@ -51,10 +51,10 @@ export default function Reviews() {
               <div className="text-black w-11/12 mx-auto flex flex-col">
                 <div className='flex'>
                   <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
-                  <Image src={Star} width={20} height={20} alt='star' />
-                  <Image src={Star} width={20} height={20} alt='star' />
-                  <Image src={Star} width={20} height={20} alt='star' />
-                  <Image src={Star} width={20} height={20} alt='star' />
+                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
+                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
+                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
+                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
                 </div>
                 <div className="w-9/12 py-10">
                   <p>{card.description}</p>

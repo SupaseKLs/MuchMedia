@@ -30,7 +30,7 @@ const Page = () => {
             <div className="w-11/12 mx-auto relative z-10 text-white">
                 <div className="flex flex-col items-center justify-center h-screen text-center">
                     <div>
-                        <div className='text-5xl md:text-7xl lg:text-9xl font-bold'> <MaskText phrases={ContentPhrases1} /></div>
+                        <div className='text-5xl md:text-7xl lg:text-8xl font-bold'> <MaskText phrases={ContentPhrases1} /></div>
                     </div>
                     <div className='flex lg:pl-12 items-center'>
                         <div>

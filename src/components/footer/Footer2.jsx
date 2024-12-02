@@ -31,7 +31,6 @@ export default function Footer() {
             <div className="absolute bottom-0 sm:p-10 sm:top-16 top-24 ">
               <div className='flex flex-col md:flex-row justify-between w-screen'>
 
-                {/* start logo */}
                 <div className="logo ml-0 lg:ml-36 w-full text-white">
                   <div className="Logo-img flex flex-col items-start">
                     <div className="flex flex-col justify-center w-full mt-7 items-center md:items-start pl-0 md:pl-20">
@@ -44,9 +43,6 @@ export default function Footer() {
                     </div>
                   </div>
 
-
-
-
                   <div className="contact lg:flex">
                     <div className="flex flex-col">
                       <div className='w-full flex justify-center'>
@@ -54,16 +50,15 @@ export default function Footer() {
                       </div>
                       <div className='p-5 lg:p-0'>
                         <div className="group w-full relative cursor-pointer p-2 border bg-[#1B1B1D] rounded-full overflow-hidden text-while text-center font-semibold" aria-label="Copy Email button" onClick={() => navigator.clipboard.writeText('muchmedia@gmail.com')}>
-                          <span className="text-2xl lg:text-2xl md:text-xl  px-5 py-5 translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
-                            muchmedia@gmail.com
+                          <span className="text-2xl lg:text-2xl md:text-xl  px-5 py-5 translate-y-0 group-active:-translate-y-12 group-active:opacity-0 transition-all duration-300 inline-block">
+                          muchmedia@gmail.com
                           </span>
-                          <div className="flex gap-2 text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 rounded-full group-hover:rounded-none">
-                            <span className='text-2xl lg:text-2xl md:text-xl '>Click to copy email !</span>
+                          <div className="flex gap-2 text-white bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 z-10 items-center absolute left-0 top-0 h-full w-full justify-center translate-y-12 opacity-0 group-active:translate-y-0 group-active:opacity-100 transition-all duration-300 rounded-full group-active:rounded-none">
+                            <span className='text-2xl lg:text-2xl md:text-xl '>Copy email Succesfully!</span>
                           </div>
                         </div>
                       </div>
 
-                      {/* <a type="button" className="text-white bg-gradient-to-r  from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 shadow-lg shadow-purple-500/50 dark:shadow-lg dark:shadow-purple-800/80 font-medium rounded-full text-sm w-14 h-14 text-center me-2 mb-2 inline-block"></a> */}
                     </div>
 
 
