@@ -51,7 +51,7 @@ function HomePage() {
           autoPlay
           muted
           loop
-          className="relative w-full h-screen object-cover"
+          className="w-full h-screen object-cover"
         >
           <source src="/video/bgvideo.mp4" type="video/mp4" />
         </video>

@@ -47,7 +47,7 @@ const ReviewCard = ({ img }) => {
   return (
     <figure
       className={cn(
-        "relative w-[568px] h-[287px] cursor-pointer overflow-hidden"
+        "relative w-[450px] h-[287px] cursor-pointer overflow-hidden"
       )}
     >
       <div className="flex flex-row items-center">
