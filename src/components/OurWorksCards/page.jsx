@@ -40,11 +40,11 @@ export default function CardGrid() {
           className="relative bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow"
         >
           <div className="overflow-hidden">
-            <img
+            <Image
               src={card.imageUrl}
               alt="work"
-              width={250}
-              height={250}
+              width={650}
+              height={650}
               priority="true"
               className="h-[400px] lg:h-[600px] w-screen object-cover transition-transform duration-500 transform hover:scale-110"
             />
