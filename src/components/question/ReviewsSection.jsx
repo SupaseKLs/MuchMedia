@@ -34,7 +34,7 @@ export default function Reviews() {
 
   return (
     <>
-      <div className="mx-auto w-11/12 pt-10 pb-20">
+      <div className="pt-10 pb-20">
         <p className="text-xl md:text-2xl font-bold">
           clients reviews
         </p>
