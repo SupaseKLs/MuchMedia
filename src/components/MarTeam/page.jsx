@@ -62,7 +62,7 @@ const MarqueeDemo = () => {
       {/* Header Section */}
       <div className="absolute flex flex-col items-center top-0 z-10 pt-72">
         <div>
-          <h1 className="text-8xl font-bold">Our Team</h1>
+          <h1 className="text-8xl text-center font-bold">Our Team</h1>
 
         </div>
         <div>

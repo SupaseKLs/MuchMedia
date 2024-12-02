@@ -34,7 +34,8 @@ export default function Reviews() {
 
   return (
     <>
-      <div className="pt-10 pb-20">
+    <div className="w-11/12 mx-auto">
+    <div className="pt-10 pb-20">
         <p className="text-xl md:text-2xl font-bold">
           clients reviews
         </p>
@@ -72,6 +73,7 @@ export default function Reviews() {
           ))}
         </div>
 
-      </div></>
+      </div></div>
+      </>
   );
 }

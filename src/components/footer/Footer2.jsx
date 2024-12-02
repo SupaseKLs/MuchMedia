@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="relative bg-primary-color h-[700px] lg:h-[450px]">
           <div className="flex">
             <div className="absolute bottom-0 sm:p-10 sm:top-16 top-24 ">
-              <div className='flex flex-col md:flex-row lg:justify-between md:items-center w-full '>
+              <div className='flex flex-col md:flex-row justify-between w-screen'>
 
                 {/* start logo */}
                 <div className="logo ml-0 lg:ml-36 w-full text-white">
@@ -44,12 +44,12 @@ export default function Footer() {
                     </div>
                   </div>
 
-                  <p className='text-5xl md:text-5xl lg:text-6xl font-semibold my-8 whitespace-nowrap text-center font-Gotham'>Get in touch</p>
+                  
 
 
                   <div className="contact flex">
-
-                    <div className="flex">
+                    <div className="flex flex-col">
+                  <p className='text-5xl md:text-5xl lg:text-6xl font-semibold my-8 whitespace-nowrap text-center font-Gotham'>Get in touch</p>
                       <div className="group w-full relative cursor-pointer p-2 border bg-[#1B1B1D] rounded-full overflow-hidden text-while text-center font-semibold" aria-label="Copy Email button" onClick={() => navigator.clipboard.writeText('muchmedia@gmail.com')}>
                         <span className="text-2xl md:text-2xl px-5 py-5 translate-y-0 group-hover:-translate-y-12 group-hover:opacity-0 transition-all duration-300 inline-block">
                           muchmedia@gmail.com

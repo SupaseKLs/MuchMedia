@@ -194,19 +194,19 @@ function HomePage() {
 
                 <div className="text-center">
                   <div className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="10">
-                    <NumberTicker className="font-Poppins text-6xl text-purple-700" value="2" />
+                    <NumberTicker className="font-Poppins text-7xl md:text-8xl text-purple-700" value="2" />
                   </div>
                   <p className="text-white text-xl text-left">Years of<br /> Experience</p>
                 </div>
                 <div className="text-center">
                   <div className="count font-semibold text-7xl bg-gradient-to-r from-purple-500 to-purple-700 text-transparent bg-clip-text" data-target="100">
-                    <NumberTicker className="font-Poppins text-6xl text-purple-700" value="47" /><span>+</span>
+                    <NumberTicker className="font-Poppins text-7xl md:text-8xl text-purple-700" value="47" /><span>+</span>
                   </div>
                   <p className="text-white text-xl text-left" >Completed<br /> Project</p>
                 </div>
               </div>
-              <div className="w-full md:w-5/12 font-semibold text-lg text-left">
-                <div className='hidden md:block'>
+              <div className="w-full md:w-5/12 ">
+                <div className='hidden md:block font-semibold text-4xl text-left'>
                   <MaskText phrases={ProPhrases} />
                 </div>
                 <p className='block md:hidden'>

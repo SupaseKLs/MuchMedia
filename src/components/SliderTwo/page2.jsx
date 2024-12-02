@@ -72,11 +72,12 @@ export default function App() {
                   initial={{ opacity: 0, scale: 0.6 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.6 }}
-                  className="inline-flex w-full items-center justify-center"
+                  className=""
                 >
-                  <div className="inline-flex items-center font-bold text-sm text-white dark:text-black">
-                    Drag
-                    <Image className="pl-2" src={Drag} alt="Drag"></Image>
+                  <div className="items-center text-white dark:text-black">
+                    <span>
+                    <Image src={Drag} fill priority alt="Drag"></Image>
+                    </span>
                   </div>
                 </motion.div>
               )}
@@ -109,12 +110,12 @@ export default function App() {
           className="mySwiper"
         >
           <SwiperSlide>
-            <Image src={Controller}  alt="img"/>
+            <Image src={Controller} fill priority alt="img"/>
           </SwiperSlide>
-          <SwiperSlide><Image src={Item} alt="img" /></SwiperSlide>
-          <SwiperSlide><Image src={Webfolio}  alt="img"/></SwiperSlide>
-          <SwiperSlide><Image src={Photo}  alt="img"/></SwiperSlide>
-          <SwiperSlide><Image src={Green}  alt="img"/></SwiperSlide>
+          <SwiperSlide><Image src={Item} fill priority alt="img" /></SwiperSlide>
+          <SwiperSlide><Image src={Webfolio} fill priority alt="img"/></SwiperSlide>
+          <SwiperSlide><Image src={Photo} fill priority alt="img"/></SwiperSlide>
+          <SwiperSlide><Image src={Green} fill priority alt="img"/></SwiperSlide>
         </Swiper>
       </div>
     </>
