@@ -15,10 +15,11 @@ const Page = () => {
             {/* Video Background */}
             <div className="absolute inset-0 z-0">
                 <video
-                    autoPlay
-                    loop
-                    muted
                     playsInline
+                    loading="lazy"
+                    autoPlay
+                    muted
+                    loop
                     className="w-full h-full object-cover"
                 >
                     <source src="/video/bgboard.MP4" type="video/mp4" />

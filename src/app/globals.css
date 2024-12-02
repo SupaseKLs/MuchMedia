@@ -19,6 +19,11 @@
   font-style: normal;
 }
 
+@layer base {
+  html {
+    font-family: 'Inter'; /* ฟอนต์เริ่มต้น */
+  }
+}
 
 body {
   background: #070707;

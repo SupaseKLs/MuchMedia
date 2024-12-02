@@ -170,7 +170,7 @@ export default function Index() {
                                     ))}
                                     <li className="md:px-3 lg:px-6 cursor-pointer text-lg font-semibold font-Inter">
                                         <motion.p
-                                            onMouseOver={() => setIsActive(!isActive)}
+                                            onClick={() => setIsActive(!isActive)}
                                             className={`${styles.el} text-text_color `}>
 
                                             Work
@@ -235,7 +235,7 @@ export default function Index() {
                                             animate={{ height: "100vh" }} // ขณะปรากฏ
                                             exit={{ height: 0 }} // ขณะปิด
                                             transition={{ ease: [0.76, 0, 0.24, 1], delay: 0.1, duration: 0.5 }}
-                                            className="absolute top-0 left-0 -z-40 bg-background h-screen w-full "
+                                            className="absolute top-0 left-0 -z-40 bg-background h-full w-full box-border"
                                         >
                                             <ul className="flex flex-col w-full pt-32 font-neue  transition-transform duration-300 lg:hidden">
                                                 <motion.li
@@ -291,7 +291,7 @@ export default function Index() {
                                                                     // animate={{ opacity: 1, height: 'auto' }}
                                                                     exit={{ opacity: 0, height: 0 }} // เพิ่ม exit เพื่อสไลด์กลับ
                                                                     transition={{ ease: 'easeInOut', duration: 0.2 }}
-                                                                    className={`font-Poppins ${isDropDown ? 'text-white max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
+                                                                    className={`font-Poppins  ${isDropDown ? 'text-white max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
                                                                 >
                                                                     <motion.li
                                                                         variants={items}
@@ -303,7 +303,7 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href="/We"
+                                                                            href="/WebApp"
                                                                         >
                                                                             WEBSITE
                                                                         </motion.a>
@@ -318,7 +318,7 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href="/"
+                                                                            href="/Graphic"
                                                                         >
                                                                             GRAPHIC
                                                                         </motion.a>
@@ -333,7 +333,7 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href="/"
+                                                                            href="/Production"
                                                                         >
                                                                             PRODUCTION
                                                                         </motion.a>
@@ -344,7 +344,7 @@ export default function Index() {
                                                                     >
                                                                         <motion.a
                                                                             whileHover={{ color: '#767676' }}
-                                                                            href="/"
+                                                                            href="/Drawing"
                                                                         >
                                                                             DRAWING
                                                                         </motion.a>
@@ -365,7 +365,7 @@ export default function Index() {
                                                     animate={{ opacity: 1 }}
                                                     exit={{ opacity: 0 }}
                                                     transition={{ ease: "easeInOut", delay: .2 }}
-                                                    className={`px-6 py-3 cursor-pointer text-5xl ${isDropDown ? 'text-[#767676]' : 'text-white'}`}>
+                                                    className={`px-6 py-3 cursor-pointer text-5xl font-Poppins font-semibold  ${isDropDown ? 'text-[#767676]' : 'text-white'}`}>
                                                     <motion.a href={page.href}
                                                         whileHover={{ color: '#767676' }}
                                                     >{page.text}</motion.a>

@@ -42,8 +42,8 @@ function HomePage() {
   return (
     <>
       <div className="w-full z-10">
-        <div className="flex justify-center absolute bottom-20 md:bottom-4 lg:bottom-8 z-20 w-full">
-          <div className="text-6xl md:text-9xl font-Inter lg:text-[200px] text-white"><MaskText phrases={HeaderPhrases} /></div>
+        <div className="flex justify-center absolute bottom-20 md:bottom-4 lg:bottom-8 z-20 w-full font-Poppins font-bold">
+          <div className="text-5xl md:text-9xl font-Inter lg:text-[200px] text-white"><MaskText phrases={HeaderPhrases} /></div>
         </div>
         <video
           playsInline
@@ -73,9 +73,9 @@ function HomePage() {
         </div>
         <div className="w-11/12 py-20 mx-auto">
           <div className='px-4 md:px-0'>
-            <h1 className="text-5xl lg:text-7xl font-bold text-gray-600">OUR <span className="text-white">SERVICE</span></h1>
+            <h1 className="text-5xl lg:text-7xl font-bold text-gray-600 font-">OUR <span className="text-white font-">SERVICE</span></h1>
             <ul className="text-xl md:text-3xl xl:text-5xl pt-7 list-disc pb-20">
-              <p className='w-full text-white text-xl md:text-xl xl:text-2xl'>
+              <p className='w-full text-white text-xl md:text-xl xl:text-2xl font-Poppins'>
                 • We deliver comprehensive solutions designed to drive your business forward
               </p>
             </ul>
@@ -273,7 +273,7 @@ function HomePage() {
 
         {/* Text Section */}
         <div className="py-20 flex justify-center items-center">
-          <div className="hidden md:block text-sm md:text-5xl font-semibold px-5 w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
+          <div className="hidden md:block text-sm md:text-5xl font-semibold  w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
             <MaskText phrases={MuchPhrases} />
           </div>
           <div className='block md:hidden'>

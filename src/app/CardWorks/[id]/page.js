@@ -88,18 +88,18 @@ const ProjectPage = ({ params }) => {
             <h1 className="text-white text-5xl">{project.created}</h1>
             <p className="text-gray-600 text-lg font-bold pt-2">Developed by</p>
           </div>
-          <div className="text-white py-3 md:pt-10">
+          <div className="text-white py-3 md:pt-10 font-Poppins ">
             <NumberTicker className="text-5xl text-white" value={project.price} />
             <span className="text-5xl"> Bath</span>
             <h1 className="text-lg font-bold pt-2">Price</h1>
           </div>
           <div className="text-white py-3 md:pt-10">
             <NumberTicker
-              className="text-5xl text-white"
+              className="text-5xl text-white font-semibold"
               value={project.developed}
             />
-            <span className="text-5xl"> Days</span>
-            <h1 className="text-lg font-bold pt-2">Development</h1>
+            <span className="text-5xl font-Poppins "> Days</span>
+            <h1 className="text-lg font-bold pt-2 font-Poppins ">Development</h1>
           </div>
         </div>
 
@@ -117,6 +117,8 @@ const ProjectPage = ({ params }) => {
                   src={project.banner}
                   alt={project.title.title1}
                   onClick={handleImageClick}
+                  width={1000}
+                  height={1000}
                 />
               </div>
             ) : (
@@ -174,7 +176,7 @@ const ProjectPage = ({ params }) => {
               className="absolute top-2 right-2 bg-white text-black py-2 px-3 rounded-full"
               onClick={closeModal}
             >
-              ✕
+              
             </button>
           </div>
         </div>

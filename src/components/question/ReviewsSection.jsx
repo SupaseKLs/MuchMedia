@@ -50,7 +50,7 @@ export default function Reviews() {
             >
               <div className="text-black w-11/12 mx-auto flex flex-col">
                 <div className='flex'>
-                  <Image src={Star} width={20} height={20} alt='star' />
+                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
                   <Image src={Star} width={20} height={20} alt='star' />
                   <Image src={Star} width={20} height={20} alt='star' />
                   <Image src={Star} width={20} height={20} alt='star' />

@@ -7,8 +7,9 @@
     margin-bottom: 300px;
   }
   
-  .body{
+  .body , html{
     font-size: 5vw;
+    overflow: hidden;
   }
   
   .lineMask{
