@@ -43,7 +43,7 @@ function HomePage() {
     <>
       <div className="w-full z-10">
         <div className="flex justify-center absolute bottom-20 md:bottom-4 lg:bottom-8 z-20 w-full font-Poppins font-bold">
-          <div className="text-5xl md:text-9xl font-Inter lg:text-[200px] text-white"><MaskText phrases={HeaderPhrases} /></div>
+          <div className="text-5xl md:text-7xl font-Inter lg:text-9xl text-white"><MaskText phrases={HeaderPhrases} /></div>
         </div>
         <video
           playsInline
@@ -58,11 +58,11 @@ function HomePage() {
         <div className="absolute bottom-0 w-full h-96 bg-gradient-to-t from-[#040404] to-transparent" />
         <div className="h-96 md:h-screen w-full flex items-center">
           <div className="w-11/12 mx-auto">
-            <div className="w-[370px] md:w-[1400px]">
-              <div className="hidden md:block text-white text-md px-2 md:text-5xl leading-[2rem] font-semibold xl:leading-[6rem] xl:text-6xl">
+            <div className="w-[370px] md:w-9/12 lg:w-10/12">
+              <div className="hidden md:block lg:hidden xl:block text-white text-md px-2 md:text-5xl leading-[2rem] font-semibold xl:leading-[6rem] xl:text-6xl">
                 <MaskText phrases={customPhrases} />
               </div>
-              <p className="block md:hidden text-white text-xl px-2 md:text-5xl leading-[2rem] font-semibold xl:leading-[6rem] xl:text-6xl">
+              <p className="block md:hidden lg:block xl:hidden text-white text-xl px-2 md:text-5xl leading-[2rem] font-semibold xl:leading-[6rem] xl:text-6xl">
                 MUCHMEDIA LEVERAGES MULTIMEDIA
                 TO BUILD A BETTER WORLD, CREATING
                 NEW OPPORTUNITIES FOR THE NEXT
@@ -208,10 +208,10 @@ function HomePage() {
                 </div>
               </div>
               <div className="w-full md:w-5/12 ">
-                <div className='hidden md:block font-semibold text-4xl text-left'>
+                <div className='hidden md:block lg:hidden xl:block font-semibold text-4xl text-left'>
                   <MaskText phrases={ProPhrases} />
                 </div>
-                <p className='block md:hidden font-semibold text-4xl text-left'>
+                <p className='block md:hidden lg:block xl:hidden font-semibold text-4xl text-left'>
                   All aspects of the projects were
                   fully developed by our team. Here
                   are some of our recent favorites.
@@ -273,11 +273,11 @@ function HomePage() {
 
         {/* Text Section */}
         <div className="py-20 flex justify-center items-center">
-          <div className="hidden md:block text-sm md:text-5xl font-semibold  w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
+          <div className="hidden md:block lg:hidden xl:block text-sm md:text-5xl font-semibold  w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
             <MaskText phrases={MuchPhrases} />
           </div>
-          <div className='block md:hidden'>
-            <p className="text-xl md:text-5xl font-semibold px-2 w-[350px] md:w-[1300px] leading-[2.5rem] xl:leading-[5rem]">
+          <div className='block md:hidden lg:block xl:hidden'>
+            <p className="text-xl md:text-5xl font-semibold px-2 w-[350px] md:w-10/12 leading-[2.5rem] xl:leading-[5rem]">
               MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE
               QUALITY MEDIA AND BE A LEADER IN DELIVERING
               ENGAGING CONTENT FOR DIGITAL AUDIENCES. OUR
@@ -286,7 +286,6 @@ function HomePage() {
             </p>
           </div>
         </div>
-
         <div className="w-full flex justify-center items-center py-10">
           {/* Team Section */}
           <MarTeam />

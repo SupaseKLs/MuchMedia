@@ -37,9 +37,14 @@ export default function Teams() {
                     <div className="mt-40 bg-red-00">
                         <div className="header w-11/12 mx-auto text-white">
                             <h1 className="text-7xl font-Inter font-bold">Team</h1>
-                            <div className="text-2xl leading-snug my-10 font-Inter">
+                            <div className="hidden md:block text-2xl leading-snug my-10 font-Inter">
                             <MaskText phrases={ContentTeam} />
                             </div>
+                            <p className="block md:hidden text-2xl leading-snug my-10 font-Inter">
+                            Much Media has a team consisting of website developers, video editors, graphic designers, and illustrators who work together to create engaging
+        content and media. The team focuses on developing user-friendly websites, producing high-quality videos, designing beautiful graphics, and
+        creating unique illustrations, all of which effectively enhance the brand's image and communication.
+                            </p>
                         </div>
                     </div>
 
