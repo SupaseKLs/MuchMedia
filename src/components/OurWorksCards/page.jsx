@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function CardGrid() {
   const cardsData = [
     {
@@ -39,9 +40,12 @@ export default function CardGrid() {
           className="relative bg-white shadow-md overflow-hidden hover:shadow-xl transition-shadow"
         >
           <div className="overflow-hidden">
-            <img
+            <Image
               src={card.imageUrl}
               alt={card.title}
+              width={199}
+              height={199}
+              priority
               className="h-[600px] w-full object-cover transition-transform duration-500 transform hover:scale-110"
             />
           </div>

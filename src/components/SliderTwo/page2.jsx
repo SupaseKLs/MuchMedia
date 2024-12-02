@@ -76,7 +76,7 @@ export default function App() {
                 >
                   <div className="items-center text-white dark:text-black">
                     <span>
-                    <Image src={Drag} fill priority alt="Drag"></Image>
+                    <Image src={Drag}  fill priority alt="Drag"></Image>
                     </span>
                   </div>
                 </motion.div>

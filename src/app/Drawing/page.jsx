@@ -25,7 +25,7 @@ export default function Home() {
         "At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team",
         "collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and",
         "effective functionality.",
-      ];
+    ];
     const targetRef = useRef(null);
 
     useEffect(() => {
@@ -70,11 +70,16 @@ export default function Home() {
                 <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#040404] to-transparent" />
             </div>
 
-            <div className="w-11/12 mx-auto pt-40 pb-10">
-                <div className="w-10/12 mb-8">
-                    <div className="text-white text-3xl mb-8">
-                    <MaskText phrases={ContentPhrases} />
+            <div className="w-11/12 mx-auto pt-4 md:pt-40 pb-10">
+                <div className="w-full md:w-10/12 mb-8">
+                    <div className="hidden md:blocktext-white text-3xl mb-8">
+                        <MaskText phrases={ContentPhrases} />
                     </div>
+                    <p className="block md:hidden text-white text-3xl mb-8">
+                        At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team
+                        collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and
+                        effective functionality.
+                    </p>
                 </div>
                 <CategoryFilter
                     categories={categories}
