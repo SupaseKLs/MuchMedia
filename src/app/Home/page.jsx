@@ -46,6 +46,8 @@ function HomePage() {
           <div className="text-6xl md:text-9xl font-Inter lg:text-[200px] text-white"><MaskText phrases={HeaderPhrases} /></div>
         </div>
         <video
+          playsInline
+          loading="lazy"
           autoPlay
           muted
           loop
@@ -210,9 +212,9 @@ function HomePage() {
                   <MaskText phrases={ProPhrases} />
                 </div>
                 <p className='block md:hidden font-semibold text-4xl text-left'>
-                All aspects of the projects were
-    fully developed by our team. Here
-    are some of our recent favorites.
+                  All aspects of the projects were
+                  fully developed by our team. Here
+                  are some of our recent favorites.
                 </p>
               </div>
             </section>

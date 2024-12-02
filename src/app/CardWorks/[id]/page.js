@@ -2,7 +2,6 @@
 import { useEffect, useState, useRef } from "react";
 import Play from "@/app/assets/play.svg";
 import Pause from "@/app/assets/pause.svg";
-import Cursor from "@/components/Cursor/cursor_core/page";
 import { AnimatePresence, motion } from "framer-motion";
 import NumberTicker from "@/components/Counter/page";
 import Image from "next/image";
@@ -75,12 +74,11 @@ const ProjectPage = ({ params }) => {
     <div>
       <div className="relative">
         <div
-          className="w-full h-96 lg:h-screen bg-center bg-fixed"
+          className="w-full h-96 lg:h-screen bg-center bg-cover"
           style={{
             backgroundImage: `url(${project.banner})`,
-            backgroundSize: "cover",
           }}
-        ></div>
+        />
         <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-[#040404] to-transparent" />
       </div>
 
@@ -88,9 +86,7 @@ const ProjectPage = ({ params }) => {
         <div className="md:flex-row md:flex justify-between">
           <div className="py-3 md:pt-10">
             <h1 className="text-white text-5xl">{project.created}</h1>
-            <p className="text-gray-600 text-lg font-bold pt-2">
-              Developed by
-            </p>
+            <p className="text-gray-600 text-lg font-bold pt-2">Developed by</p>
           </div>
           <div className="text-white py-3 md:pt-10">
             <NumberTicker className="text-5xl text-white" value={project.price} />
@@ -108,9 +104,7 @@ const ProjectPage = ({ params }) => {
         </div>
 
         <div className="w-full lg:w-9/12">
-          <h1 className="font-bold text-6xl py-10 text-white">
-            {project.header.header1}
-          </h1>
+          <h1 className="font-bold text-6xl py-10 text-white">{project.header.header1}</h1>
           <p className="pb-10 text-xl text-white">{project.title.title1}</p>
         </div>
 
@@ -162,9 +156,7 @@ const ProjectPage = ({ params }) => {
           </div>
 
           <div className="w-full lg:w-9/12">
-            <h1 className="pt-10 font-bold text-6xl text-white">
-              {project.header.header2}
-            </h1>
+            <h1 className="pt-10 font-bold text-6xl text-white">{project.header.header2}</h1>
             <p className="py-10 text-xl text-white">{project.title.title2}</p>
           </div>
         </div>
