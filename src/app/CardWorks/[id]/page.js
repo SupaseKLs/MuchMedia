@@ -19,6 +19,7 @@ const ProjectPage = ({ params }) => {
   const [loading, setLoading] = useState(true);
   const [id, setId] = useState(null);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [showControls, setShowControls] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const videoRef = useRef(null);
@@ -52,15 +53,21 @@ const ProjectPage = ({ params }) => {
     }
   }, [id]);
 
-  const togglePlayPause = () => {
+  const togglePlayPause = (e) => {
+    e.stopPropagation();
     if (videoRef.current) {
-      const video = videoRef.current;
-      const isPlaying = !video.paused;
-      isPlaying ? video.pause() : video.play();
-      video.muted = !isPlaying;
-      setIsPlaying(!isPlaying);
+      if (isPlaying) {
+        videoRef.current.pause();
+        setIsPlaying(false);
+      } else {
+        videoRef.current.play();
+        setIsPlaying(true);
+      }
     }
   };
+
+  const handleMouseEnter = () => setShowControls(true);
+  const handleMouseLeave = () => setShowControls(false);
 
   const handleImageClick = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -125,34 +132,34 @@ const ProjectPage = ({ params }) => {
               <div
                 ref={targetRef}
                 className="relative"
-                onClick={() => {
-                  videoRef.current?.play();
-                  setIsPlaying(true);
-                }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
               >
                 <video
                   ref={videoRef}
                   className="w-11/12 mx-auto h-auto rounded-lg"
                   loop
-                  muted
                   autoPlay
-                  playsinline
+                  muted={!isPlaying}
+                  playsInline
                   loading="lazy"
                 >
                   <source src={project.video} type="video/mp4" />
                 </video>
-                <div className="absolute flex justify-center items-center h-full w-full top-0">
-                  <button
-                    className="bg-white opacity-30 p-5 lg:p-20 rounded-full"
-                    onClick={togglePlayPause}
-                  >
-                    <Image
-                      className="w-6 lg:w-12"
-                      src={isPlaying ? Pause : Play}
-                      alt={isPlaying ? "Pause" : "Play"}
-                    />
-                  </button>
-                </div>
+                {showControls && (
+                  <div className="absolute flex justify-center items-center h-full w-full top-0">
+                    <button
+                      className="bg-white opacity-30 p-5 lg:p-20 rounded-full"
+                      onClick={togglePlayPause}
+                    >
+                      <Image
+                        className="w-6 lg:w-12"
+                        src={isPlaying ? Pause : Play}
+                        alt={isPlaying ? "Pause" : "Play"}
+                      />
+                    </button>
+                  </div>
+                )}
               </div>
             )}
           </div>
@@ -176,7 +183,7 @@ const ProjectPage = ({ params }) => {
               className="absolute top-2 right-2 bg-white text-black py-2 px-3 rounded-full"
               onClick={closeModal}
             >
-              
+              Close
             </button>
           </div>
         </div>
