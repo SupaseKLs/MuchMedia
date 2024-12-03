@@ -363,24 +363,7 @@
     },
     "video": "#"
   },
-  {
-    "id": 21,
-    "cards": "/images/Graphic/images/omie.jpg",
-    "banner": "/images/Graphic/images/omie.jpg",
-    "created": "Ammarat Jamdee",
-    "price": "800",
-    "developed": "3",
-    "type": "Poster",
-    "header": {
-      "header1": "Poster",
-      "header2": "Game Poster"
-    },
-    "title": {
-      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
-      "title2": "This image blends the beauty of nature with the eeriness of the mysterious in perfect harmony, evoking a sense of intrigue and curiosity. It compels viewers to explore the story and origins behind the image."
-    },
-    "video": "#"
-  },
+ 
   {
     "id": 22,
     "cards": "/images/Graphic/images/Best.jpg",
@@ -399,24 +382,7 @@
     },
     "video": "#"
   },
-  {
-    "id": 23,
-    "cards": "/images/Graphic/images/Rov2.jpg",
-    "banner": "/images/Graphic/images/Rov2.jpg",
-    "created": "Ammarat Jamdee",
-    "price": "1200",
-    "developed": "2",
-    "type": "Fan Art",
-    "header": {
-      "header1": "Fan Art",
-      "header2": "Sukuna"
-    },
-    "title": {
-      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
-      "title2": "This image is a fusion of the beauty of Japanese art and the mystery of the character, creating a sense of intrigue and curiosity."
-    },
-    "video": "#"
-  },
+ 
   {
     "id": 24,
     "cards": "/images/Graphic/images/Rov.jpg",
