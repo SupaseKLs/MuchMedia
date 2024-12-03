@@ -399,24 +399,7 @@
     },
     "video": "#"
   },
-  {
-    "id": 23,
-    "cards": "/images/Graphic/images/Rov2.jpg",
-    "banner": "/images/Graphic/images/Rov2.jpg",
-    "created": "Ammarat Jamdee",
-    "price": "1200",
-    "developed": "2",
-    "type": "Fan Art",
-    "header": {
-      "header1": "Fan Art",
-      "header2": "Sukuna"
-    },
-    "title": {
-      "title1": "A poster is a printed or digital visual design used to convey information, advertise a product, promote an event, or deliver a message to a target audience. Posters typically combine text and images in a creative and eye-catching way to grab attention and communicate their purpose effectively.",
-      "title2": "This image is a fusion of the beauty of Japanese art and the mystery of the character, creating a sense of intrigue and curiosity."
-    },
-    "video": "#"
-  },
+
   {
     "id": 24,
     "cards": "/images/Graphic/images/Rov.jpg",
@@ -435,24 +418,7 @@
     },
     "video": "#"
   },
-  {
-    "id": 25,
-    "cards": "/images/Graphic/images/Rengoku.jpg",
-    "banner": "/images/Graphic/images/Rengoku.jpg",
-    "created": "Poorijak Russamee",
-    "price": "450",
-    "developed": "3",
-    "type": "Social Media",
-    "header": {
-      "header1": "Social Media Poster",
-      "header2": "Promotion Rengoku"
-    },
-    "title": {
-      "title1": "A social media poster is a visual graphic designed to be shared on social media platforms like Facebook, Instagram, or Twitter. It typically combines images, text, and branding elements to convey a message, promote a product, event, or idea, and engage viewers. The goal is to catch attention quickly and encourage interaction, whether through likes, shares, or comments. Effective posters often use bold fonts, vibrant colors, and clear calls-to-action to stand out in a crowded social feed.",
-      "title2": "The design of this poster uses bright colors, clear typography, and an organized layout, making it visually appealing and attention-grabbing. It is well-suited for presenting product information."
-    },
-    "video": "#"
-  },
+ 
   {
     "id": 26,
     "cards": "/images/Graphic/images/RiskFixed.png",
