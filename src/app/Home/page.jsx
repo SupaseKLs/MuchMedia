@@ -272,7 +272,7 @@ function HomePage() {
 
         {/* Text Section */}
         <div className="py-20 flex justify-center items-center">
-          <div className="hidden md:block lg:hidden xl:block text-[2.5vw] font-semibold  w-[400px] md:w-[900px] leading-[3rem] xl:leading-[5rem]">
+          <div className="hidden md:block lg:hidden xl:block text-[2.5vw] md:text-[3vw] font-semibold  w-[400px] md:w-full leading-[3rem] xl:leading-[5rem]">
             <MaskText phrases={MuchPhrases} />
           </div>
           <div className='block md:hidden lg:block xl:hidden'>
@@ -290,9 +290,9 @@ function HomePage() {
           <MarTeam />
         </div>
 
-        <div>
-          <ReviewsSection />
-        </div>
+      </div>
+      <div className='w-11/12 mx-auto mb-10'>
+        <ReviewsSection />
       </div>
 
 
