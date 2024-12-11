@@ -22,9 +22,9 @@ export default function Home() {
     const [hoveredId, setHoveredId] = useState(null);
     const [isHovering, setIsHovering] = useState(false);
     const ContentPhrases = [
-        "At MuchMedia, we pride ourselves on delivering creative websites that prioritize user interaction. Our team",
-        "collaborates closely with clients to understand their vision and goals, ensuring user-friendly interfaces and",
-        "effective functionality.",
+        "At MuchMedia, we pride ourselves on delivering creative websites that prioritize",
+        "user interaction. Our team collaborates closely with clients to understand their",
+        "vision and goals, ensuring user-friendly interfaces and effective functionality."
     ];
     const targetRef = useRef(null);
 
@@ -71,8 +71,8 @@ export default function Home() {
             </div>
 
             <div className="w-11/12 mx-auto pt-4 md:pt-40 pb-10">
-                <div className="w-full md:w-10/12 mb-8">
-                    <div className="hidden md:block text-white text-3xl mb-8">
+                <div className="w-full mb-8">
+                    <div className="hidden md:block text-white text-[2vw] mb-8">
                         <MaskText phrases={ContentPhrases} />
                     </div>
                     <p className="block md:hidden text-white text-3xl mb-8">
