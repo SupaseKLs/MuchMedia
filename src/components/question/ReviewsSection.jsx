@@ -23,57 +23,54 @@ export default function Reviews() {
       name: "Phakphum Sarawee",
       position: "Project Manager"
     },
-    {
-      title: "Card 4",
-      description: "The quality of the work speaks volumes about the team’s dedication. Everything feels polished and impressive!",
-      image: "https://i.pinimg.com/736x/bc/8e/31/bc8e31140a5c1e1fd4ef51ea61e91386.jpg",
-      name: "Kritsada Jaknara",
-      position: "Art Director"
-    },
+
   ];
 
   return (
     <>
-    <div className="w-11/12 mx-auto">
-    <div className="pt-10 pb-20">
-        <p className="text-xl md:text-2xl font-bold">
-          clients reviews
-        </p>
-        <h1 className="text-5xl md:text-8xl font-bold">What they say</h1>
-      </div>
-      <div className="mx-auto w-11/12 h-full flex items-center justify-between">
-        <div className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="pt-10 pb-20">
+          <p className="text-xl md:text-2xl font-bold">
+            clients reviews
+          </p>
+          <h1 className="text-5xl md:text-8xl font-bold">What they say</h1>
+        </div>
+        <div className="h-full mx-6 md:mx-0 flex items-center flex-col md:flex-row justify-center gap-6">
           {cardData.map((card, index) => (
             <div
               key={index}
-              className="bg-white h-full py-10 shadow-md rounded overflow-hidden"
+              className="relative bg-white w-full sm:w-72 md:w-80 h-80 shadow-md rounded overflow-hidden"
             >
               <div className="text-black w-11/12 mx-auto flex flex-col">
-                <div className='flex'>
-                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
-                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
-                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
-                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
-                  <Image src={Star} width={20} height={20} className='object-cover' alt='star' />
+                <div className="flex py-4">
+                  {[...Array(5)].map((_, i) => (
+                    <Image
+                      key={i}
+                      src={Star}
+                      width={20}
+                      height={20}
+                      className="object-cover"
+                      alt="star"
+                    />
+                  ))}
                 </div>
-                <div className="w-9/12 py-10">
+                <div className="w-full py-6">
                   <p>{card.description}</p>
                 </div>
-                <div className="flex items-center">
-                  <div>
-                    <img className="bg-contain w-12 h-12 rounded-full" src={card.image} alt="card" />
-                  </div>
+                <div className="flex items-center absolute bottom-0 py-4">
+                  <img
+                    className="bg-contain w-12 h-12 rounded-full"
+                    src={card.image}
+                    alt="card"
+                  />
                   <div className="ml-4">
                     <h1>{card.name}</h1>
-                    <h1 className='font-semibold'>{card.position}</h1>
+                    <h1 className="font-semibold">{card.position}</h1>
                   </div>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
-      </div></div>
-      </>
+    </>
   );
 }

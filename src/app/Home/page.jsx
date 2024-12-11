@@ -58,10 +58,10 @@ function HomePage() {
         <div className="h-96 md:h-screen w-full flex items-center">
           <div className="w-11/12 mx-auto">
             <div className="w-[370px] md:w-9/12 lg:w-10/12">
-              <div className="hidden md:block lg:hidden xl:block text-white text-md px-2 md:text-5xl leading-[2rem] font-semibold xl:leading-[6rem] xl:text-6xl">
+              <div className="hidden md:block lg:hidden xl:block text-white text-[3vw] px-2 leading-[2rem] font-semibold xl:leading-[6rem]">
                 <MaskText phrases={customPhrases} />
               </div>
-              <p className="block md:hidden lg:block xl:hidden text-white text-xl px-2 md:text-5xl leading-[2rem] font-semibold xl:leading-[6rem] xl:text-6xl">
+              <p className="block md:hidden lg:block xl:hidden text-white text-xl md:text-5xl xl:text-6xl px-2 leading-[2rem] font-semibold xl:leading-[6rem]">
                 MUCHMEDIA LEVERAGES MULTIMEDIA
                 TO BUILD A BETTER WORLD, CREATING
                 NEW OPPORTUNITIES FOR THE NEXT
@@ -207,7 +207,7 @@ function HomePage() {
                 </div>
               </div>
               <div className="w-full md:w-5/12 ">
-                <div className='hidden md:block lg:hidden xl:block font-semibold text-4xl text-left'>
+                <div className='hidden md:block lg:hidden xl:block font-semibold text-[2vw] text-left'>
                   <MaskText phrases={ProPhrases} />
                 </div>
                 <p className='block md:hidden lg:block xl:hidden font-semibold text-4xl text-left'>
@@ -272,7 +272,7 @@ function HomePage() {
 
         {/* Text Section */}
         <div className="py-20 flex justify-center items-center">
-          <div className="hidden md:block lg:hidden xl:block text-sm md:text-5xl font-semibold  w-[400px] md:w-[1300px] leading-[3rem] xl:leading-[5rem]">
+          <div className="hidden md:block lg:hidden xl:block text-[2.5vw] font-semibold  w-[400px] md:w-[900px] leading-[3rem] xl:leading-[5rem]">
             <MaskText phrases={MuchPhrases} />
           </div>
           <div className='block md:hidden lg:block xl:hidden'>

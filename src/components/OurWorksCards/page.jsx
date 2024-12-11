@@ -46,7 +46,7 @@ export default function CardGrid() {
               width={650}
               height={650}
               priority="true"
-              className="h-[400px] lg:h-[600px] w-screen object-cover transition-transform duration-500 transform hover:scale-110"
+              className="h-[450px] w-screen object-cover transition-transform duration-500 transform hover:scale-110"
             />
           </div>
           <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-3xl font-bold opacity-0 transition-opacity duration-500 hover:opacity-100">
