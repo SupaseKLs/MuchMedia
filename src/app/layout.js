@@ -1,8 +1,12 @@
+// app/layout.js
+
 import localFont from "next/font/local";
 import "./globals.css";
-import Navbar from '@/components/header/index'
-import Footer from '@/components/footer/Footer2'
+import Navbar from "@/components/header/index";
+import Footer from "@/components/footer/Footer2";
 import SmoothScroll from "@/components/SmoothScroll";
+import Script from "next/script"; // ✅ เพิ่มตรงนี้
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -20,18 +24,22 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en">
       <head>
-      <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/4cc85ab005c48edd3685d833/script.js"></script> 
+        {/* ✅ CookieYes ด้วย next/script */}
+        <Script
+          id="cookieyes"
+          strategy="afterInteractive"
+          src="https://cdn-cookieyes.com/client_data/4cc85ab005c48edd3685d833/script.js"
+        />
+        <link rel="icon" href="/logoweb.ico" />
+        <meta property="og:title" content="MuchMedia" />
+        <meta property="og:description" content="MuchMedia Studio" />
+        <meta property="og:image" content="/images/p3.jpg" />
+        <meta property="og:url" content="https://much-media-nahb.vercel.app/" />
+        <meta property="og:type" content="website" />
       </head>
-      <link rel="icon" href="/logoweb.ico" />
-      <meta property="og:title" content="MuchMedia" />
-      <meta property="og:description" content="MuchMedia Studio" />
-      <meta property="og:image" content="/images/p3.jpg" />
-      <meta property="og:url" content="https://much-media-nahb.vercel.app/" />
-      <meta property="og:type" content="website" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
