@@ -28,11 +28,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         {/* ✅ CookieYes ด้วย next/script */}
-        <Script
-          id="cookieyes"
-          strategy="afterInteractive"
-          src="https://cdn-cookieyes.com/client_data/4cc85ab005c48edd3685d833/script.js"
-        />
+        <Script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/4cc85ab005c48edd3685d833/script.js"></Script>
         <link rel="icon" href="/logoweb.ico" />
         <meta property="og:title" content="MuchMedia" />
         <meta property="og:description" content="MuchMedia Studio" />
