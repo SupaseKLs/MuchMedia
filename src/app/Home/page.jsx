@@ -30,7 +30,6 @@ function HomePage() {
     "fully developed by our team. Here",
     "are some of our recent favorites.",
   ];
-
   const MuchPhrases = [
     "MUCHMEDIA WAS FOUNDED WITH A VISION TO CREATE",
     "QUALITY MEDIA AND BE A LEADER IN DELIVERING",
@@ -61,7 +60,7 @@ function HomePage() {
               <div className="hidden md:block lg:hidden xl:block text-white text-[3vw] px-2 leading-[2rem] font-semibold xl:leading-[6rem]">
                 <MaskText phrases={customPhrases} />
               </div>
-              <p className="block md:hidden lg:block xl:hidden text-white text-xl md:text-5xl xl:text-6xl px-2 leading-[2rem] font-semibold xl:leading-[6rem]">
+              <p className="block md:hidden lg:block xl:hidden text-white text-xl md:text-5xl xl:text-6xl px-2 font-semibold leading-[2rem] xl:leading-[6rem]">
                 MUCHMEDIA LEVERAGES MULTIMEDIA
                 TO BUILD A BETTER WORLD, CREATING
                 NEW OPPORTUNITIES FOR THE NEXT
@@ -271,8 +270,8 @@ function HomePage() {
       <div className="w-full flex flex-col justify-start items-center text-white py-10">
 
         {/* Text Section */}
-        <div className="py-20 flex justify-center items-center">
-          <div className="hidden md:block lg:hidden xl:block text-[2.5vw] md:text-[3vw] font-semibold  w-[400px] md:w-full leading-[3rem] xl:leading-[5rem]">
+        <div className="py-20 flex h-screen justify-center items-center">
+          <div className="hidden md:block lg:hidden xl:block text-[2.5vw] md:text-[3vw] font-semibold w-[400px] md:w-full leading-[2rem] xl:leading-[6rem]">
             <MaskText phrases={MuchPhrases} />
           </div>
           <div className='block md:hidden lg:block xl:hidden'>
@@ -294,8 +293,6 @@ function HomePage() {
       <div className='w-11/12 mx-auto mb-10'>
         <ReviewsSection />
       </div>
-
-
 
       {/* ส่วน FAQ */}
       <div style={{

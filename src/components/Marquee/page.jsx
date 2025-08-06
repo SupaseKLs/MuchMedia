@@ -3,40 +3,40 @@ import Marquee from "../ui/marquee";
 import Image from "next/image";
 const reviews = [
   {
-    img: "/images/p1.jpg",
+    img: "/images/p1.webp",
   },
   {
-    img: "/images/p2.jpg",
+    img: "/images/p2.webp",
   },
   {
-    img: "/images/p3.jpg",
+    img: "/images/p3.webp",
   },
   {
-    img: "/images/p4.jpg",
+    img: "/images/p4.webp",
   },
   {
-    img: "/images/p5.jpg",
+    img: "/images/p5.webp",
   },
   {
-    img: "/images/p6.jpg",
+    img: "/images/p6.webp",
   },
   {
-    img: "/images/p7.jpg",
+    img: "/images/p7.webp",
   },
   {
-    img: "/images/p8.jpg",
+    img: "/images/p8.webp",
   },
   {
-    img: "/images/p9.jpg",
+    img: "/images/p9.webp",
   },
   {
-    img: "/images/p10.jpg",
+    img: "/images/p10.webp",
   },
   {
-    img: "/images/p11.jpg",
+    img: "/images/p11.webp",
   },
   {
-    img: "/images/p12.jpg",
+    img: "/images/p12.webp",
   },
 ];
 

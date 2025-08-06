@@ -2,37 +2,36 @@ import { cn } from "@/lib/utils";
 import Marquee from "../ui/marqueeTeam";
 import Share from '@/app/assets/svg/blank.svg'
 import Image from "next/image";
-import { motion } from "framer-motion";
 import FramerMagnetic from '@/components/FramerMagnetic/page';
 
 
 const reviews = [
   {
-    img: "/images/Omie.avif",
+    img: "/images/Omie.webp",
   },
   {
-    img: "/images/Bew.avif",
+    img: "/images/Bew.webp",
   },
   {
-    img: "/images/Nine.avif",
+    img: "/images/Nine.webp",
   },
   {
-    img: "/images/Mond.avif",
+    img: "/images/Mond.webp",
   },
   {
-    img: "/images/Fammozy.avif",
+    img: "/images/Fammozy.webp",
   },
   {
-    img: "/images/Best.avif",
+    img: "/images/Best.webp",
   },
   {
-    img: "/images/S.avif",
+    img: "/images/S.webp",
   },
   {
-    img: "/images/Tun.avif",
+    img: "/images/Tun.webp",
   },
   {
-    img: "/images/Pan.avif",
+    img: "/images/Pan.webp",
   },
 ];
 

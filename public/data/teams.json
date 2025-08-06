@@ -1,74 +1,72 @@
 [
     {
-        "id" : 1,
-        "name" : "Supasek Laobutsa",
-        "role" : "CEO,Developer",
-        "img" : "/images/S.avif",
-        "contact_facebook" : "https://www.facebook.com/supasek.laobutsa"
-        
+        "id": 1,
+        "name": "Supasek Laobutsa",
+        "role": "CEO,Developer",
+        "img": "/images/S.webp",
+        "contact_facebook": "https://www.facebook.com/supasek.laobutsa"
     },
     {
-        "id" : 2,
-        "name" : "Napat Attayoko",
-        "role" : "Founder,Developer", 
-        "img" : "/images/Nine.avif",
-        "contact_facebook" : "https://www.facebook.com/napat.attayoko"
+        "id": 2,
+        "name": "Napat Attayoko",
+        "role": "Founder,Developer",
+        "img": "/images/Nine.webp",
+        "contact_facebook": "https://www.facebook.com/napat.attayoko"
     },
     {
-        "id" : 3,
-        "name" : "Ammarat Jamdee",
-        "role" : "Co-Founder,Graphic Design",
-        "img" : "/images/Omie.avif",
-        "contact_facebook" : "https://www.facebook.com/ome.ammarach"
+        "id": 3,
+        "name": "Ammarat Jamdee",
+        "role": "Co-Founder,Graphic Design",
+        "img": "/images/Omie.webp",
+        "contact_facebook": "https://www.facebook.com/ome.ammarach"
     },
     {
-        "id" : 4,
-        "name" : "Poorijak Russamee",
-        "role" : "Co-Founder,Developer",
-        "img" : "/images/Best.avif",
-        "contact_facebook" : "https://www.facebook.com/B.poorijak/"
+        "id": 4,
+        "name": "Poorijak Russamee",
+        "role": "Co-Founder,Developer",
+        "img": "/images/Best.webp",
+        "contact_facebook": "https://www.facebook.com/B.poorijak/"
     },
     {
-        "id" : 5,
-        "name" : "Panthong Kasujai",
-        "role" : "Developer", 
-        "img" : "/images/Fammozy.avif",
-        "contact_facebook" : "https://www.facebook.com/FAMMOZYX2"
+        "id": 5,
+        "name": "Panthong Kasujai",
+        "role": "Developer",
+        "img": "/images/Fammozy.webp",
+        "contact_facebook": "https://www.facebook.com/FAMMOZYX2"
     },
     {
-        "id" : 6,
-        "name" : "Tanathat Setteechaichana",
-        "role" : "Developer,Camera Man",
-        "img" : "/images/Pan.avif",
-        "contact_facebook" : "https://www.facebook.com/Plannerkk"
+        "id": 6,
+        "name": "Tanathat Setteechaichana",
+        "role": "Developer,Camera Man",
+        "img": "/images/Pan.webp",
+        "contact_facebook": "https://www.facebook.com/Plannerkk"
     },
     {
-        "id" : 7,
-        "name" : "Korawit Koedrod",
-        "role" : "Camera Man",
-        "img" : "/images/Tun.avif",
-        "contact_facebook" : "https://www.facebook.com/korawit.koedrod"
+        "id": 7,
+        "name": "Korawit Koedrod",
+        "role": "Camera Man",
+        "img": "/images/Tun.webp",
+        "contact_facebook": "https://www.facebook.com/korawit.koedrod"
     },
     {
-        "id" : 8,
-        "name" : "Kawin Palasak",
-        "role" : "Graphic Design", 
-        "img" : "/images/Mond.avif",
-        "contact_facebook" : "https://www.facebook.com/monz.blackshark"
+        "id": 8,
+        "name": "Kawin Palasak",
+        "role": "Graphic Design",
+        "img": "/images/Mond.webp",
+        "contact_facebook": "https://www.facebook.com/monz.blackshark"
     },
     {
-        "id" : 9,
-        "name" : "Paramed Mayterangsiman",
-        "role" : "Graphic Design",
-        "img" : "/images/Bew.avif",
-        "contact_facebook" : "https://www.facebook.com/ParamedWwzZ"
+        "id": 9,
+        "name": "Paramed Mayterangsiman",
+        "role": "Graphic Design",
+        "img": "/images/Bew.webp",
+        "contact_facebook": "https://www.facebook.com/ParamedWwzZ"
     },
     {
-        "id" : 10,
-        "name" : "Witchayan Phokaew",
-        "role" : "UX/UI Designer",
-        "img" : "/images/Oak.jpg",
-        "contact_facebook" : "https://www.facebook.com/wwitttc"
+        "id": 10,
+        "name": "Witchayan Phokaew",
+        "role": "UX/UI Designer",
+        "img": "/images/Oak.webp",
+        "contact_facebook": "https://www.facebook.com/wwitttc"
     }
-    
-    ]
+]

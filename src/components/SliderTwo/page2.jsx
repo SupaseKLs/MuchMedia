@@ -2,11 +2,11 @@
 import { useState, useEffect, useRef } from "react";
 import React from "react";
 import Image from "next/image";
-import Item from '@/app/assets/img/F1.png'
-import Controller from '@/app/assets/img/F2.png'
-import Webfolio from '@/app/assets/img/F3.png'
-import Photo from '@/app/assets/img/F4.png'
-import Green from '@/app/assets/img/F5.png'
+import Item from '@/app/assets/img/F1.webp'
+import Controller from '@/app/assets/img/F2.webp'
+import Webfolio from '@/app/assets/img/F3.webp'
+import Photo from '@/app/assets/img/F4.webp'
+import Green from '@/app/assets/img/F5.webp'
 import { Swiper, SwiperSlide } from "swiper/react";
 import Cursor from "@/components/Cursor/cursor_core/page";
 import { AnimatePresence, motion } from "framer-motion";

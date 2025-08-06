@@ -41,14 +41,14 @@ export default function Reviews() {
         </p>
         <h1 className="text-5xl md:text-8xl font-bold">What they say</h1>
       </div>
-      <div className="h-full mx-6 md:mx-0 flex items-center flex-col md:flex-row justify-center gap-6">
+      <div className="h-full flex items-center flex-col md:flex-row justify-center gap-6">
         {cardData.map((card, index) => (
           <div
             key={index}
-            className="relative bg-white w-full sm:w-72 md:w-80 h-80 shadow-md rounded overflow-hidden"
+            className="relative bg-white w-full sm:w-72 md:w-full min-h-96 shadow-md rounded overflow-hidden"
           >
-            <div className="text-black w-11/12 mx-auto flex flex-col">
-              <div className="flex py-4">
+            <div className="text-black w-10/12 mx-auto flex flex-col">
+              <div className="flex py-12">
                 {[...Array(5)].map((_, i) => (
                   <Image
                     key={i}
@@ -60,10 +60,10 @@ export default function Reviews() {
                   />
                 ))}
               </div>
-              <div className="w-full py-6">
+              <div className="w-full py-2">
                 <p>{card.description}</p>
               </div>
-              <div className="flex items-center absolute bottom-0 py-4">
+              <div className="flex items-center absolute bottom-0 py-12">
                 <img
                   className="bg-contain w-12 h-12 rounded-full"
                   src={card.image}

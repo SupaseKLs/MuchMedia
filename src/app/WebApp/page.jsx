@@ -30,7 +30,7 @@ export default function Home() {
         "on developing user-friendly websites, producing high-quality videos, designing beautiful",
         "graphics, and creating unique illustrations, all of which effectively enhance the brand's",
         "image and communication.",
-      ];
+    ];
     const targetRef = useRef(null);
     useEffect(() => {
         AOS.init({ duration: 500, easing: 'ease-in-out', once: true });
@@ -90,7 +90,7 @@ export default function Home() {
 
             <div className="w-11/12 mx-auto pt-4 md:pt-40">
                 <div className="w-full mb-8">
-                <div className="hidden md:block text-white text-[2vw] mb-8">
+                    <div className="hidden md:block text-white text-[2vw] mb-8">
                         <MaskText phrases={ContentTeam} />
                     </div>
                     <p className="block md:hidden text-white text-3xl mb-8">

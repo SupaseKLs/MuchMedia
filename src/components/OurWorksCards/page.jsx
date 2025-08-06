@@ -5,28 +5,28 @@ export default function CardGrid() {
       id: 1,
       title: "Web App",
       description: "This is a brief description of Card 1.",
-      imageUrl: "/images/WebApp.JPG",
+      imageUrl: "/images/WebApp.webp",
       link: "/WebApp", // Add link for each card
     },
     {
       id: 2,
       title: "Drawing",
       description: "This is a brief description of Card 2.",
-      imageUrl: "/images/Drawing2.JPG",
+      imageUrl: "/images/Drawing2.webp",
       link: "/Drawing", // Add link for each card
     },
     {
       id: 3,
       title: "Graphic",
       description: "This is a brief description of Card 3.",
-      imageUrl: "/images/Graphic.JPG",
+      imageUrl: "/images/Graphic.webp",
       link: "/Graphic", // Add link for each card
     },
     {
       id: 4,
       title: "Production",
       description: "This is a brief description of Card 4.",
-      imageUrl: "/images/Production2.JPG",
+      imageUrl: "/images/Production2.webp",
       link: "/Production", // Add link for each card
     },
   ];

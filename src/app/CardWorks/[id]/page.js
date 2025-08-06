@@ -96,7 +96,10 @@ const ProjectPage = ({ params }) => {
             <p className="text-gray-600 text-lg font-bold pt-2">Developed by</p>
           </div>
           <div className="text-white py-3 md:pt-10 font-Poppins ">
-            <NumberTicker className="text-5xl text-white" value={project.price} />
+            <NumberTicker
+              className="text-5xl text-white"
+              value={project.price}
+            />
             <span className="text-5xl"> Bath</span>
             <h1 className="text-lg font-bold pt-2">Price</h1>
           </div>
@@ -106,12 +109,16 @@ const ProjectPage = ({ params }) => {
               value={project.developed}
             />
             <span className="text-5xl font-Poppins "> Days</span>
-            <h1 className="text-lg font-bold pt-2 font-Poppins ">Development</h1>
+            <h1 className="text-lg font-bold pt-2 font-Poppins ">
+              Development
+            </h1>
           </div>
         </div>
 
         <div className="w-full lg:w-9/12">
-          <h1 className="font-bold text-6xl py-10 text-white">{project.header.header1}</h1>
+          <h1 className="font-bold text-6xl py-10 text-white">
+            {project.header.header1}
+          </h1>
           <p className="pb-10 text-xl text-white">{project.title.title1}</p>
         </div>
 
@@ -156,6 +163,8 @@ const ProjectPage = ({ params }) => {
                         className="w-6 lg:w-12"
                         src={isPlaying ? Pause : Play}
                         alt={isPlaying ? "Pause" : "Play"}
+                        width={1000}
+                        height={1000}
                       />
                     </button>
                   </div>
@@ -165,7 +174,9 @@ const ProjectPage = ({ params }) => {
           </div>
 
           <div className="w-full lg:w-9/12">
-            <h1 className="pt-10 font-bold text-6xl text-white">{project.header.header2}</h1>
+            <h1 className="pt-10 font-bold text-6xl text-white">
+              {project.header.header2}
+            </h1>
             <p className="py-10 text-xl text-white">{project.title.title2}</p>
           </div>
         </div>
@@ -177,6 +188,8 @@ const ProjectPage = ({ params }) => {
             <Image
               src={project.banner}
               alt={project.title.title1}
+              width={1000}
+              height={1000}
               className="max-w-full max-h-screen rounded-lg"
             />
             <button
