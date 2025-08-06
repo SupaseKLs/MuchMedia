@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logoweb.ico" />
         <meta property="og:title" content="MuchMedia" />
         <meta property="og:description" content="MuchMedia Studio" />
-        <meta property="og:image" content="/images/p3.jpg" />
+        <meta property="og:image" content="/images/p3.webo" />
         <meta property="og:url" content="https://much-media-nahb.vercel.app/" />
         <meta property="og:type" content="website" />
       </head>
