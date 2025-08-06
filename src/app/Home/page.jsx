@@ -40,7 +40,7 @@ function HomePage() {
 
   return (
     <>
-      <div className="w-11/12 z-10">
+      <div className="z-10">
         <div className="flex justify-center absolute bottom-20 md:bottom-4 lg:bottom-8 z-20 w-full font-Poppins font-bold">
           <div className="text-5xl md:text-7xl font-Inter lg:text-9xl text-white"><MaskText phrases={HeaderPhrases} /></div>
         </div>
