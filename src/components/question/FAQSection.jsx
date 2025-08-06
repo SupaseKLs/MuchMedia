@@ -10,10 +10,10 @@ const FAQSection = () => {
   };
 
   return (
-    <div className="md:w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto">
       <div className="font-sans text-gray-800 p-6 mx-auto rounded-lg bg-transparent">
         <h1 className="text-xl font-bold text-left mb-5">FAQS</h1>
-        <h1 className="text-5xl md:text-6xl font-bold text-left mb-5">Frequently Asked Questions</h1>
+        <h1 className="text-4xl md:text-6xl font-bold text-left mb-5">Frequently Asked Questions</h1>
         <div className="border-t border-gray-300">
           {faqData.map((faq, index) => (
             <div key={index} className="py-4 border-b border-gray-300">
@@ -22,7 +22,7 @@ const FAQSection = () => {
                 onClick={() => toggleQuestion(index)}
               >
                 <span className="text-4xl font-bold text-gray-400 mr-4">{`0${index + 1}.`}</span>
-                <p className="flex-grow text-2xl font-bold text-black">{faq.question}</p>
+                <p className="flex-grow text-md md:text-2xl font-bold text-black">{faq.question}</p>
                 <button className="bg-black text-white rounded-full py-2 px-8 md:px-10 text-3xl cursor-pointer">
                   {openQuestion === index ? '-' : '+'}
                 </button>

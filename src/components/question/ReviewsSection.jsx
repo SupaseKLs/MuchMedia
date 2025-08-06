@@ -35,48 +35,50 @@ export default function Reviews() {
 
   return (
     <>
-      <div className="text-white pt-10 pb-20">
-        <p className="text-xl md:text-2xl font-bold">
-          clients reviews
-        </p>
-        <h1 className="text-5xl md:text-8xl font-bold">What they say</h1>
-      </div>
-      <div className="h-full flex items-center flex-col md:flex-row justify-center gap-6">
-        {cardData.map((card, index) => (
-          <div
-            key={index}
-            className="relative bg-white w-full sm:w-72 md:w-full min-h-96 shadow-md rounded overflow-hidden"
-          >
-            <div className="text-black w-10/12 mx-auto flex flex-col">
-              <div className="flex py-12">
-                {[...Array(5)].map((_, i) => (
-                  <Image
-                    key={i}
-                    src={Star}
-                    width={20}
-                    height={20}
-                    className="object-cover"
-                    alt="star"
+      <div className="w-11/12 mx-auto">
+        <div className="text-white pt-10 pb-20">
+          <p className="text-xl md:text-2xl font-bold">
+            clients reviews
+          </p>
+          <h1 className="text-5xl md:text-8xl font-bold">What they say</h1>
+        </div>
+        <div className="h-full flex items-center flex-col md:flex-row justify-center gap-6">
+          {cardData.map((card, index) => (
+            <div
+              key={index}
+              className="relative bg-white w-full sm:w-72 md:w-full min-h-96 shadow-md rounded overflow-hidden"
+            >
+              <div className="text-black w-10/12 mx-auto flex flex-col">
+                <div className="flex py-12">
+                  {[...Array(5)].map((_, i) => (
+                    <Image
+                      key={i}
+                      src={Star}
+                      width={20}
+                      height={20}
+                      className="object-cover"
+                      alt="star"
+                    />
+                  ))}
+                </div>
+                <div className="w-full py-2">
+                  <p>{card.description}</p>
+                </div>
+                <div className="flex items-center absolute bottom-0 py-12">
+                  <img
+                    className="bg-contain w-12 h-12 rounded-full"
+                    src={card.image}
+                    alt="card"
                   />
-                ))}
-              </div>
-              <div className="w-full py-2">
-                <p>{card.description}</p>
-              </div>
-              <div className="flex items-center absolute bottom-0 py-12">
-                <img
-                  className="bg-contain w-12 h-12 rounded-full"
-                  src={card.image}
-                  alt="card"
-                />
-                <div className="ml-4">
-                  <h1>{card.name}</h1>
-                  <h1 className="font-semibold">{card.position}</h1>
+                  <div className="ml-4">
+                    <h1>{card.name}</h1>
+                    <h1 className="font-semibold">{card.position}</h1>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );

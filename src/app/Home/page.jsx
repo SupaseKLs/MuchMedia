@@ -40,7 +40,7 @@ function HomePage() {
 
   return (
     <>
-      <div className="w-full z-10">
+      <div className="w-11/12 z-10">
         <div className="flex justify-center absolute bottom-20 md:bottom-4 lg:bottom-8 z-20 w-full font-Poppins font-bold">
           <div className="text-5xl md:text-7xl font-Inter lg:text-9xl text-white"><MaskText phrases={HeaderPhrases} /></div>
         </div>
@@ -187,7 +187,7 @@ function HomePage() {
         </div>
 
         {/* Plan */}
-        <div className="w-11/12 mx-auto">
+        <div className="w-11/12 mx-auto p-4">
           <div className="text-white font-sans flex flex-col min-h-screen">
             <section className="flex flex-col md:flex-row justify-between items-start gap-10 py-5 w-full">
               <div className="flex gap-8 px-2 md:gap-20">
